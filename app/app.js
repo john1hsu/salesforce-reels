@@ -212,7 +212,9 @@
     E.render(ctx, cur.reel, lib, cur.beat, Math.min(tb, b.dur + hold), (now - cur.start) / 1000, talking, ext);
   }
 
-  function articleUrl(path) { return GRAPH_SITE + path.replace(/\.md$/, ".html"); }
+  // the graph site publishes every article flat, as articles/<slug>.html (no domain folder)
+  function articleUrl(path) { return GRAPH_SITE + "articles/" + path.split("/").pop().replace(/\.md$/, ".html"); }
+  function openTab(url) { var w = window.open(url, "_blank"); if (w) { try { w.opener = null; } catch (e) { /* ignore */ } } }
   function showSources(reel) {
     var srcs = reel.sources || [];
     sourcesEl.hidden = true; sourcesEl.textContent = "";
@@ -272,9 +274,17 @@
     }
   });
   stage.addEventListener("pointercancel", function () { p0 = null; });
-  sourceEl.addEventListener("click", function (e) {
-    if (cur) cur.tapped = true;
-    if (cur && (cur.reel.sources || []).length > 1) { e.preventDefault(); sourcesEl.hidden = !sourcesEl.hidden; }
+  sourceEl.addEventListener("click", function (e) {      // always a new tab, never this one
+    e.preventDefault();
+    if (!cur) return;
+    cur.tapped = true;
+    if ((cur.reel.sources || []).length > 1) sourcesEl.hidden = !sourcesEl.hidden;
+    else openTab(sourceEl.href);
+  });
+  sourcesEl.addEventListener("click", function (e) {
+    var a = e.target.closest ? e.target.closest("a") : null;
+    if (!a) return;
+    e.preventDefault(); sourcesEl.hidden = true; openTab(a.href);
   });
   window.addEventListener("keydown", function (e) {
     if (e.key === "ArrowDown" || e.key === "j") next();
