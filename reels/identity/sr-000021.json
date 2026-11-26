@@ -1,0 +1,198 @@
+{
+ "id": "sr-000021",
+ "title": "Ada has the guest list for the API club",
+ "style": "humor",
+ "topics": [
+  "identity"
+ ],
+ "backdrop": "city-night",
+ "cast": [
+  "ada",
+  "bolt",
+  "dex"
+ ],
+ "beats": [
+  {
+   "say": "Your org's APIs are a club. Ada has the guest list.",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 62,
+     "flip": true
+    }
+   ],
+   "props": [
+    {
+     "id": "door",
+     "x": 84,
+     "scale": 5
+    },
+    {
+     "id": "scroll",
+     "x": 42,
+     "y": 44,
+     "scale": 4,
+     "anim": "bob"
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "With API Access Control on, only admin-approved connected apps get in.",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 62,
+     "flip": true,
+     "anim": "nod"
+    },
+    {
+     "id": "bolt",
+     "x": 24,
+     "anim": "enter-left",
+     "emote": "star"
+    }
+   ],
+   "props": [
+    {
+     "id": "door",
+     "x": 84,
+     "scale": 5
+    }
+   ],
+   "sign": "APPROVED ONLY",
+   "sfx": "coin"
+  },
+  {
+   "say": "Dex's mystery script from last year? Not on the list.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 22,
+     "emote": "sweat"
+    },
+    {
+     "id": "ada",
+     "x": 64,
+     "flip": true,
+     "anim": "shake"
+    }
+   ],
+   "props": [
+    {
+     "id": "bug",
+     "x": 40,
+     "scale": 3,
+     "anim": "bob"
+    },
+    {
+     "id": "door",
+     "x": 84,
+     "scale": 5
+    }
+   ],
+   "sfx": "boing"
+  },
+  {
+   "say": "It stops working at the door.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 20,
+     "anim": "sulk"
+    },
+    {
+     "id": "ada",
+     "x": 66,
+     "flip": true
+    }
+   ],
+   "props": [
+    {
+     "id": "bug",
+     "x": 40,
+     "scale": 3,
+     "anim": "shake"
+    },
+    {
+     "id": "stop",
+     "x": 40,
+     "y": 36,
+     "scale": 4,
+     "anim": "drop"
+    },
+    {
+     "id": "door",
+     "x": 84,
+     "scale": 5
+    }
+   ],
+   "fx": "alarm",
+   "sfx": "error"
+  },
+  {
+   "say": "Inventory every integration before you ask for the velvet rope.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 26,
+     "emote": "idea"
+    },
+    {
+     "id": "ada",
+     "x": 66,
+     "flip": true,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "magnifier",
+     "x": 44,
+     "y": 42,
+     "scale": 4,
+     "anim": "bob"
+    },
+    {
+     "id": "coffee",
+     "x": 82,
+     "y": 50,
+     "scale": 3,
+     "anim": "bob"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "With API Access Control on, users reach the APIs only through connected apps the admin has approved.",
+   "source": "articles/identity/api-access-control.md",
+   "evidence": "a user can reach the APIs only through a connected app the admin has approved"
+  },
+  {
+   "claim": "A client whose app is not installed and assigned stops working.",
+   "source": "articles/identity/api-access-control.md",
+   "evidence": "a client whose app is not installed and assigned will stop working"
+  },
+  {
+   "claim": "Before requesting the setting, inventory every integration on Connected Apps OAuth Usage.",
+   "source": "articles/identity/api-access-control.md",
+   "evidence": "Before requesting it, inventory every integration on Connected Apps OAuth Usage"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/identity/api-access-control.md",
+   "id": "kt:api-access-control",
+   "title": "API Access Control",
+   "domain": "identity",
+   "release": "Winter '27",
+   "blob": "c875f71ee8a0ed4ab3bda1b03e509c62eef271de"
+  }
+ ],
+ "source_commit": "3ea374f6fafb0d8f6a4bcd0233dfc6c97a73c70c",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

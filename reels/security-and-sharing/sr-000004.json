@@ -1,0 +1,161 @@
+{
+ "id": "sr-000004",
+ "title": "A key to a door in an open field",
+ "style": "humor",
+ "topics": [
+  "security-and-sharing"
+ ],
+ "backdrop": "forest",
+ "cast": [
+  "penny",
+  "ada"
+ ],
+ "beats": [
+  {
+   "say": "Penny builds an account team and hands everyone an Edit key.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 28,
+     "anim": "cheer"
+    },
+    {
+     "id": "ada",
+     "x": 76,
+     "flip": true
+    }
+   ],
+   "props": [
+    {
+     "id": "key",
+     "x": 52,
+     "y": 40,
+     "scale": 5,
+     "anim": "bob"
+    }
+   ],
+   "sfx": "coin"
+  },
+  {
+   "say": "Small problem. Accounts are already Public Read Write.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 28,
+     "emote": "?"
+    },
+    {
+     "id": "ada",
+     "x": 76,
+     "flip": true,
+     "anim": "nod"
+    }
+   ],
+   "sign": "OWD: READ/WRITE",
+   "sfx": "blip"
+  },
+  {
+   "say": "That's a key to a door standing in an open field.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 24,
+     "emote": "..."
+    }
+   ],
+   "props": [
+    {
+     "id": "door",
+     "x": 56,
+     "scale": 5
+    },
+    {
+     "id": "tree",
+     "x": 88,
+     "scale": 4
+    }
+   ],
+   "sfx": "boing"
+  },
+  {
+   "say": "Team access only matters when it beats the org-wide default.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 22
+    },
+    {
+     "id": "ada",
+     "x": 78,
+     "flip": true,
+     "anim": "talk"
+    }
+   ],
+   "props": [
+    {
+     "id": "door",
+     "x": 52,
+     "scale": 4
+    }
+   ],
+   "sign": "BEAT THE DEFAULT",
+   "sfx": "powerup"
+  },
+  {
+   "say": "Ada walks around the door. Sips her coffee.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 20,
+     "anim": "sulk"
+    },
+    {
+     "id": "ada",
+     "x": 74,
+     "anim": "enter-left"
+    }
+   ],
+   "props": [
+    {
+     "id": "door",
+     "x": 48,
+     "scale": 4
+    },
+    {
+     "id": "coffee",
+     "x": 90,
+     "y": 45,
+     "scale": 3,
+     "anim": "bob"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Account team access levels must be higher than the org-wide default for the object to have any effect.",
+   "source": "articles/security-and-sharing/account-teams.md",
+   "evidence": "Default team access levels must be higher than the org-wide default"
+  },
+  {
+   "claim": "In an org where the default is Public Read/Write, Edit grants to team members add little.",
+   "source": "articles/security-and-sharing/account-teams.md",
+   "evidence": "a Public Read/Write org gains little from Edit grants"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/security-and-sharing/account-teams.md",
+   "id": "kt:account-teams",
+   "title": "Account Teams",
+   "domain": "security-and-sharing",
+   "release": "Winter '27",
+   "blob": "00c6a5f973662bd6fe1b27767de3eb40c6af7534"
+  }
+ ],
+ "source_commit": "3ea374f6fafb0d8f6a4bcd0233dfc6c97a73c70c",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

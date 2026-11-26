@@ -1,0 +1,162 @@
+{
+ "id": "sr-000006",
+ "title": "Activities move to the basement at 365 days",
+ "style": "fact",
+ "topics": [
+  "data-model"
+ ],
+ "backdrop": "dungeon",
+ "cast": [
+  "dex",
+  "archie"
+ ],
+ "beats": [
+  {
+   "say": "Activities in Salesforce get a strange birthday present.",
+   "props": [
+    {
+     "id": "calendar",
+     "x": 50,
+     "y": 35,
+     "scale": 5,
+     "anim": "bob"
+    },
+    {
+     "id": "envelope",
+     "x": 24,
+     "scale": 3
+    },
+    {
+     "id": "phone",
+     "x": 76,
+     "scale": 3
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "At three hundred sixty-five days old, a background process archives them.",
+   "props": [
+    {
+     "id": "box",
+     "x": 50,
+     "scale": 5
+    },
+    {
+     "id": "envelope",
+     "x": 50,
+     "y": 30,
+     "scale": 3,
+     "anim": "drop"
+    }
+   ],
+   "sign": "365 DAYS",
+   "fx": "dark",
+   "sfx": "whoosh"
+  },
+  {
+   "say": "A standard query stops seeing them. Dex panics.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 36,
+     "anim": "run",
+     "emote": "sweat"
+    }
+   ],
+   "props": [
+    {
+     "id": "magnifier",
+     "x": 72,
+     "y": 42,
+     "scale": 4,
+     "anim": "shake"
+    }
+   ],
+   "sfx": "error"
+  },
+  {
+   "say": "Archie doesn't. Query All still returns them.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 26
+    },
+    {
+     "id": "archie",
+     "x": 76,
+     "flip": true,
+     "anim": "nod",
+     "emote": "idea"
+    }
+   ],
+   "props": [
+    {
+     "id": "chest",
+     "x": 52,
+     "scale": 4,
+     "anim": "pulse"
+    }
+   ],
+   "sign": "queryAll()",
+   "sfx": "powerup"
+  },
+  {
+   "say": "Not deleted. Just moved to the basement.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 24,
+     "anim": "cheer"
+    },
+    {
+     "id": "archie",
+     "x": 78,
+     "flip": true
+    }
+   ],
+   "props": [
+    {
+     "id": "chest",
+     "x": 52,
+     "scale": 5
+    },
+    {
+     "id": "envelope",
+     "x": 52,
+     "y": 45,
+     "scale": 3,
+     "anim": "rise"
+    }
+   ],
+   "fx": "sparkle",
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "A background process archives activities once they are 365 days old.",
+   "source": "articles/data-model/activity-data-model.md",
+   "evidence": "archives activities once they are 365 days old"
+  },
+  {
+   "claim": "A standard query() excludes archived activities, while queryAll() returns them.",
+   "source": "articles/data-model/activity-data-model.md",
+   "evidence": "`query()` excludes archived rows; `queryAll()` returns them"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/data-model/activity-data-model.md",
+   "id": "kt:activity-data-model",
+   "title": "Activity Data Model",
+   "domain": "data-model",
+   "release": "Winter '27",
+   "blob": "a3092f03504204954cb14d475d76668f2fc78634"
+  }
+ ],
+ "source_commit": "3ea374f6fafb0d8f6a4bcd0233dfc6c97a73c70c",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

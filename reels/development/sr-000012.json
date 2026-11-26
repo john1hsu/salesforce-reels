@@ -1,0 +1,164 @@
+{
+ "id": "sr-000012",
+ "title": "Apex is not Java in a cloud costume",
+ "style": "myth",
+ "topics": [
+  "development"
+ ],
+ "backdrop": "stage",
+ "cast": [
+  "dex",
+  "archie"
+ ],
+ "myth": "Apex is simply Java running on Salesforce, with the same rules.",
+ "beats": [
+  {
+   "say": "Myth: Apex is just Java in a cloud costume.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 34,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "cloud",
+     "x": 68,
+     "y": 40,
+     "scale": 5,
+     "anim": "bob"
+    },
+    {
+     "id": "coffee",
+     "x": 68,
+     "y": 62,
+     "scale": 3
+    }
+   ],
+   "sign": "MYTH",
+   "sfx": "blip"
+  },
+  {
+   "say": "So Dex names one variable total. And another one, TOTAL, in capitals.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 28,
+     "anim": "cheer"
+    }
+   ],
+   "props": [
+    {
+     "id": "desk",
+     "x": 68,
+     "scale": 4
+    },
+    {
+     "id": "computer",
+     "x": 68,
+     "y": 54,
+     "scale": 3
+    }
+   ],
+   "sign": "total  TOTAL",
+   "sfx": "coin"
+  },
+  {
+   "say": "Busted. Unlike Java, Apex is case-insensitive.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 28,
+     "anim": "shake",
+     "emote": "!"
+    }
+   ],
+   "props": [
+    {
+     "id": "desk",
+     "x": 68,
+     "scale": 4
+    },
+    {
+     "id": "computer",
+     "x": 68,
+     "y": 54,
+     "scale": 3,
+     "anim": "shake"
+    },
+    {
+     "id": "bug",
+     "x": 88,
+     "y": 40,
+     "scale": 3,
+     "anim": "drop"
+    }
+   ],
+   "sign": "BUSTED",
+   "fx": "flash",
+   "sfx": "error"
+  },
+  {
+   "say": "Java-like, yes. Java, no.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "emote": "..."
+    },
+    {
+     "id": "archie",
+     "x": 76,
+     "flip": true,
+     "anim": "nod"
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "Shouting a name doesn't make it a new one.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "sulk"
+    },
+    {
+     "id": "archie",
+     "x": 76,
+     "flip": true,
+     "anim": "talk"
+    }
+   ],
+   "sign": "total = TOTAL",
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Unlike Java, Apex is case-insensitive.",
+   "source": "articles/development/apex.md",
+   "evidence": "Unlike Java, Apex is case-insensitive"
+  },
+  {
+   "claim": "Apex is a Java-like language rather than Java itself.",
+   "source": "articles/development/apex.md",
+   "evidence": "strongly typed, object-oriented, Java-like programming language"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/development/apex.md",
+   "id": "kt:apex",
+   "title": "Apex",
+   "domain": "development",
+   "release": "Winter '27",
+   "blob": "4aca2723593c462a9a996092ec7e673c62356427"
+  }
+ ],
+ "source_commit": "3ea374f6fafb0d8f6a4bcd0233dfc6c97a73c70c",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

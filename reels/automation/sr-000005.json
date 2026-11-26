@@ -1,0 +1,159 @@
+{
+ "id": "sr-000005",
+ "title": "Two engineers, one task, back to Penny",
+ "style": "story",
+ "topics": [
+  "automation"
+ ],
+ "backdrop": "classroom",
+ "cast": [
+  "penny",
+  "dex",
+  "archie"
+ ],
+ "beats": [
+  {
+   "say": "Penny launches an action plan. One task goes to the Sales Engineer role.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 28,
+     "anim": "cheer"
+    }
+   ],
+   "props": [
+    {
+     "id": "rocket",
+     "x": 72,
+     "scale": 4,
+     "anim": "rise"
+    },
+    {
+     "id": "calendar",
+     "x": 50,
+     "y": 35,
+     "scale": 3
+    }
+   ],
+   "sfx": "powerup"
+  },
+  {
+   "say": "But two people hold that role.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 60,
+     "emote": "?"
+    },
+    {
+     "id": "archie",
+     "x": 82,
+     "flip": true,
+     "emote": "?"
+    }
+   ],
+   "sign": "ROLE x 2",
+   "sfx": "blip"
+  },
+  {
+   "say": "The plan won't pick a favourite. The task falls back to the plan creator.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 20
+    },
+    {
+     "id": "dex",
+     "x": 62
+    },
+    {
+     "id": "archie",
+     "x": 84,
+     "flip": true
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 72,
+     "y": 35,
+     "scale": 4,
+     "anim": "fly-left"
+    }
+   ],
+   "sfx": "whoosh"
+  },
+  {
+   "say": "Which is Penny. Due Friday.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 30,
+     "anim": "shake",
+     "emote": "!"
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 30,
+     "y": 30,
+     "scale": 4,
+     "anim": "drop"
+    }
+   ],
+   "sign": "DUE: FRIDAY",
+   "fx": "flash",
+   "sfx": "error"
+  },
+  {
+   "say": "She did call it a quick one.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 26,
+     "anim": "sulk",
+     "emote": "sweat"
+    },
+    {
+     "id": "dex",
+     "x": 62,
+     "anim": "cheer"
+    },
+    {
+     "id": "archie",
+     "x": 84,
+     "flip": true,
+     "anim": "nod"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "An action plan item assigned to a role that two or more users hold falls back to the plan creator.",
+   "source": "articles/automation/action-plans.md",
+   "evidence": "role held by two or more users, fall back to the plan creator"
+  },
+  {
+   "claim": "Action plan tasks can be assigned to a role when team roles are enabled.",
+   "source": "articles/automation/action-plans.md",
+   "evidence": "or a role when account, opportunity or case team roles are enabled"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/automation/action-plans.md",
+   "id": "kt:action-plans",
+   "title": "Action Plans",
+   "domain": "automation",
+   "release": "Winter '27",
+   "blob": "f46498e1ee06b26d3b3a6d6dc4f09b3ca3b4266b"
+  }
+ ],
+ "source_commit": "3ea374f6fafb0d8f6a4bcd0233dfc6c97a73c70c",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

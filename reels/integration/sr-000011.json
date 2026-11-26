@@ -1,0 +1,169 @@
+{
+ "id": "sr-000011",
+ "title": "The transcript that stops at minute fifteen",
+ "style": "fact",
+ "topics": [
+  "integration"
+ ],
+ "backdrop": "kitchen",
+ "cast": [
+  "penny",
+  "ada"
+ ],
+ "beats": [
+  {
+   "say": "Penny takes a customer call. A long one.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 32,
+     "anim": "talk"
+    }
+   ],
+   "props": [
+    {
+     "id": "phone",
+     "x": 62,
+     "y": 42,
+     "scale": 4,
+     "anim": "shake"
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "The live transcript scrolls along nicely. Until minute fifteen.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 26,
+     "anim": "talk"
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 62,
+     "y": 40,
+     "scale": 5,
+     "anim": "bob"
+    },
+    {
+     "id": "clock",
+     "x": 88,
+     "y": 22,
+     "scale": 3,
+     "anim": "spin"
+    }
+   ],
+   "sfx": "coin"
+  },
+  {
+   "say": "Then silence. Amazon Transcribe only covers the first fifteen minutes of a call.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 26,
+     "emote": "?"
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 62,
+     "y": 40,
+     "scale": 5,
+     "anim": "shake"
+    },
+    {
+     "id": "clock",
+     "x": 88,
+     "y": 22,
+     "scale": 3
+    }
+   ],
+   "sign": "FIRST 15 MIN",
+   "fx": "dark",
+   "sfx": "error"
+  },
+  {
+   "say": "For longer calls, pick Contact Lens instead.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 24,
+     "emote": "idea"
+    },
+    {
+     "id": "ada",
+     "x": 76,
+     "flip": true,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "magnifier",
+     "x": 52,
+     "y": 40,
+     "scale": 5,
+     "anim": "pulse"
+    }
+   ],
+   "sign": "CONTACT LENS",
+   "sfx": "powerup"
+  },
+  {
+   "say": "Penny's quick ones rarely fit in fifteen minutes.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 30,
+     "anim": "talk",
+     "emote": "sweat"
+    },
+    {
+     "id": "ada",
+     "x": 76,
+     "flip": true
+    }
+   ],
+   "props": [
+    {
+     "id": "coffee",
+     "x": 90,
+     "y": 48,
+     "scale": 3,
+     "anim": "bob"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Real-time transcription through Amazon Transcribe covers only the first 15 minutes of a call.",
+   "source": "articles/integration/amazon-connect.md",
+   "evidence": "Transcription through Amazon Transcribe covers only the first 15 minutes of a call"
+  },
+  {
+   "claim": "Contact Lens is the transcription choice for longer calls.",
+   "source": "articles/integration/amazon-connect.md",
+   "evidence": "so Contact Lens is the choice for longer calls"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/integration/amazon-connect.md",
+   "id": "kt:amazon-connect",
+   "title": "Amazon Connect",
+   "domain": "integration",
+   "release": "Winter '27",
+   "blob": "b3f92531f76d5569024694c0350c5e4889e1323c"
+  }
+ ],
+ "source_commit": "3ea374f6fafb0d8f6a4bcd0233dfc6c97a73c70c",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

@@ -1,0 +1,153 @@
+{
+ "id": "sr-000015",
+ "title": "Published is not the same as live",
+ "style": "myth",
+ "topics": [
+  "devops-and-alm"
+ ],
+ "backdrop": "server-room",
+ "cast": [
+  "dex",
+  "bolt"
+ ],
+ "myth": "Publishing an agent with Agentforce DX makes it live for users.",
+ "beats": [
+  {
+   "say": "Myth: publish an agent from the command line and it's live.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 32,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "computer",
+     "x": 70,
+     "y": 56,
+     "scale": 4
+    },
+    {
+     "id": "desk",
+     "x": 70,
+     "scale": 4
+    }
+   ],
+   "sign": "MYTH",
+   "sfx": "blip"
+  },
+  {
+   "say": "Dex publishes his authoring bundle. Then waits for the fanfare.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "cheer",
+     "emote": "star"
+    }
+   ],
+   "props": [
+    {
+     "id": "box",
+     "x": 66,
+     "y": 40,
+     "scale": 4,
+     "anim": "rise"
+    }
+   ],
+   "sfx": "whoosh"
+  },
+  {
+   "say": "Nothing. Busted: publishing does not make the agent live.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "emote": "?"
+    },
+    {
+     "id": "bolt",
+     "x": 74,
+     "flip": true,
+     "emote": "zzz"
+    }
+   ],
+   "sign": "BUSTED",
+   "fx": "dark",
+   "sfx": "error"
+  },
+  {
+   "say": "A separate command, agent activate, does that.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 28,
+     "emote": "idea"
+    },
+    {
+     "id": "bolt",
+     "x": 74,
+     "flip": true
+    }
+   ],
+   "props": [
+    {
+     "id": "bolt",
+     "x": 52,
+     "y": 36,
+     "scale": 4,
+     "anim": "drop"
+    }
+   ],
+   "sign": "sf agent activate",
+   "fx": "flash",
+   "sfx": "zap"
+  },
+  {
+   "say": "Bolt was ready all along. Nobody said the word activate.",
+   "speaker": "bolt",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 26,
+     "anim": "sulk"
+    },
+    {
+     "id": "bolt",
+     "x": 70,
+     "flip": true,
+     "anim": "talk",
+     "emote": "heart"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Publishing an authoring bundle does not make the agent live.",
+   "source": "articles/devops-and-alm/agentforce-dx.md",
+   "evidence": "Publishing does not make the agent live"
+  },
+  {
+   "claim": "The sf agent activate command is what makes a published agent live.",
+   "source": "articles/devops-and-alm/agentforce-dx.md",
+   "evidence": "`sf agent activate` does that"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/devops-and-alm/agentforce-dx.md",
+   "id": "kt:agentforce-dx",
+   "title": "Agentforce DX",
+   "domain": "devops-and-alm",
+   "release": "Winter '27",
+   "blob": "b52f0d583b3a29d707c322bc077bb2ec2f84b4c4"
+  }
+ ],
+ "source_commit": "3ea374f6fafb0d8f6a4bcd0233dfc6c97a73c70c",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

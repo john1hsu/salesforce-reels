@@ -1,0 +1,164 @@
+{
+ "id": "sr-000022",
+ "title": "Four certifications in a trench coat",
+ "style": "fact",
+ "topics": [
+  "architecture-practice"
+ ],
+ "backdrop": "mountain",
+ "cast": [
+  "dex",
+  "archie"
+ ],
+ "beats": [
+  {
+   "say": "Dex wants to be an Application Architect. He goes to book the exam.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 24,
+     "anim": "enter-left",
+     "emote": "star"
+    }
+   ],
+   "props": [
+    {
+     "id": "trophy",
+     "x": 80,
+     "y": 40,
+     "scale": 4,
+     "anim": "bob"
+    }
+   ],
+   "sfx": "jump"
+  },
+  {
+   "say": "He searches. And searches. No exam.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 34,
+     "anim": "run",
+     "emote": "?"
+    }
+   ],
+   "props": [
+    {
+     "id": "magnifier",
+     "x": 66,
+     "y": 44,
+     "scale": 4,
+     "anim": "shake"
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "Because there isn't one. The credential is granted automatically.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 26,
+     "emote": "!"
+    },
+    {
+     "id": "archie",
+     "x": 76,
+     "flip": true,
+     "anim": "talk"
+    }
+   ],
+   "sign": "NO EXAM",
+   "sfx": "boing"
+  },
+  {
+   "say": "Pass four other certifications, and it simply appears.",
+   "props": [
+    {
+     "id": "scroll",
+     "x": 20,
+     "y": 44,
+     "scale": 3,
+     "anim": "drop"
+    },
+    {
+     "id": "scroll",
+     "x": 40,
+     "y": 44,
+     "scale": 3,
+     "anim": "drop"
+    },
+    {
+     "id": "scroll",
+     "x": 60,
+     "y": 44,
+     "scale": 3,
+     "anim": "drop"
+    },
+    {
+     "id": "scroll",
+     "x": 80,
+     "y": 44,
+     "scale": 3,
+     "anim": "drop"
+    }
+   ],
+   "sign": "4 CERTS",
+   "fx": "sparkle",
+   "sfx": "powerup"
+  },
+  {
+   "say": "It's four certifications in a trench coat.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 26,
+     "anim": "cheer"
+    },
+    {
+     "id": "archie",
+     "x": 78,
+     "flip": true,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "trophy",
+     "x": 52,
+     "y": 42,
+     "scale": 5,
+     "anim": "pulse"
+    }
+   ],
+   "fx": "confetti",
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "There is no Application Architect exam.",
+   "source": "articles/architecture-practice/application-architect-certification.md",
+   "evidence": "there is no Application Architect exam"
+  },
+  {
+   "claim": "Trailhead grants the credential automatically once a candidate has passed four prerequisite certifications.",
+   "source": "articles/architecture-practice/application-architect-certification.md",
+   "evidence": "grants it automatically once a candidate has passed four prerequisite certifications"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/architecture-practice/application-architect-certification.md",
+   "id": "kt:application-architect-certification",
+   "title": "Application Architect Certification",
+   "domain": "architecture-practice",
+   "release": "Winter '27",
+   "blob": "2aa475122fab3135bd759a0b6102c8f58687715e"
+  }
+ ],
+ "source_commit": "3ea374f6fafb0d8f6a4bcd0233dfc6c97a73c70c",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

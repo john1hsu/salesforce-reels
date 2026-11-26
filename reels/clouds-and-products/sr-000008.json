@@ -1,0 +1,171 @@
+{
+ "id": "sr-000008",
+ "title": "AppExchange and AgentExchange are one shop",
+ "style": "myth",
+ "topics": [
+  "clouds-and-products"
+ ],
+ "backdrop": "wild-west",
+ "cast": [
+  "penny",
+  "archie"
+ ],
+ "myth": "AppExchange and AgentExchange are two separate marketplaces.",
+ "beats": [
+  {
+   "say": "Myth: AppExchange and AgentExchange are two different stores.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 50,
+     "emote": "?"
+    }
+   ],
+   "props": [
+    {
+     "id": "door",
+     "x": 16,
+     "scale": 4
+    },
+    {
+     "id": "door",
+     "x": 84,
+     "scale": 4
+    }
+   ],
+   "sign": "MYTH",
+   "sfx": "blip"
+  },
+  {
+   "say": "Penny goes looking for both. She finds one front door.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 30,
+     "anim": "run",
+     "emote": "sweat"
+    }
+   ],
+   "props": [
+    {
+     "id": "door",
+     "x": 68,
+     "scale": 5
+    },
+    {
+     "id": "cactus",
+     "x": 92,
+     "scale": 3
+    }
+   ],
+   "sfx": "boing"
+  },
+  {
+   "say": "Fact: in April twenty twenty-six, Salesforce merged them with the Slack Marketplace.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 26,
+     "emote": "!"
+    },
+    {
+     "id": "archie",
+     "x": 78,
+     "flip": true,
+     "anim": "enter-right"
+    }
+   ],
+   "props": [
+    {
+     "id": "calendar",
+     "x": 52,
+     "y": 38,
+     "scale": 4,
+     "anim": "drop"
+    }
+   ],
+   "sign": "FACT: APRIL 2026",
+   "fx": "flash",
+   "sfx": "powerup"
+  },
+  {
+   "say": "One storefront, one name: AgentExchange.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 24,
+     "anim": "cheer"
+    },
+    {
+     "id": "archie",
+     "x": 80,
+     "flip": true,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "door",
+     "x": 52,
+     "scale": 5,
+     "anim": "pulse"
+    }
+   ],
+   "sign": "AGENTEXCHANGE",
+   "fx": "sparkle",
+   "sfx": "fanfare"
+  },
+  {
+   "say": "Old docs still say AppExchange. Same shop, old sign.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 72,
+     "flip": true,
+     "emote": "..."
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 40,
+     "y": 40,
+     "scale": 4,
+     "anim": "bob"
+    },
+    {
+     "id": "door",
+     "x": 14,
+     "scale": 4
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "In April 2026 Salesforce merged AppExchange, the Slack Marketplace and the Agentforce ecosystem into one storefront named AgentExchange.",
+   "source": "articles/clouds-and-products/agentexchange.md",
+   "evidence": "merged AppExchange, the Slack Marketplace and that Agentforce ecosystem into one storefront"
+  },
+  {
+   "claim": "Many docs, URLs and permission names still use the AppExchange wording.",
+   "source": "articles/clouds-and-products/agentexchange.md",
+   "evidence": "Many docs, URLs and permission names still carry the AppExchange wording"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/clouds-and-products/agentexchange.md",
+   "id": "kt:agentexchange",
+   "title": "AgentExchange",
+   "domain": "clouds-and-products",
+   "release": "Winter '27",
+   "blob": "5d89070a3d3662cd5f12b5e146aabef2f97c22bd"
+  }
+ ],
+ "source_commit": "3ea374f6fafb0d8f6a4bcd0233dfc6c97a73c70c",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

@@ -1,27 +1,72 @@
 {
- "reels_in_feed": 2,
+ "reels_in_feed": 22,
  "by_status": {
-  "active": 2
+  "active": 22
  },
- "articles_covered": 1,
+ "articles_covered": 21,
  "by_style": {
-  "humor": 1,
-  "myth": 1
+  "fact": 6,
+  "humor": 7,
+  "myth": 4,
+  "story": 5
  },
  "by_topic": {
-  "platform-architecture": 2
+  "architecture-practice": 2,
+  "automation": 2,
+  "clouds-and-products": 2,
+  "data-cloud-and-ai": 2,
+  "data-model": 1,
+  "development": 2,
+  "devops-and-alm": 2,
+  "identity": 2,
+  "integration": 2,
+  "platform-architecture": 2,
+  "public-sector-and-compliance": 1,
+  "security-and-sharing": 2
  },
  "by_cast": {
-  "ada": 1,
-  "dex": 1,
-  "gus": 1,
-  "penny": 1
+  "ada": 7,
+  "archie": 10,
+  "bolt": 5,
+  "dex": 14,
+  "gus": 2,
+  "penny": 10
  },
  "by_backdrop": {
-  "office": 1,
-  "server-room": 1
+  "beach": 2,
+  "city-night": 2,
+  "classroom": 2,
+  "dungeon": 2,
+  "forest": 1,
+  "kitchen": 1,
+  "mountain": 2,
+  "office": 2,
+  "server-room": 2,
+  "space": 2,
+  "stage": 2,
+  "wild-west": 2
  },
  "by_article": {
-  "articles/platform-architecture/governor-limits.md": 2
+  "articles/architecture-practice/agentforce-architecture-patterns.md": 1,
+  "articles/architecture-practice/application-architect-certification.md": 1,
+  "articles/automation/action-plans.md": 1,
+  "articles/automation/agentforce-for-flow.md": 1,
+  "articles/clouds-and-products/agentexchange.md": 1,
+  "articles/clouds-and-products/agentforce-nonprofit.md": 1,
+  "articles/data-cloud-and-ai/agent-actions.md": 1,
+  "articles/data-cloud-and-ai/agent-api.md": 1,
+  "articles/data-model/activity-data-model.md": 1,
+  "articles/development/apex-callouts.md": 1,
+  "articles/development/apex.md": 1,
+  "articles/devops-and-alm/agentexchange-go-to-market-app.md": 1,
+  "articles/devops-and-alm/agentforce-dx.md": 1,
+  "articles/identity/account-takeover.md": 1,
+  "articles/identity/api-access-control.md": 1,
+  "articles/integration/amazon-connect.md": 1,
+  "articles/integration/anypoint-runtime-manager.md": 1,
+  "articles/platform-architecture/governor-limits.md": 2,
+  "articles/public-sector-and-compliance/authority-to-operate.md": 1,
+  "articles/security-and-sharing/account-teams.md": 1,
+  "articles/security-and-sharing/apex-managed-sharing.md": 1
  }
 }

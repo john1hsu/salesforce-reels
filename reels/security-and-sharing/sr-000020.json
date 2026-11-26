@@ -1,0 +1,170 @@
+{
+ "id": "sr-000020",
+ "title": "Give your shares a reason to stay",
+ "style": "story",
+ "topics": [
+  "security-and-sharing"
+ ],
+ "backdrop": "dungeon",
+ "cast": [
+  "dex",
+  "penny",
+  "archie"
+ ],
+ "beats": [
+  {
+   "say": "Dex shares a record from Apex. He skips the sharing reason.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 28,
+     "anim": "nod"
+    },
+    {
+     "id": "penny",
+     "x": 78,
+     "flip": true,
+     "anim": "cheer"
+    }
+   ],
+   "props": [
+    {
+     "id": "key",
+     "x": 54,
+     "y": 42,
+     "scale": 4,
+     "anim": "fly-right"
+    }
+   ],
+   "sfx": "coin"
+  },
+  {
+   "say": "Then the record gets a new owner.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 76,
+     "flip": true,
+     "anim": "enter-right"
+    }
+   ],
+   "props": [
+    {
+     "id": "chest",
+     "x": 40,
+     "scale": 4,
+     "anim": "shake"
+    }
+   ],
+   "sfx": "whoosh"
+  },
+  {
+   "say": "Poof. Penny's access is gone.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 28,
+     "anim": "shake",
+     "emote": "!"
+    }
+   ],
+   "props": [
+    {
+     "id": "door",
+     "x": 68,
+     "scale": 5
+    },
+    {
+     "id": "lock",
+     "x": 68,
+     "y": 42,
+     "scale": 3,
+     "anim": "drop"
+    }
+   ],
+   "fx": "flash",
+   "sfx": "zap"
+  },
+  {
+   "say": "Without a custom reason, his row counted as Manual. Those are deleted when ownership changes.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 26,
+     "anim": "sulk",
+     "emote": "sweat"
+    }
+   ],
+   "props": [
+    {
+     "id": "key",
+     "x": 62,
+     "y": 40,
+     "scale": 4,
+     "anim": "fly-right"
+    }
+   ],
+   "sign": "ROWCAUSE: MANUAL",
+   "sfx": "error"
+  },
+  {
+   "say": "Moral: give your shares a reason to stay.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 24,
+     "emote": "idea"
+    },
+    {
+     "id": "penny",
+     "x": 78,
+     "flip": true,
+     "anim": "cheer"
+    }
+   ],
+   "props": [
+    {
+     "id": "key",
+     "x": 52,
+     "y": 40,
+     "scale": 5,
+     "anim": "pulse"
+    }
+   ],
+   "sign": "SHARING REASON",
+   "fx": "sparkle",
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Without a custom Apex sharing reason, share rows inserted from code get the Manual row cause.",
+   "source": "articles/security-and-sharing/apex-managed-sharing.md",
+   "evidence": "rows inserted from code get the `Manual` cause"
+  },
+  {
+   "claim": "Manual-cause sharing is deleted automatically when record ownership changes.",
+   "source": "articles/security-and-sharing/apex-managed-sharing.md",
+   "evidence": "which is deleted automatically when ownership changes"
+  },
+  {
+   "claim": "Apex managed sharing grants persist when the record owner changes.",
+   "source": "articles/security-and-sharing/apex-managed-sharing.md",
+   "evidence": "these grants persist when the record owner changes"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/security-and-sharing/apex-managed-sharing.md",
+   "id": "kt:apex-managed-sharing",
+   "title": "Apex Managed Sharing",
+   "domain": "security-and-sharing",
+   "release": "Winter '27",
+   "blob": "1a850cbec809d56e16f150c24980e630495397dc"
+  }
+ ],
+ "source_commit": "3ea374f6fafb0d8f6a4bcd0233dfc6c97a73c70c",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

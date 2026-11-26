@@ -1,0 +1,165 @@
+{
+ "id": "sr-000013",
+ "title": "You can't borrow the neighbours' ATO",
+ "style": "story",
+ "topics": [
+  "public-sector-and-compliance"
+ ],
+ "backdrop": "office",
+ "cast": [
+  "penny",
+  "archie"
+ ],
+ "beats": [
+  {
+   "say": "Penny's agency needs an Authority to Operate. The agency next door already has one.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 30,
+     "emote": "idea"
+    }
+   ],
+   "props": [
+    {
+     "id": "door",
+     "x": 80,
+     "scale": 4
+    },
+    {
+     "id": "scroll",
+     "x": 80,
+     "y": 30,
+     "scale": 3,
+     "anim": "bob"
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "So she borrows their letter. Done by Friday?",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 50,
+     "anim": "run",
+     "emote": "star"
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 66,
+     "y": 45,
+     "scale": 4,
+     "anim": "bob"
+    }
+   ],
+   "sfx": "jump"
+  },
+  {
+   "say": "No. Each system must be authorized individually.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 26,
+     "emote": "!"
+    },
+    {
+     "id": "archie",
+     "x": 76,
+     "flip": true,
+     "anim": "talk"
+    }
+   ],
+   "props": [
+    {
+     "id": "stop",
+     "x": 52,
+     "y": 32,
+     "scale": 4,
+     "anim": "drop"
+    }
+   ],
+   "sfx": "error"
+  },
+  {
+   "say": "Another agency's sign-off is evidence, not a substitute.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 24,
+     "anim": "sulk"
+    },
+    {
+     "id": "archie",
+     "x": 78,
+     "flip": true,
+     "anim": "talk"
+    }
+   ],
+   "props": [
+    {
+     "id": "whiteboard",
+     "x": 52,
+     "scale": 4,
+     "anim": "drop"
+    }
+   ],
+   "sign": "EVIDENCE ONLY",
+   "sfx": "boing"
+  },
+  {
+   "say": "Like a friend's permission slip. Lovely. Still not yours.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 28,
+     "emote": "..."
+    },
+    {
+     "id": "archie",
+     "x": 76,
+     "flip": true,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 52,
+     "y": 42,
+     "scale": 3,
+     "anim": "spin"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Each system must be authorized individually, with explicit risk acceptance.",
+   "source": "articles/public-sector-and-compliance/authority-to-operate.md",
+   "evidence": "each system be authorized individually, with explicit risk acceptance"
+  },
+  {
+   "claim": "Another agency's ATO is evidence for the decision, not a substitute for the agency's own ATO.",
+   "source": "articles/public-sector-and-compliance/authority-to-operate.md",
+   "evidence": "so another agency's ATO is evidence, not a substitute"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/public-sector-and-compliance/authority-to-operate.md",
+   "id": "kt:authority-to-operate",
+   "title": "Authority to Operate",
+   "domain": "public-sector-and-compliance",
+   "release": "Winter '27",
+   "blob": "0611692270abb0c450ba117ef4cf171dd12a8a98"
+  }
+ ],
+ "source_commit": "3ea374f6fafb0d8f6a4bcd0233dfc6c97a73c70c",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

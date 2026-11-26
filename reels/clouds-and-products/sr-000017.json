@@ -1,0 +1,181 @@
+{
+ "id": "sr-000017",
+ "title": "Spouses need two records to say I do",
+ "style": "humor",
+ "topics": [
+  "clouds-and-products"
+ ],
+ "backdrop": "beach",
+ "cast": [
+  "dex",
+  "ada"
+ ],
+ "beats": [
+  {
+   "say": "Dex is loading donor data into Agentforce Nonprofit.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "database",
+     "x": 70,
+     "scale": 4
+    },
+    {
+     "id": "box",
+     "x": 50,
+     "y": 40,
+     "scale": 3,
+     "anim": "fly-right"
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "He links two donors as spouses with one record. Done?",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 24,
+     "anim": "cheer",
+     "emote": "heart"
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 62,
+     "y": 42,
+     "scale": 4,
+     "anim": "bob"
+    }
+   ],
+   "sign": "RECORDS: 1",
+   "sfx": "coin"
+  },
+  {
+   "say": "Half done. A reciprocal link like spouse to spouse needs two records.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 24,
+     "emote": "!"
+    },
+    {
+     "id": "ada",
+     "x": 78,
+     "flip": true,
+     "anim": "enter-right"
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 44,
+     "y": 42,
+     "scale": 4
+    },
+    {
+     "id": "scroll",
+     "x": 60,
+     "y": 42,
+     "scale": 4,
+     "anim": "drop"
+    }
+   ],
+   "sign": "RECORDS: 2",
+   "sfx": "powerup"
+  },
+  {
+   "say": "Ada checks that before every data load.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 24,
+     "anim": "sulk"
+    },
+    {
+     "id": "ada",
+     "x": 76,
+     "flip": true,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "coffee",
+     "x": 92,
+     "y": 48,
+     "scale": 3,
+     "anim": "bob"
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "Romantic, really. The database wants both to say I do.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 26,
+     "emote": "heart"
+    },
+    {
+     "id": "ada",
+     "x": 76,
+     "flip": true,
+     "emote": "heart"
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 44,
+     "y": 40,
+     "scale": 3,
+     "anim": "bob"
+    },
+    {
+     "id": "scroll",
+     "x": 58,
+     "y": 40,
+     "scale": 3,
+     "anim": "bob"
+    }
+   ],
+   "fx": "confetti",
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "In Agentforce Nonprofit, reciprocal links such as spouse-to-spouse need two records.",
+   "source": "articles/clouds-and-products/agentforce-nonprofit.md",
+   "evidence": "reciprocal links like spouse-to-spouse need two records"
+  },
+  {
+   "claim": "Storing reciprocal relationships as two records matters for data loads.",
+   "source": "articles/clouds-and-products/agentforce-nonprofit.md",
+   "evidence": "Reciprocal relationships must be stored as two records, which matters for data loads"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/clouds-and-products/agentforce-nonprofit.md",
+   "id": "kt:agentforce-nonprofit",
+   "title": "Agentforce Nonprofit",
+   "domain": "clouds-and-products",
+   "release": "Winter '27",
+   "blob": "eb2c9f41c4a11d1107d336689f4801e6be2a16bc"
+  }
+ ],
+ "source_commit": "3ea374f6fafb0d8f6a4bcd0233dfc6c97a73c70c",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

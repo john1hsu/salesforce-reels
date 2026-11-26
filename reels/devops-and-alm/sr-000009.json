@@ -1,0 +1,165 @@
+{
+ "id": "sr-000009",
+ "title": "The private offer that sailed with a typo",
+ "style": "story",
+ "topics": [
+  "devops-and-alm"
+ ],
+ "backdrop": "beach",
+ "cast": [
+  "penny",
+  "ada"
+ ],
+ "beats": [
+  {
+   "say": "Penny sends a private offer from the Go-To-Market App.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 28,
+     "anim": "cheer"
+    }
+   ],
+   "props": [
+    {
+     "id": "envelope",
+     "x": 62,
+     "y": 45,
+     "scale": 4,
+     "anim": "fly-right"
+    }
+   ],
+   "sfx": "whoosh"
+  },
+  {
+   "say": "Then she spots it. A zero is missing from the price.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 28,
+     "anim": "shake",
+     "emote": "!"
+    }
+   ],
+   "props": [
+    {
+     "id": "coin",
+     "x": 62,
+     "y": 38,
+     "scale": 4,
+     "anim": "drop"
+    }
+   ],
+   "sign": "$100? $1000!",
+   "sfx": "error"
+  },
+  {
+   "say": "Too late. Sent offers can't be edited or withdrawn during the offer period.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 26,
+     "anim": "run",
+     "emote": "sweat"
+    }
+   ],
+   "props": [
+    {
+     "id": "lock",
+     "x": 64,
+     "y": 40,
+     "scale": 4,
+     "anim": "drop"
+    },
+    {
+     "id": "envelope",
+     "x": 64,
+     "y": 58,
+     "scale": 3
+    }
+   ],
+   "sign": "NO EDITS",
+   "fx": "shake",
+   "sfx": "zap"
+  },
+  {
+   "say": "Off it sails, typo and all.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 22,
+     "anim": "sulk"
+    }
+   ],
+   "props": [
+    {
+     "id": "envelope",
+     "x": 70,
+     "y": 50,
+     "scale": 3,
+     "anim": "fly-right"
+    },
+    {
+     "id": "cloud",
+     "x": 40,
+     "y": 18,
+     "scale": 3,
+     "anim": "bob"
+    }
+   ],
+   "sfx": "whoosh"
+  },
+  {
+   "say": "Proofread first. That part really is a quick one.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 30,
+     "emote": "idea"
+    },
+    {
+     "id": "ada",
+     "x": 74,
+     "flip": true,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "magnifier",
+     "x": 52,
+     "y": 42,
+     "scale": 4,
+     "anim": "bob"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "In the AgentExchange Go-To-Market App, sent offers can't be edited or withdrawn during the offer period.",
+   "source": "articles/devops-and-alm/agentexchange-go-to-market-app.md",
+   "evidence": "Sent offers can't be edited or withdrawn during the offer period"
+  },
+  {
+   "claim": "Partners use the Go-To-Market App to send private offers to customers.",
+   "source": "articles/devops-and-alm/agentexchange-go-to-market-app.md",
+   "evidence": "send private offers to customers"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/devops-and-alm/agentexchange-go-to-market-app.md",
+   "id": "kt:agentexchange-go-to-market-app",
+   "title": "AgentExchange Go-To-Market App",
+   "domain": "devops-and-alm",
+   "release": "Winter '27",
+   "blob": "14a2711c79b9c6d0bfe4ae46de12a26b3a396e4b"
+  }
+ ],
+ "source_commit": "3ea374f6fafb0d8f6a4bcd0233dfc6c97a73c70c",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

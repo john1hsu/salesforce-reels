@@ -1,0 +1,181 @@
+{
+ "id": "sr-000014",
+ "title": "Forget everything I just streamed",
+ "style": "fact",
+ "topics": [
+  "data-cloud-and-ai"
+ ],
+ "backdrop": "space",
+ "cast": [
+  "bolt",
+  "dex"
+ ],
+ "beats": [
+  {
+   "say": "Bolt streams an answer through the Agent API, chunk by chunk.",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 24,
+     "anim": "float"
+    }
+   ],
+   "props": [
+    {
+     "id": "box",
+     "x": 50,
+     "y": 48,
+     "scale": 2,
+     "anim": "fly-right"
+    },
+    {
+     "id": "box",
+     "x": 66,
+     "y": 48,
+     "scale": 2,
+     "anim": "fly-right"
+    },
+    {
+     "id": "computer",
+     "x": 88,
+     "y": 50,
+     "scale": 3
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "Then a strange event arrives. Validation Failure Chunk.",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 24,
+     "anim": "float",
+     "emote": "!"
+    }
+   ],
+   "props": [
+    {
+     "id": "stop",
+     "x": 58,
+     "y": 45,
+     "scale": 4,
+     "anim": "fly-right"
+    },
+    {
+     "id": "computer",
+     "x": 88,
+     "y": 50,
+     "scale": 3
+    }
+   ],
+   "sign": "VALIDATION FAILURE",
+   "fx": "alarm",
+   "sfx": "error"
+  },
+  {
+   "say": "Translation: forget everything I just said.",
+   "speaker": "bolt",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 30,
+     "anim": "talk",
+     "emote": "sweat"
+    }
+   ],
+   "props": [
+    {
+     "id": "computer",
+     "x": 80,
+     "y": 50,
+     "scale": 4,
+     "anim": "shake"
+    }
+   ],
+   "sfx": "boing"
+  },
+  {
+   "say": "The client should throw away the chunks it showed and display only what comes next.",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 22,
+     "anim": "float"
+    }
+   ],
+   "props": [
+    {
+     "id": "bucket",
+     "x": 56,
+     "y": 66,
+     "scale": 4
+    },
+    {
+     "id": "box",
+     "x": 56,
+     "y": 36,
+     "scale": 2,
+     "anim": "drop"
+    },
+    {
+     "id": "computer",
+     "x": 88,
+     "y": 50,
+     "scale": 3
+    }
+   ],
+   "sfx": "whoosh"
+  },
+  {
+   "say": "Otherwise users keep reading words Bolt took back.",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 26,
+     "anim": "float",
+     "emote": "..."
+    },
+    {
+     "id": "dex",
+     "x": 74,
+     "flip": true,
+     "anim": "float",
+     "emote": "?"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "In Agent API streaming, a ValidationFailureChunk means the response failed validation.",
+   "source": "articles/data-cloud-and-ai/agent-api.md",
+   "evidence": "`ValidationFailureChunk` means the response failed validation"
+  },
+  {
+   "claim": "On a ValidationFailureChunk the client should discard the chunks already rendered and display only what streams next.",
+   "source": "articles/data-cloud-and-ai/agent-api.md",
+   "evidence": "should throw away the chunks it already rendered and display only what streams next"
+  },
+  {
+   "claim": "Clients that don't handle it may show users text the agent later withdrew.",
+   "source": "articles/data-cloud-and-ai/agent-api.md",
+   "evidence": "or users may see text the agent later withdrew"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/data-cloud-and-ai/agent-api.md",
+   "id": "kt:agent-api",
+   "title": "Agent API",
+   "domain": "data-cloud-and-ai",
+   "release": "Winter '27",
+   "blob": "434d8eda714feff24e0537894b6d526bbc257742"
+  }
+ ],
+ "source_commit": "3ea374f6fafb0d8f6a4bcd0233dfc6c97a73c70c",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

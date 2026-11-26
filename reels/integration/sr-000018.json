@@ -1,0 +1,163 @@
+{
+ "id": "sr-000018",
+ "title": "Mission control does not fly the rocket",
+ "style": "humor",
+ "topics": [
+  "integration"
+ ],
+ "backdrop": "space",
+ "cast": [
+  "dex",
+  "archie"
+ ],
+ "beats": [
+  {
+   "say": "Dex asks where Runtime Manager runs his integration.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 28,
+     "anim": "float",
+     "emote": "?"
+    },
+    {
+     "id": "archie",
+     "x": 76,
+     "flip": true,
+     "anim": "float"
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "Trick question. It doesn't run integrations at all.",
+   "speaker": "archie",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 28,
+     "anim": "float",
+     "emote": "!"
+    },
+    {
+     "id": "archie",
+     "x": 76,
+     "flip": true,
+     "anim": "talk"
+    }
+   ],
+   "sfx": "boing"
+  },
+  {
+   "say": "It's the control plane. It tells a runtime plane where and how to run Mule applications.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 22,
+     "anim": "talk"
+    }
+   ],
+   "props": [
+    {
+     "id": "whiteboard",
+     "x": 52,
+     "y": 66,
+     "scale": 4
+    },
+    {
+     "id": "rocket",
+     "x": 84,
+     "y": 60,
+     "scale": 4
+    }
+   ],
+   "sign": "CONTROL PLANE",
+   "sfx": "whoosh"
+  },
+  {
+   "say": "The Mule runtime engine does the work.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 22,
+     "anim": "float",
+     "emote": "idea"
+    }
+   ],
+   "props": [
+    {
+     "id": "rocket",
+     "x": 64,
+     "y": 55,
+     "scale": 5,
+     "anim": "rise"
+    },
+    {
+     "id": "flame",
+     "x": 64,
+     "y": 76,
+     "scale": 3,
+     "anim": "rise"
+    }
+   ],
+   "fx": "shake",
+   "sfx": "powerup"
+  },
+  {
+   "say": "Think mission control. Lots of talking. Zero flying.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 30,
+     "anim": "talk"
+    },
+    {
+     "id": "dex",
+     "x": 60,
+     "anim": "float"
+    }
+   ],
+   "props": [
+    {
+     "id": "rocket",
+     "x": 86,
+     "y": 22,
+     "scale": 3,
+     "anim": "rise"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Anypoint Runtime Manager is a control-plane tool that does not run integrations itself.",
+   "source": "articles/integration/anypoint-runtime-manager.md",
+   "evidence": "It does not run integrations itself"
+  },
+  {
+   "claim": "It tells a runtime plane where and how to run Mule applications.",
+   "source": "articles/integration/anypoint-runtime-manager.md",
+   "evidence": "It tells a runtime plane where and how to run Mule applications"
+  },
+  {
+   "claim": "The Mule runtime engine is what executes the applications.",
+   "source": "articles/integration/anypoint-runtime-manager.md",
+   "evidence": "the Mule runtime engine executes them"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/integration/anypoint-runtime-manager.md",
+   "id": "kt:anypoint-runtime-manager",
+   "title": "Anypoint Runtime Manager",
+   "domain": "integration",
+   "release": "Winter '27",
+   "blob": "b05bd7c13a72ae85beaff08623b979f1fc44dff2"
+  }
+ ],
+ "source_commit": "3ea374f6fafb0d8f6a4bcd0233dfc6c97a73c70c",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

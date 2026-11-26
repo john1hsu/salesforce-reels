@@ -1,0 +1,168 @@
+{
+ "id": "sr-000016",
+ "title": "The Architect and Developer inside Flow's AI",
+ "style": "fact",
+ "topics": [
+  "automation"
+ ],
+ "backdrop": "classroom",
+ "cast": [
+  "penny",
+  "archie",
+  "dex"
+ ],
+ "beats": [
+  {
+   "say": "Penny types one sentence into Flow Builder. A draft flow appears.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 28,
+     "anim": "cheer"
+    }
+   ],
+   "props": [
+    {
+     "id": "computer",
+     "x": 68,
+     "y": 54,
+     "scale": 4
+    },
+    {
+     "id": "desk",
+     "x": 68,
+     "scale": 4
+    }
+   ],
+   "fx": "sparkle",
+   "sfx": "powerup"
+  },
+  {
+   "say": "Who built it? Peek inside the pipeline.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 28,
+     "emote": "?"
+    }
+   ],
+   "props": [
+    {
+     "id": "magnifier",
+     "x": 62,
+     "y": 42,
+     "scale": 5,
+     "anim": "bob"
+    },
+    {
+     "id": "gear",
+     "x": 84,
+     "y": 30,
+     "scale": 3,
+     "anim": "spin"
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "First an Architect phase plans the flow's structure.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 30,
+     "anim": "talk"
+    }
+   ],
+   "props": [
+    {
+     "id": "whiteboard",
+     "x": 68,
+     "scale": 5,
+     "anim": "drop"
+    }
+   ],
+   "sign": "1. ARCHITECT",
+   "sfx": "boing"
+  },
+  {
+   "say": "Then a Developer phase writes out the detailed metadata.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 70,
+     "flip": true,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 34,
+     "y": 42,
+     "scale": 5,
+     "anim": "bob"
+    }
+   ],
+   "sign": "2. DEVELOPER",
+   "sfx": "coin"
+  },
+  {
+   "say": "Even the AI needs an Archie and a Dex. Still, review the draft.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 22,
+     "anim": "nod"
+    },
+    {
+     "id": "penny",
+     "x": 50,
+     "emote": "idea"
+    },
+    {
+     "id": "dex",
+     "x": 78,
+     "flip": true,
+     "anim": "cheer"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Agentforce for Flow drafts a starter flow from a natural-language description.",
+   "source": "articles/automation/agentforce-for-flow.md",
+   "evidence": "drafts a starter flow from a natural-language description"
+  },
+  {
+   "claim": "In the generation pipeline an Architect phase plans the flow's structure.",
+   "source": "articles/automation/agentforce-for-flow.md",
+   "evidence": "\"Architect\" phase plans the flow's structure"
+  },
+  {
+   "claim": "A Developer phase then emits the detailed Flow metadata.",
+   "source": "articles/automation/agentforce-for-flow.md",
+   "evidence": "\"Developer\" phase emits the detailed metadata"
+  },
+  {
+   "claim": "Salesforce advises reviewing AI-generated flows before testing or activation.",
+   "source": "articles/automation/agentforce-for-flow.md",
+   "evidence": "AI-generated flows be reviewed before testing or activation"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/automation/agentforce-for-flow.md",
+   "id": "kt:agentforce-for-flow",
+   "title": "Agentforce for Flow",
+   "domain": "automation",
+   "release": "Winter '27",
+   "blob": "faa75c367969bffe7677aae8e25c7d7a13f9ef43"
+  }
+ ],
+ "source_commit": "3ea374f6fafb0d8f6a4bcd0233dfc6c97a73c70c",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

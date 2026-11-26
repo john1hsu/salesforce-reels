@@ -1,0 +1,168 @@
+{
+ "id": "sr-000010",
+ "title": "The mountain sage says use Flow",
+ "style": "humor",
+ "topics": [
+  "architecture-practice"
+ ],
+ "backdrop": "mountain",
+ "cast": [
+  "penny",
+  "archie",
+  "bolt"
+ ],
+ "beats": [
+  {
+   "say": "Penny climbs a mountain to ask Archie for an AI agent.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 22,
+     "anim": "enter-left",
+     "emote": "sweat"
+    },
+    {
+     "id": "archie",
+     "x": 76,
+     "flip": true,
+     "anim": "float"
+    }
+   ],
+   "props": [
+    {
+     "id": "campfire",
+     "x": 52,
+     "scale": 3
+    }
+   ],
+   "sfx": "jump"
+  },
+  {
+   "say": "He asks: can you draw every branch today?",
+   "speaker": "archie",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 22
+    },
+    {
+     "id": "archie",
+     "x": 78,
+     "flip": true,
+     "anim": "talk"
+    }
+   ],
+   "props": [
+    {
+     "id": "whiteboard",
+     "x": 52,
+     "scale": 4,
+     "anim": "drop"
+    }
+   ],
+   "sfx": "boing"
+  },
+  {
+   "say": "She can. Every single one.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 30,
+     "anim": "nod",
+     "emote": "star"
+    },
+    {
+     "id": "archie",
+     "x": 80,
+     "flip": true
+    }
+   ],
+   "props": [
+    {
+     "id": "whiteboard",
+     "x": 55,
+     "scale": 4
+    }
+   ],
+   "sfx": "coin"
+  },
+  {
+   "say": "Then use Flow or Apex. An agent on a fully deterministic path is an anti-pattern.",
+   "speaker": "archie",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 24,
+     "emote": "..."
+    },
+    {
+     "id": "archie",
+     "x": 78,
+     "flip": true,
+     "anim": "talk"
+    }
+   ],
+   "props": [
+    {
+     "id": "whiteboard",
+     "x": 52,
+     "scale": 4
+    }
+   ],
+   "sign": "ANTI-PATTERN",
+   "sfx": "powerup"
+  },
+  {
+   "say": "Bolt announces it will now do nothing.",
+   "speaker": "bolt",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 50,
+     "anim": "talk",
+     "emote": "zzz"
+    },
+    {
+     "id": "archie",
+     "x": 82,
+     "flip": true,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "campfire",
+     "x": 22,
+     "scale": 3
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "If every branch of a process can be defined at design time, the architects' guidance is to use Flow or Apex.",
+   "source": "articles/architecture-practice/agentforce-architecture-patterns.md",
+   "evidence": "every branch of a process can be defined at design time, use Flow or Apex"
+  },
+  {
+   "claim": "Adding an agent to a fully deterministic path is an anti-pattern.",
+   "source": "articles/architecture-practice/agentforce-architecture-patterns.md",
+   "evidence": "adding an agent to a fully deterministic path is an anti-pattern"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/architecture-practice/agentforce-architecture-patterns.md",
+   "id": "kt:agentforce-architecture-patterns",
+   "title": "Agentforce Architecture Patterns",
+   "domain": "architecture-practice",
+   "release": "Winter '27",
+   "blob": "50b2dc0fa3970c03e10531ec59ec9c5f946aeeb5"
+  }
+ ],
+ "source_commit": "3ea374f6fafb0d8f6a4bcd0233dfc6c97a73c70c",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

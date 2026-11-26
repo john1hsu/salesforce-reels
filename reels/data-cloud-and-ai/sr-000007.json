@@ -1,0 +1,158 @@
+{
+ "id": "sr-000007",
+ "title": "Bolt's habit is an Agentforce setting",
+ "style": "fact",
+ "topics": [
+  "data-cloud-and-ai"
+ ],
+ "backdrop": "stage",
+ "cast": [
+  "bolt",
+  "ada"
+ ],
+ "beats": [
+  {
+   "say": "Bolt always announces what it is about to do. Loudly.",
+   "speaker": "bolt",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 50,
+     "anim": "talk",
+     "emote": "!"
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "Turns out Agentforce has a setting for that.",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 35,
+     "emote": "?"
+    },
+    {
+     "id": "ada",
+     "x": 74,
+     "flip": true,
+     "anim": "enter-right"
+    }
+   ],
+   "props": [
+    {
+     "id": "gear",
+     "x": 55,
+     "y": 35,
+     "scale": 4,
+     "anim": "spin"
+    }
+   ],
+   "sfx": "whoosh"
+  },
+  {
+   "say": "It's called Require User Confirmation.",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 35
+    },
+    {
+     "id": "ada",
+     "x": 74,
+     "flip": true,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "gear",
+     "x": 55,
+     "y": 35,
+     "scale": 4,
+     "anim": "pulse"
+    }
+   ],
+   "sign": "CONFIRM?",
+   "fx": "flash",
+   "sfx": "powerup"
+  },
+  {
+   "say": "The agent restates what it's about to change, then waits for approval.",
+   "speaker": "bolt",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 35,
+     "anim": "talk"
+    },
+    {
+     "id": "ada",
+     "x": 74,
+     "flip": true
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 55,
+     "y": 38,
+     "scale": 4,
+     "anim": "bob"
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "Perfect for write actions. Bolt has been waiting since Tuesday.",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 40,
+     "emote": "zzz"
+    }
+   ],
+   "props": [
+    {
+     "id": "clock",
+     "x": 68,
+     "y": 35,
+     "scale": 4,
+     "anim": "spin"
+    },
+    {
+     "id": "cactus",
+     "x": 14,
+     "scale": 3
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "With Require user confirmation on an action, the agent restates what it is about to change and waits for approval.",
+   "source": "articles/data-cloud-and-ai/agent-actions.md",
+   "evidence": "the agent restates what it is about to change and waits for approval"
+  },
+  {
+   "claim": "Require user confirmation suits write actions.",
+   "source": "articles/data-cloud-and-ai/agent-actions.md",
+   "evidence": "waits for approval, which suits write actions"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/data-cloud-and-ai/agent-actions.md",
+   "id": "kt:agent-actions",
+   "title": "Agent Actions",
+   "domain": "data-cloud-and-ai",
+   "release": "Winter '27",
+   "blob": "00ce543a01a577060273a52f595a0a8bc7c1d80c"
+  }
+ ],
+ "source_commit": "3ea374f6fafb0d8f6a4bcd0233dfc6c97a73c70c",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

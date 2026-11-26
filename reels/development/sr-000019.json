@@ -1,0 +1,174 @@
+{
+ "id": "sr-000019",
+ "title": "Phone first, paperwork second",
+ "style": "story",
+ "topics": [
+  "development"
+ ],
+ "backdrop": "wild-west",
+ "cast": [
+  "dex",
+  "gus"
+ ],
+ "beats": [
+  {
+   "say": "Dex saves a record, then calls an external service. Same transaction.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 26,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "database",
+     "x": 58,
+     "scale": 3
+    },
+    {
+     "id": "phone",
+     "x": 84,
+     "y": 48,
+     "scale": 3,
+     "anim": "bob"
+    }
+   ],
+   "sfx": "coin"
+  },
+  {
+   "say": "Whistle. Gus appears from nowhere.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 26,
+     "anim": "shake",
+     "emote": "sweat"
+    },
+    {
+     "id": "gus",
+     "x": 76,
+     "flip": true,
+     "anim": "enter-right",
+     "emote": "!"
+    }
+   ],
+   "fx": "alarm",
+   "sfx": "error"
+  },
+  {
+   "say": "A callout cannot follow pending work like DML in the same transaction.",
+   "speaker": "gus",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 24,
+     "anim": "sulk"
+    },
+    {
+     "id": "gus",
+     "x": 74,
+     "flip": true,
+     "anim": "talk"
+    }
+   ],
+   "props": [
+    {
+     "id": "stop",
+     "x": 50,
+     "y": 32,
+     "scale": 4,
+     "anim": "drop"
+    }
+   ],
+   "sign": "DML THEN CALLOUT?",
+   "sfx": "zap"
+  },
+  {
+   "say": "Callouts may run before it, though. So flip the order.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 22,
+     "emote": "idea"
+    },
+    {
+     "id": "gus",
+     "x": 82,
+     "flip": true,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "phone",
+     "x": 44,
+     "y": 46,
+     "scale": 3,
+     "anim": "bob"
+    },
+    {
+     "id": "database",
+     "x": 62,
+     "scale": 3
+    }
+   ],
+   "sign": "CALLOUT THEN DML",
+   "sfx": "powerup"
+  },
+  {
+   "say": "Phone first, paperwork second. Gus doesn't explain twice.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 28,
+     "anim": "cheer"
+    },
+    {
+     "id": "gus",
+     "x": 74,
+     "anim": "exit-right"
+    }
+   ],
+   "props": [
+    {
+     "id": "cactus",
+     "x": 54,
+     "scale": 3
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "An Apex callout cannot follow pending operations such as DML in the same transaction.",
+   "source": "articles/development/apex-callouts.md",
+   "evidence": "A callout cannot follow pending operations in the same transaction, including DML"
+  },
+  {
+   "claim": "Callouts may run before those pending operations.",
+   "source": "articles/development/apex-callouts.md",
+   "evidence": "callouts may run before them"
+  },
+  {
+   "claim": "The usual design is to make the callout first and do the DML afterwards.",
+   "source": "articles/development/apex-callouts.md",
+   "evidence": "The usual design is callout first, then DML"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/development/apex-callouts.md",
+   "id": "kt:apex-callouts",
+   "title": "Apex Callouts",
+   "domain": "development",
+   "release": "Winter '27",
+   "blob": "56a6f7f855d189ac6e2ca766cf12c08cb3466b89"
+  }
+ ],
+ "source_commit": "3ea374f6fafb0d8f6a4bcd0233dfc6c97a73c70c",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}
