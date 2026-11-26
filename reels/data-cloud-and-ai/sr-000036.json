@@ -1,0 +1,159 @@
+{
+ "id": "sr-000036",
+ "title": "Bolt cannot multiply",
+ "style": "fact",
+ "topics": [
+  "data-cloud-and-ai"
+ ],
+ "backdrop": "classroom",
+ "cast": [
+  "bolt",
+  "archie",
+  "dex"
+ ],
+ "beats": [
+  {
+   "say": "Bolt runs on Agent Script, and loves arithmetic.",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 35,
+     "anim": "cheer",
+     "emote": "heart"
+    }
+   ],
+   "props": [
+    {
+     "id": "whiteboard",
+     "x": 70,
+     "scale": 4
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "Plus? Fine. Minus? Fine.",
+   "speaker": "bolt",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 35,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "whiteboard",
+     "x": 70,
+     "scale": 4
+    }
+   ],
+   "sign": "+ OK  - OK",
+   "sfx": "coin"
+  },
+  {
+   "say": "Times? Bolt freezes. Agent Script arithmetic stops at plus and minus.",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 35,
+     "anim": "shake",
+     "emote": "?"
+    }
+   ],
+   "props": [
+    {
+     "id": "whiteboard",
+     "x": 70,
+     "scale": 4,
+     "anim": "shake"
+    }
+   ],
+   "sign": "ONLY + AND -",
+   "fx": "shake",
+   "sfx": "error"
+  },
+  {
+   "say": "Multiplication, division and modulo belong in a Flow or Apex action.",
+   "speaker": "archie",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 70,
+     "flip": true,
+     "anim": "talk"
+    },
+    {
+     "id": "bolt",
+     "x": 28,
+     "emote": "..."
+    }
+   ],
+   "props": [
+    {
+     "id": "gear",
+     "x": 50,
+     "y": 45,
+     "anim": "spin"
+    }
+   ],
+   "sfx": "powerup"
+  },
+  {
+   "say": "Dex writes the Apex. Bolt announces the answer with great pride.",
+   "speaker": "bolt",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 25,
+     "anim": "nod"
+    },
+    {
+     "id": "bolt",
+     "x": 60,
+     "anim": "talk",
+     "emote": "star"
+    }
+   ],
+   "props": [
+    {
+     "id": "trophy",
+     "x": 85,
+     "anim": "bob"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Agent Script is the language used to build agents in Agentforce Builder.",
+   "source": "articles/data-cloud-and-ai/agent-script.md",
+   "evidence": "Agent Script is the language used to build agents in Agentforce Builder"
+  },
+  {
+   "claim": "Agent Script arithmetic is limited to plus and minus.",
+   "source": "articles/data-cloud-and-ai/agent-script.md",
+   "evidence": "Arithmetic is limited to + and -"
+  },
+  {
+   "claim": "Multiplication, division or modulo belong in a Flow or Apex action.",
+   "source": "articles/data-cloud-and-ai/agent-script.md",
+   "evidence": "so multiplication, division or modulo belong in a Flow or Apex action"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/data-cloud-and-ai/agent-script.md",
+   "id": "kt:agent-script",
+   "title": "Agent Script",
+   "domain": "data-cloud-and-ai",
+   "release": "Winter '27",
+   "blob": "632cf4846d5d87932a9607fd55b440b4c0ae58cc"
+  }
+ ],
+ "source_commit": "bd93276dae33764cd7a749280630e0960e16dea1",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

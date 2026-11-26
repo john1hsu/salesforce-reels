@@ -1,0 +1,148 @@
+{
+ "id": "sr-000032",
+ "title": "The approval steps carved in stone",
+ "style": "myth",
+ "topics": [
+  "automation"
+ ],
+ "backdrop": "dungeon",
+ "cast": [
+  "dex",
+  "archie"
+ ],
+ "myth": "You can deactivate a live classic approval process and then reorder its steps.",
+ "beats": [
+  {
+   "say": "Dex says: easy, I'll deactivate the approval process and reorder its steps.",
+   "speaker": "dex",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 32,
+     "anim": "talk",
+     "emote": "idea"
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 70,
+     "anim": "bob"
+    }
+   ],
+   "sign": "MYTH",
+   "sfx": "blip"
+  },
+  {
+   "say": "Once a classic process is activated, steps can't be added, deleted or reordered.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "emote": "!"
+    }
+   ],
+   "props": [
+    {
+     "id": "lock",
+     "x": 70,
+     "scale": 4,
+     "anim": "drop"
+    }
+   ],
+   "sign": "BUSTED",
+   "fx": "flash",
+   "sfx": "zap"
+  },
+  {
+   "say": "Not even after you deactivate it.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "shake",
+     "emote": "sweat"
+    }
+   ],
+   "props": [
+    {
+     "id": "lock",
+     "x": 70,
+     "scale": 4,
+     "anim": "shake"
+    }
+   ],
+   "fx": "dark",
+   "sfx": "error"
+  },
+  {
+   "say": "Dex sulks. The steps are carved in stone.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 40,
+     "anim": "sulk"
+    }
+   ],
+   "props": [
+    {
+     "id": "chest",
+     "x": 72
+    }
+   ],
+   "sfx": "none"
+  },
+  {
+   "say": "Archie's advice: test it in a sandbox first.",
+   "speaker": "archie",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 70,
+     "flip": true,
+     "anim": "talk"
+    },
+    {
+     "id": "dex",
+     "x": 28,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "whiteboard",
+     "x": 48,
+     "scale": 4,
+     "anim": "drop"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Once a classic approval process has been activated you can no longer add, delete or reorder its steps.",
+   "source": "articles/automation/approval-processes.md",
+   "evidence": "you can no longer add, delete or reorder steps"
+  },
+  {
+   "claim": "This holds even after deactivating the process, so approval processes should be tested in a sandbox first.",
+   "source": "articles/automation/approval-processes.md",
+   "evidence": "even after deactivating it, so test in a sandbox first"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/automation/approval-processes.md",
+   "id": "kt:approval-processes",
+   "title": "Approval Processes",
+   "domain": "automation",
+   "release": "Winter '27",
+   "blob": "8bc55a870eaf3db16a7eabed9253f3db32451555"
+  }
+ ],
+ "source_commit": "bd93276dae33764cd7a749280630e0960e16dea1",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

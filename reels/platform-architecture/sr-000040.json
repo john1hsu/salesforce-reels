@@ -1,0 +1,172 @@
+{
+ "id": "sr-000040",
+ "title": "The guru on the mountain ranks by runtime",
+ "style": "fact",
+ "topics": [
+  "platform-architecture"
+ ],
+ "backdrop": "mountain",
+ "cast": [
+  "dex",
+  "bolt",
+  "archie"
+ ],
+ "beats": [
+  {
+   "say": "Dex climbs the mountain to ask ApexGuru about his Apex.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 28,
+     "anim": "enter-left",
+     "emote": "sweat"
+    },
+    {
+     "id": "bolt",
+     "x": 75,
+     "flip": true,
+     "anim": "float"
+    }
+   ],
+   "props": [
+    {
+     "id": "campfire",
+     "x": 52
+    }
+   ],
+   "sfx": "jump"
+  },
+  {
+   "say": "It ranks findings by real runtime footprint.",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 75,
+     "flip": true,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "chart",
+     "x": 40,
+     "anim": "grow"
+    }
+   ],
+   "sign": "RUNTIME FIRST",
+   "sfx": "blip"
+  },
+  {
+   "say": "Five percent of CPU time or more? Critically expensive.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 28,
+     "emote": "!"
+    }
+   ],
+   "props": [
+    {
+     "id": "flame",
+     "x": 60,
+     "anim": "pulse"
+    },
+    {
+     "id": "gear",
+     "x": 78,
+     "y": 45,
+     "anim": "spin"
+    }
+   ],
+   "sign": "5% CPU: CRITICAL",
+   "fx": "alarm",
+   "sfx": "error"
+  },
+  {
+   "say": "His ugliest class runs once a year. ApexGuru barely notices.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 28,
+     "anim": "cheer",
+     "emote": "star"
+    }
+   ],
+   "props": [
+    {
+     "id": "bug",
+     "x": 65,
+     "anim": "bob"
+    },
+    {
+     "id": "calendar",
+     "x": 82,
+     "y": 40
+    }
+   ],
+   "sfx": "coin"
+  },
+  {
+   "say": "Rarely run code gets little attention. Pair it with static checks.",
+   "speaker": "archie",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 70,
+     "flip": true,
+     "anim": "talk"
+    },
+    {
+     "id": "dex",
+     "x": 28,
+     "anim": "sulk"
+    }
+   ],
+   "props": [
+    {
+     "id": "magnifier",
+     "x": 50,
+     "y": 45,
+     "anim": "bob"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "ApexGuru uses live telemetry to rank findings by runtime footprint.",
+   "source": "articles/platform-architecture/apexguru.md",
+   "evidence": "rank findings by runtime footprint"
+  },
+  {
+   "claim": "Methods using at least 5% of CPU time are flagged as critically expensive.",
+   "source": "articles/platform-architecture/apexguru.md",
+   "evidence": "methods using at least 5% of CPU time are"
+  },
+  {
+   "claim": "Code that rarely executes may receive little attention even if poorly written.",
+   "source": "articles/platform-architecture/apexguru.md",
+   "evidence": "code that rarely executes may receive little attention even if it is poorly written"
+  },
+  {
+   "claim": "ApexGuru should be paired with static checks rather than treated as a full code review.",
+   "source": "articles/platform-architecture/apexguru.md",
+   "evidence": "pair ApexGuru with static checks"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/platform-architecture/apexguru.md",
+   "id": "kt:apexguru",
+   "title": "ApexGuru",
+   "domain": "platform-architecture",
+   "release": "Winter '27",
+   "blob": "18582968725fdfee60024f1528dc8416366ee89d"
+  }
+ ],
+ "source_commit": "bd93276dae33764cd7a749280630e0960e16dea1",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

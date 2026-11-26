@@ -1,0 +1,142 @@
+{
+ "id": "sr-000026",
+ "title": "Five wrong passwords at the precinct",
+ "style": "humor",
+ "topics": [
+  "public-sector-and-compliance"
+ ],
+ "backdrop": "city-night",
+ "cast": [
+  "dex",
+  "ada"
+ ],
+ "beats": [
+  {
+   "say": "Dex logs in to a police records org. His password? Forgotten.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "enter-left",
+     "emote": "?"
+    }
+   ],
+   "props": [
+    {
+     "id": "computer",
+     "x": 68,
+     "scale": 3
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "Wrong. Wrong. Wrong. Wrong. Wrong.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "shake",
+     "emote": "sweat"
+    }
+   ],
+   "props": [
+    {
+     "id": "computer",
+     "x": 68,
+     "scale": 3,
+     "anim": "shake"
+    }
+   ],
+   "sign": "5 TRIES",
+   "fx": "shake",
+   "sfx": "error"
+  },
+  {
+   "say": "The CJIS policy locks you out after five straight misses within fifteen minutes.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "sulk"
+    }
+   ],
+   "props": [
+    {
+     "id": "lock",
+     "x": 68,
+     "scale": 4,
+     "anim": "drop"
+    }
+   ],
+   "sign": "LOCKED 15 MIN",
+   "fx": "alarm",
+   "sfx": "zap"
+  },
+  {
+   "say": "And it stays locked until an administrator releases the account.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "emote": "..."
+    }
+   ],
+   "props": [
+    {
+     "id": "lock",
+     "x": 68,
+     "scale": 4,
+     "anim": "pulse"
+    }
+   ],
+   "sfx": "none"
+  },
+  {
+   "say": "Ada releases it without putting down her mug.",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 70,
+     "flip": true,
+     "anim": "enter-right"
+    },
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "cheer"
+    }
+   ],
+   "props": [
+    {
+     "id": "key",
+     "x": 50,
+     "y": 45,
+     "anim": "spin"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "The CJIS Security Policy requires locking an account after five consecutive invalid attempts within 15 minutes, until an administrator releases it.",
+   "source": "articles/public-sector-and-compliance/cjis-security-policy.md",
+   "evidence": "lock after five consecutive invalid attempts within 15 minutes, until an administrator releases the account"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/public-sector-and-compliance/cjis-security-policy.md",
+   "id": "kt:cjis-security-policy",
+   "title": "CJIS Security Policy",
+   "domain": "public-sector-and-compliance",
+   "release": "Winter '27",
+   "blob": "6e4e89974b2f50a22e262af8dfb310ce7938c1e2"
+  }
+ ],
+ "source_commit": "bd93276dae33764cd7a749280630e0960e16dea1",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

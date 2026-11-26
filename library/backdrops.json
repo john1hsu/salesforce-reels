@@ -586,6 +586,135 @@
      "c": "#ffffff"
     }
    ]
+  },
+  {
+   "id": "ballroom",
+   "description": "Evening ballroom with tall night windows and a checkered dance floor",
+   "base": "#3b2257",
+   "ground": 232,
+   "layers": [
+    {
+     "op": "grad",
+     "y": 0,
+     "h": 200,
+     "from": "#2a1840",
+     "to": "#5a3577",
+     "steps": 6
+    },
+    {
+     "op": "window",
+     "x": 14,
+     "y": 60,
+     "w": 36,
+     "h": 70,
+     "c": "#1b2350",
+     "frame": "#c9a36a"
+    },
+    {
+     "op": "window",
+     "x": 72,
+     "y": 60,
+     "w": 36,
+     "h": 70,
+     "c": "#1b2350",
+     "frame": "#c9a36a"
+    },
+    {
+     "op": "window",
+     "x": 130,
+     "y": 60,
+     "w": 36,
+     "h": 70,
+     "c": "#1b2350",
+     "frame": "#c9a36a"
+    },
+    {
+     "op": "sun",
+     "x": 90,
+     "y": 22,
+     "r": 10,
+     "c": "#f6d77a"
+    },
+    {
+     "op": "rect",
+     "x": 89,
+     "y": 0,
+     "w": 2,
+     "h": 12,
+     "c": "#c9a36a"
+    },
+    {
+     "op": "rect",
+     "y": 196,
+     "h": 5,
+     "c": "#c9a36a"
+    },
+    {
+     "op": "checker",
+     "y": 201,
+     "h": 119,
+     "size": 20,
+     "c1": "#2b2b3d",
+     "c2": "#e9e1cf"
+    }
+   ]
+  },
+  {
+   "id": "stadium",
+   "description": "Sunny ballpark with packed stands and a striped green field",
+   "base": "#6fb7ff",
+   "ground": 232,
+   "layers": [
+    {
+     "op": "grad",
+     "y": 0,
+     "h": 112,
+     "from": "#5aa6f2",
+     "to": "#bfe3ff",
+     "steps": 6
+    },
+    {
+     "op": "sun",
+     "x": 148,
+     "y": 30,
+     "r": 10,
+     "c": "#ffe27a"
+    },
+    {
+     "op": "stripes",
+     "y": 112,
+     "h": 58,
+     "size": 6,
+     "c1": "#8a3b3b",
+     "c2": "#b85454"
+    },
+    {
+     "op": "rect",
+     "y": 170,
+     "h": 8,
+     "c": "#e4e4e4"
+    },
+    {
+     "op": "rect",
+     "y": 178,
+     "h": 22,
+     "c": "#3f7f3a"
+    },
+    {
+     "op": "checker",
+     "y": 200,
+     "h": 120,
+     "size": 20,
+     "c1": "#4f9a45",
+     "c2": "#5fae54"
+    },
+    {
+     "op": "rect",
+     "y": 236,
+     "h": 2,
+     "c": "#f4f4f4"
+    }
+   ]
   }
  ]
 }

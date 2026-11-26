@@ -1,0 +1,169 @@
+{
+ "id": "sr-000030",
+ "title": "Gus and the cursor that kept respawning",
+ "style": "story",
+ "topics": [
+  "platform-architecture"
+ ],
+ "backdrop": "server-room",
+ "cast": [
+  "dex",
+  "gus",
+  "archie"
+ ],
+ "beats": [
+  {
+   "say": "Dex chains Queueable jobs over a huge Apex cursor.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "nod",
+     "emote": "star"
+    }
+   ],
+   "props": [
+    {
+     "id": "database",
+     "x": 70,
+     "scale": 3
+    }
+   ],
+   "sfx": "powerup"
+  },
+  {
+   "say": "But every hop, he opens a brand new cursor.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "jump"
+    }
+   ],
+   "props": [
+    {
+     "id": "database",
+     "x": 55,
+     "anim": "drop"
+    },
+    {
+     "id": "database",
+     "x": 72,
+     "anim": "drop"
+    },
+    {
+     "id": "database",
+     "x": 88,
+     "anim": "drop"
+    }
+   ],
+   "sfx": "boing"
+  },
+  {
+   "say": "Cursors charge the daily row allowance at creation, not at fetch.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "emote": "sweat"
+    }
+   ],
+   "props": [
+    {
+     "id": "coin",
+     "x": 65,
+     "y": 40,
+     "anim": "fly-right"
+    },
+    {
+     "id": "chart",
+     "x": 80,
+     "anim": "shake"
+    }
+   ],
+   "sign": "ROWS: DRAINED",
+   "sfx": "coin"
+  },
+  {
+   "say": "Gus appears, whistling. Daily limits: drained.",
+   "speaker": "gus",
+   "actors": [
+    {
+     "id": "gus",
+     "x": 70,
+     "flip": true,
+     "anim": "enter-right"
+    },
+    {
+     "id": "dex",
+     "x": 28,
+     "anim": "sulk"
+    }
+   ],
+   "props": [
+    {
+     "id": "stop",
+     "x": 50
+    }
+   ],
+   "fx": "alarm",
+   "sfx": "error"
+  },
+  {
+   "say": "The fix: create the cursor once, keep it in the job, track the position.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 70,
+     "flip": true,
+     "anim": "talk"
+    },
+    {
+     "id": "dex",
+     "x": 28,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "whiteboard",
+     "x": 48,
+     "scale": 4,
+     "anim": "drop"
+    }
+   ],
+   "sfx": "fanfare"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Calling Database.getCursor() inside execute() opens a new cursor on every hop and drains the daily cursor and row limits.",
+   "source": "articles/platform-architecture/apex-cursors.md",
+   "evidence": "opens a new cursor on every hop and quickly drains the daily"
+  },
+  {
+   "claim": "Daily cursor allowances are charged when a cursor is created, not when rows are fetched.",
+   "source": "articles/platform-architecture/apex-cursors.md",
+   "evidence": "Daily allowances are charged when a cursor is created, not when rows are fetched"
+  },
+  {
+   "claim": "In the canonical pattern, the Queueable job creates the cursor once and keeps it with a position counter.",
+   "source": "articles/platform-architecture/apex-cursors.md",
+   "evidence": "The job creates the cursor once and keeps it, with a position counter"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/platform-architecture/apex-cursors.md",
+   "id": "kt:apex-cursors",
+   "title": "Apex Cursors",
+   "domain": "platform-architecture",
+   "release": "Winter '27",
+   "blob": "a5ae6d7ee6f4cb64029a78201c36cae7f7690e8a"
+  }
+ ],
+ "source_commit": "bd93276dae33764cd7a749280630e0960e16dea1",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

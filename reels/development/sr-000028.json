@@ -1,0 +1,156 @@
+{
+ "id": "sr-000028",
+ "title": "Two salts in the spice map",
+ "style": "fact",
+ "topics": [
+  "development"
+ ],
+ "backdrop": "kitchen",
+ "cast": [
+  "dex",
+  "archie",
+  "ada"
+ ],
+ "beats": [
+  {
+   "say": "Dex keeps spices in an Apex map, keyed by name.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "box",
+     "x": 62
+    },
+    {
+     "id": "bucket",
+     "x": 80
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "He puts in Salt. Later, he asks for SALT in all capitals.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "talk"
+    }
+   ],
+   "props": [
+    {
+     "id": "magnifier",
+     "x": 70,
+     "y": 45,
+     "anim": "bob"
+    }
+   ],
+   "sign": "SALT vs Salt",
+   "sfx": "whoosh"
+  },
+  {
+   "say": "Nothing comes back. String map keys are case-sensitive.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "shake",
+     "emote": "?"
+    }
+   ],
+   "props": [
+    {
+     "id": "box",
+     "x": 70,
+     "anim": "shake"
+    }
+   ],
+   "fx": "shake",
+   "sfx": "error"
+  },
+  {
+   "say": "Keys differing only in case are separate entries.",
+   "speaker": "archie",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 70,
+     "flip": true,
+     "anim": "talk"
+    },
+    {
+     "id": "dex",
+     "x": 25,
+     "emote": "..."
+    }
+   ],
+   "props": [
+    {
+     "id": "whiteboard",
+     "x": 48,
+     "scale": 4,
+     "anim": "drop"
+    }
+   ],
+   "sfx": "boing"
+  },
+  {
+   "say": "So he adds SALT again. Now there are two salts.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "cheer"
+    },
+    {
+     "id": "ada",
+     "x": 72,
+     "flip": true,
+     "emote": "zzz"
+    }
+   ],
+   "props": [
+    {
+     "id": "bucket",
+     "x": 50
+    },
+    {
+     "id": "bucket",
+     "x": 56
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "String map keys in Apex are case-sensitive.",
+   "source": "articles/development/apex-collections.md",
+   "evidence": "String map keys are case-sensitive"
+  },
+  {
+   "claim": "Map keys that differ only in case are separate entries.",
+   "source": "articles/development/apex-collections.md",
+   "evidence": "keys that differ only in case are separate entries"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/development/apex-collections.md",
+   "id": "kt:apex-collections",
+   "title": "Apex Collections",
+   "domain": "development",
+   "release": "Winter '27",
+   "blob": "6845b664d61392e21befcaf9b6aeec4fa34015c2"
+  }
+ ],
+ "source_commit": "bd93276dae33764cd7a749280630e0960e16dea1",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

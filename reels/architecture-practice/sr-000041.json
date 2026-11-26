@@ -1,0 +1,174 @@
+{
+ "id": "sr-000041",
+ "title": "ADR eight is born",
+ "style": "story",
+ "topics": [
+  "architecture-practice"
+ ],
+ "backdrop": "ballroom",
+ "cast": [
+  "penny",
+  "dex",
+  "archie"
+ ],
+ "beats": [
+  {
+   "say": "Penny changes her mind: one org becomes two.",
+   "speaker": "penny",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 30,
+     "anim": "talk",
+     "emote": "idea"
+    }
+   ],
+   "props": [
+    {
+     "id": "cloud",
+     "x": 65,
+     "y": 35
+    },
+    {
+     "id": "cloud",
+     "x": 82,
+     "y": 35,
+     "anim": "grow"
+    }
+   ],
+   "sfx": "boing"
+  },
+  {
+   "say": "Dex reaches to edit Archie's decision record. Archie stops him.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "run"
+    },
+    {
+     "id": "archie",
+     "x": 72,
+     "flip": true,
+     "anim": "shake",
+     "emote": "!"
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 52,
+     "anim": "bob"
+    }
+   ],
+   "sfx": "whoosh"
+  },
+  {
+   "say": "Once accepted, an ADR is never edited.",
+   "speaker": "archie",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 72,
+     "flip": true,
+     "anim": "talk"
+    },
+    {
+     "id": "dex",
+     "x": 28,
+     "emote": "?"
+    }
+   ],
+   "props": [
+    {
+     "id": "lock",
+     "x": 50,
+     "anim": "drop"
+    }
+   ],
+   "sign": "NO EDITS",
+   "sfx": "zap"
+  },
+  {
+   "say": "Instead, a new record supersedes the old one and links back.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 72,
+     "flip": true,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 35
+    },
+    {
+     "id": "scroll",
+     "x": 52,
+     "anim": "drop"
+    }
+   ],
+   "sfx": "powerup"
+  },
+  {
+   "say": "ADR eight is born. Penny asks for ADR nine by Friday.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 28,
+     "anim": "cheer",
+     "emote": "heart"
+    },
+    {
+     "id": "archie",
+     "x": 72,
+     "flip": true,
+     "emote": "..."
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 50,
+     "anim": "spin"
+    }
+   ],
+   "sign": "ADR-008",
+   "fx": "confetti",
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Once accepted, an architecture decision record is not edited.",
+   "source": "articles/architecture-practice/architecture-decision-records.md",
+   "evidence": "once accepted, a record is not edited"
+  },
+  {
+   "claim": "A changed decision gets a new ADR that supersedes and links to the old one.",
+   "source": "articles/architecture-practice/architecture-decision-records.md",
+   "evidence": "A changed decision gets a new ADR that supersedes and links to the old one"
+  },
+  {
+   "claim": "ADRs are numbered sequentially and the numbers are never reused.",
+   "source": "articles/architecture-practice/architecture-decision-records.md",
+   "evidence": "ADRs are numbered sequentially and the numbers are never reused"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/architecture-practice/architecture-decision-records.md",
+   "id": "kt:architecture-decision-records",
+   "title": "Architecture Decision Records",
+   "domain": "architecture-practice",
+   "release": "Winter '27",
+   "blob": "e6c3d67a86772524c3e275fdcc8901af59d956da"
+  }
+ ],
+ "source_commit": "bd93276dae33764cd7a749280630e0960e16dea1",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

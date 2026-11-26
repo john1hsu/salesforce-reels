@@ -1,0 +1,164 @@
+{
+ "id": "sr-000037",
+ "title": "The trace that told everyone",
+ "style": "story",
+ "topics": [
+  "devops-and-alm"
+ ],
+ "backdrop": "forest",
+ "cast": [
+  "dex",
+  "ada"
+ ],
+ "beats": [
+  {
+   "say": "Dex still deploys with the Ant Migration Tool, retired in Spring twenty-four.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "computer",
+     "x": 68
+    },
+    {
+     "id": "calendar",
+     "x": 85,
+     "y": 35
+    }
+   ],
+   "sign": "RETIRED",
+   "sfx": "blip"
+  },
+  {
+   "say": "Chasing a failed deploy, he turns on trace in shared CI logs.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "talk",
+     "emote": "idea"
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 68,
+     "anim": "bob"
+    }
+   ],
+   "sfx": "whoosh"
+  },
+  {
+   "say": "Trace prints SOAP traffic, login password included, in plain text.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "faint",
+     "emote": "!"
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 68,
+     "scale": 4,
+     "anim": "grow"
+    },
+    {
+     "id": "key",
+     "x": 50,
+     "y": 40,
+     "anim": "fly-right"
+    }
+   ],
+   "sign": "PASSWORD!",
+   "fx": "alarm",
+   "sfx": "error"
+  },
+  {
+   "say": "Ada changes the password before he finishes gasping.",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 70,
+     "flip": true,
+     "anim": "enter-right"
+    },
+    {
+     "id": "dex",
+     "x": 28,
+     "emote": "sweat"
+    }
+   ],
+   "props": [
+    {
+     "id": "lock",
+     "x": 50,
+     "anim": "drop"
+    }
+   ],
+   "sfx": "powerup"
+  },
+  {
+   "say": "Then she hands him Salesforce CLI.",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 65,
+     "flip": true,
+     "emote": "zzz"
+    },
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "cheer"
+    }
+   ],
+   "props": [
+    {
+     "id": "box",
+     "x": 48,
+     "anim": "drop"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Salesforce retired the Ant Migration Tool with Spring '24.",
+   "source": "articles/devops-and-alm/ant-migration-tool.md",
+   "evidence": "Salesforce retired it with Spring '24"
+  },
+  {
+   "claim": "The trace option prints SOAP traffic to the console and exposes the login password in plain text.",
+   "source": "articles/devops-and-alm/ant-migration-tool.md",
+   "evidence": "prints SOAP traffic to the console and exposes the login password in plain text"
+  },
+  {
+   "claim": "Salesforce recommends Salesforce CLI for managing metadata changes instead.",
+   "source": "articles/devops-and-alm/ant-migration-tool.md",
+   "evidence": "Salesforce recommends Salesforce CLI for managing metadata changes instead"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/devops-and-alm/ant-migration-tool.md",
+   "id": "kt:ant-migration-tool",
+   "title": "Ant Migration Tool",
+   "domain": "devops-and-alm",
+   "release": "Winter '27",
+   "blob": "a7e3cf66728970940bfc4eb3d3545bff54cf68ed"
+  }
+ ],
+ "source_commit": "bd93276dae33764cd7a749280630e0960e16dea1",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

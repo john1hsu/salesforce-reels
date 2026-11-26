@@ -1,0 +1,164 @@
+{
+ "id": "sr-000034",
+ "title": "Twenty-four strikes and you are benched",
+ "style": "story",
+ "topics": [
+  "clouds-and-products"
+ ],
+ "backdrop": "stadium",
+ "cast": [
+  "penny",
+  "gus"
+ ],
+ "beats": [
+  {
+   "say": "Penny's nightly SQL Query activity in Automation Studio keeps failing.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 30,
+     "anim": "enter-left",
+     "emote": "zzz"
+    }
+   ],
+   "props": [
+    {
+     "id": "database",
+     "x": 70
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "Fail. Fail. Fail. Night after night, nobody checks.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 30,
+     "anim": "idle",
+     "emote": "zzz"
+    }
+   ],
+   "props": [
+    {
+     "id": "bug",
+     "x": 60,
+     "anim": "bob"
+    },
+    {
+     "id": "bug",
+     "x": 78,
+     "anim": "bob"
+    }
+   ],
+   "fx": "rain",
+   "sfx": "error"
+  },
+  {
+   "say": "At twenty-four consecutive failures, Gus blows the whistle.",
+   "speaker": "gus",
+   "actors": [
+    {
+     "id": "gus",
+     "x": 70,
+     "flip": true,
+     "anim": "enter-right"
+    },
+    {
+     "id": "penny",
+     "x": 28,
+     "emote": "!"
+    }
+   ],
+   "props": [
+    {
+     "id": "stop",
+     "x": 50
+    }
+   ],
+   "sign": "24 STRIKES",
+   "fx": "alarm",
+   "sfx": "zap"
+  },
+  {
+   "say": "The activity is deactivated, and that rule cannot be turned off.",
+   "actors": [
+    {
+     "id": "gus",
+     "x": 70,
+     "flip": true,
+     "anim": "nod"
+    },
+    {
+     "id": "penny",
+     "x": 28,
+     "anim": "sulk"
+    }
+   ],
+   "props": [
+    {
+     "id": "lock",
+     "x": 50,
+     "anim": "drop"
+    }
+   ],
+   "sfx": "none"
+  },
+  {
+   "say": "The automation stays benched until someone fixes it and reactivates it.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 35,
+     "anim": "nod",
+     "emote": "sweat"
+    },
+    {
+     "id": "gus",
+     "x": 75,
+     "flip": true
+    }
+   ],
+   "props": [
+    {
+     "id": "gear",
+     "x": 55,
+     "y": 45,
+     "anim": "spin"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "In Automation Studio, a SQL Query activity is deactivated after 24 consecutive failures.",
+   "source": "articles/clouds-and-products/automation-studio.md",
+   "evidence": "a SQL Query activity is deactivated after 24 consecutive failures"
+  },
+  {
+   "claim": "This auto-deactivation behavior can't be turned off.",
+   "source": "articles/clouds-and-products/automation-studio.md",
+   "evidence": "this behavior can't be turned off"
+  },
+  {
+   "claim": "Once inactive, an automation won't run again until it's fixed and reactivated.",
+   "source": "articles/clouds-and-products/automation-studio.md",
+   "evidence": "an automation won't run again until it's fixed and reactivated"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/clouds-and-products/automation-studio.md",
+   "id": "kt:automation-studio",
+   "title": "Automation Studio",
+   "domain": "clouds-and-products",
+   "release": "Winter '27",
+   "blob": "dffda8bf62a9c8b32c0dda923ea15c4e1f3d1f53"
+  }
+ ],
+ "source_commit": "bd93276dae33764cd7a749280630e0960e16dea1",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

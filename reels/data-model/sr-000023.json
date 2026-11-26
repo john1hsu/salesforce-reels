@@ -1,0 +1,168 @@
+{
+ "id": "sr-000023",
+ "title": "Invoice forty-two went missing",
+ "style": "myth",
+ "topics": [
+  "data-model"
+ ],
+ "backdrop": "office",
+ "cast": [
+  "penny",
+  "archie",
+  "ada"
+ ],
+ "myth": "Auto-number fields give a gap-free sequence, perfect for invoice numbers.",
+ "beats": [
+  {
+   "say": "Penny wants auto-numbered invoices. No gaps, ever. Right?",
+   "speaker": "penny",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 30,
+     "anim": "talk",
+     "emote": "star"
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 70,
+     "scale": 3,
+     "anim": "bob"
+    }
+   ],
+   "sign": "MYTH: NO GAPS",
+   "sfx": "blip"
+  },
+  {
+   "say": "A save fails and burns number forty-two. Another save grabs forty-three.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 25,
+     "emote": "!"
+    }
+   ],
+   "props": [
+    {
+     "id": "coin",
+     "x": 55,
+     "y": 40,
+     "anim": "fly-right"
+    },
+    {
+     "id": "computer",
+     "x": 72,
+     "scale": 3
+    }
+   ],
+   "sign": "INV-0043",
+   "fx": "shake",
+   "sfx": "error"
+  },
+  {
+   "say": "Archie says they always increase, but are never promised to be consecutive.",
+   "speaker": "archie",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 22,
+     "emote": "..."
+    },
+    {
+     "id": "archie",
+     "x": 72,
+     "flip": true,
+     "anim": "talk"
+    }
+   ],
+   "props": [
+    {
+     "id": "whiteboard",
+     "x": 48,
+     "scale": 4,
+     "anim": "drop"
+    }
+   ],
+   "sign": "BUSTED",
+   "sfx": "boing"
+  },
+  {
+   "say": "Need a gap-free series? Fill a Text field with your own logic.",
+   "speaker": "archie",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 70,
+     "flip": true,
+     "anim": "nod"
+    },
+    {
+     "id": "penny",
+     "x": 28,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "gear",
+     "x": 48,
+     "y": 45,
+     "anim": "spin"
+    }
+   ],
+   "sfx": "powerup"
+  },
+  {
+   "say": "Ada sips. Forty-two is gone.",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 50,
+     "anim": "idle",
+     "emote": "zzz"
+    }
+   ],
+   "props": [
+    {
+     "id": "desk",
+     "x": 50,
+     "scale": 4
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Auto-number values increase but are not guaranteed to be consecutive.",
+   "source": "articles/data-model/auto-number-fields.md",
+   "evidence": "Values increase but are not guaranteed to be consecutive"
+  },
+  {
+   "claim": "A failed save can burn an auto-number value while a parallel save takes the next one.",
+   "source": "articles/data-model/auto-number-fields.md",
+   "evidence": "a failed save can burn a number while a parallel save takes the next one"
+  },
+  {
+   "claim": "For a sequence you control, a Text field populated by your own logic is usually the safer design.",
+   "source": "articles/data-model/auto-number-fields.md",
+   "evidence": "a Text field populated by your own logic"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/data-model/auto-number-fields.md",
+   "id": "kt:auto-number-fields",
+   "title": "Auto-Number Fields",
+   "domain": "data-model",
+   "release": "Winter '27",
+   "blob": "e728c002b2f816d18d37ac7216ceeed2d9eb1a3f"
+  }
+ ],
+ "source_commit": "bd93276dae33764cd7a749280630e0960e16dea1",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

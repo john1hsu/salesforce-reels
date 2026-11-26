@@ -1,0 +1,150 @@
+{
+ "id": "sr-000027",
+ "title": "The IDE that forgot Dex",
+ "style": "fact",
+ "topics": [
+  "devops-and-alm"
+ ],
+ "backdrop": "beach",
+ "cast": [
+  "dex",
+  "ada"
+ ],
+ "beats": [
+  {
+   "say": "Dex codes everything in Agentforce Vibes IDE, VS Code in a browser.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 32,
+     "anim": "nod",
+     "emote": "heart"
+    }
+   ],
+   "props": [
+    {
+     "id": "computer",
+     "x": 68,
+     "scale": 3
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "Then he spends a month at the beach. Zero commits.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 40,
+     "anim": "float",
+     "emote": "zzz"
+    }
+   ],
+   "props": [
+    {
+     "id": "calendar",
+     "x": 75,
+     "y": 40,
+     "anim": "bob"
+    }
+   ],
+   "sign": "DAY 30",
+   "sfx": "whoosh"
+  },
+  {
+   "say": "Instances inactive for thirty days get deleted, data and all.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "emote": "!"
+    }
+   ],
+   "props": [
+    {
+     "id": "computer",
+     "x": 68,
+     "scale": 3,
+     "anim": "shake"
+    }
+   ],
+   "sign": "30 DAYS",
+   "fx": "flash",
+   "sfx": "zap"
+  },
+  {
+   "say": "Dex returns to an empty workspace.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 40,
+     "anim": "faint",
+     "emote": "sweat"
+    }
+   ],
+   "props": [
+    {
+     "id": "box",
+     "x": 72
+    }
+   ],
+   "sfx": "error"
+  },
+  {
+   "say": "Ada's tip: commit to source control, then enjoy the sand.",
+   "speaker": "ada",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 65,
+     "flip": true,
+     "anim": "talk"
+    },
+    {
+     "id": "dex",
+     "x": 28,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "coffee",
+     "x": 82,
+     "y": 55
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Agentforce Vibes IDE runs Visual Studio Code in the browser.",
+   "source": "articles/devops-and-alm/agentforce-vibes-ide.md",
+   "evidence": "runs Visual Studio Code in the browser"
+  },
+  {
+   "claim": "An Agentforce Vibes IDE instance inactive for 30 days is deleted along with its data.",
+   "source": "articles/devops-and-alm/agentforce-vibes-ide.md",
+   "evidence": "An instance inactive for 30 days is deleted along with its data"
+  },
+  {
+   "claim": "Users should commit their IDE work to source control.",
+   "source": "articles/devops-and-alm/agentforce-vibes-ide.md",
+   "evidence": "so commit work to source control"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/devops-and-alm/agentforce-vibes-ide.md",
+   "id": "kt:agentforce-vibes-ide",
+   "title": "Agentforce Vibes IDE",
+   "domain": "devops-and-alm",
+   "release": "Winter '27",
+   "blob": "3af0b27471add6808df90eb1e0048ec44e604e43"
+  }
+ ],
+ "source_commit": "bd93276dae33764cd7a749280630e0960e16dea1",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

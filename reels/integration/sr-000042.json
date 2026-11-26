@@ -1,0 +1,154 @@
+{
+ "id": "sr-000042",
+ "title": "Penny's quick PUT",
+ "style": "humor",
+ "topics": [
+  "integration"
+ ],
+ "backdrop": "kitchen",
+ "cast": [
+  "penny",
+  "dex",
+  "ada"
+ ],
+ "beats": [
+  {
+   "say": "Penny sends Dex's Apex REST endpoint a PUT. Just a new name.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 30,
+     "anim": "talk",
+     "emote": "idea"
+    },
+    {
+     "id": "dex",
+     "x": 72,
+     "flip": true
+    }
+   ],
+   "props": [
+    {
+     "id": "envelope",
+     "x": 50,
+     "y": 40,
+     "anim": "fly-right"
+    }
+   ],
+   "sfx": "whoosh"
+  },
+  {
+   "say": "In the Trailhead example, PUT upserts the whole record.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 70,
+     "flip": true,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "box",
+     "x": 40,
+     "anim": "drop"
+    }
+   ],
+   "sign": "PUT",
+   "sfx": "blip"
+  },
+  {
+   "say": "So any field she left out? Cleared. Goodbye, phone number.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 30,
+     "anim": "faint",
+     "emote": "!"
+    }
+   ],
+   "props": [
+    {
+     "id": "phone",
+     "x": 65,
+     "y": 40,
+     "anim": "fly-right"
+    }
+   ],
+   "fx": "shake",
+   "sfx": "error"
+  },
+  {
+   "say": "PATCH updates only the fields you send.",
+   "speaker": "ada",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 65,
+     "flip": true,
+     "anim": "talk"
+    }
+   ],
+   "props": [
+    {
+     "id": "coffee",
+     "x": 82,
+     "y": 55
+    }
+   ],
+   "sign": "PATCH: JUST THESE",
+   "sfx": "powerup"
+  },
+  {
+   "say": "Penny calls it a quick one. The phone number disagrees.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 30,
+     "anim": "nod",
+     "emote": "sweat"
+    },
+    {
+     "id": "ada",
+     "x": 70,
+     "flip": true,
+     "emote": "zzz"
+    }
+   ],
+   "props": [
+    {
+     "id": "phone",
+     "x": 50,
+     "anim": "shake"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "In Trailhead's walkthrough, PUT upserts while PATCH updates only the fields sent.",
+   "source": "articles/integration/apex-rest-services.md",
+   "evidence": "PUT upserts and PATCH updates only the fields sent"
+  },
+  {
+   "claim": "In the Trailhead example, a PUT that leaves out a field clears it.",
+   "source": "articles/integration/apex-rest-services.md",
+   "evidence": "a PUT that leaves out a field clears it"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/integration/apex-rest-services.md",
+   "id": "kt:apex-rest-services",
+   "title": "Apex REST Services",
+   "domain": "integration",
+   "release": "Winter '27",
+   "blob": "a19880143f8b20b5e0cde864a99c382c83de6c5b"
+  }
+ ],
+ "source_commit": "bd93276dae33764cd7a749280630e0960e16dea1",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

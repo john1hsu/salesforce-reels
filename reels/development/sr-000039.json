@@ -1,0 +1,176 @@
+{
+ "id": "sr-000039",
+ "title": "The limit continuations no longer dodge",
+ "style": "myth",
+ "topics": [
+  "development"
+ ],
+ "backdrop": "city-night",
+ "cast": [
+  "dex",
+  "archie"
+ ],
+ "myth": "You need continuations so slow callouts don't count toward the long-running request limit.",
+ "beats": [
+  {
+   "say": "Dex insists continuations dodge the long-running request limit.",
+   "speaker": "dex",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 32,
+     "anim": "talk",
+     "emote": "star"
+    }
+   ],
+   "props": [
+    {
+     "id": "clock",
+     "x": 72,
+     "y": 40,
+     "anim": "bob"
+    }
+   ],
+   "sign": "MYTH",
+   "sfx": "blip"
+  },
+  {
+   "say": "True once. Since Winter twenty, every callout is excluded from that limit.",
+   "speaker": "archie",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 72,
+     "flip": true,
+     "anim": "enter-right"
+    },
+    {
+     "id": "dex",
+     "x": 28,
+     "emote": "!"
+    }
+   ],
+   "props": [
+    {
+     "id": "calendar",
+     "x": 50,
+     "y": 40,
+     "anim": "drop"
+    }
+   ],
+   "sign": "BUSTED",
+   "fx": "flash",
+   "sfx": "zap"
+  },
+  {
+   "say": "So what's left? User experience.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 72,
+     "flip": true,
+     "anim": "nod"
+    },
+    {
+     "id": "dex",
+     "x": 28,
+     "emote": "?"
+    }
+   ],
+   "props": [
+    {
+     "id": "computer",
+     "x": 50
+    }
+   ],
+   "sfx": "boing"
+  },
+  {
+   "say": "Three parallel callouts, and a timeout of up to a hundred and twenty seconds.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 25,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "envelope",
+     "x": 55,
+     "y": 35,
+     "anim": "fly-right"
+    },
+    {
+     "id": "envelope",
+     "x": 65,
+     "y": 48,
+     "anim": "fly-right"
+    },
+    {
+     "id": "envelope",
+     "x": 75,
+     "y": 61,
+     "anim": "fly-right"
+    }
+   ],
+   "sign": "3 CALLS / 120s",
+   "sfx": "whoosh"
+  },
+  {
+   "say": "Dex quietly updates his conference talk.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 40,
+     "anim": "sulk",
+     "emote": "sweat"
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 70,
+     "anim": "bob"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Since Winter '20, all callouts are excluded from the limit on long-running concurrent synchronous requests.",
+   "source": "articles/development/apex-continuations.md",
+   "evidence": "Since Winter '20 all callouts are excluded from that limit"
+  },
+  {
+   "claim": "The remaining benefit of continuations is user experience.",
+   "source": "articles/development/apex-continuations.md",
+   "evidence": "the remaining benefit is user experience"
+  },
+  {
+   "claim": "A continuation allows up to 3 parallel callouts.",
+   "source": "articles/development/apex-continuations.md",
+   "evidence": "3 parallel callouts per continuation"
+  },
+  {
+   "claim": "A continuation has a maximum timeout of 120 seconds.",
+   "source": "articles/development/apex-continuations.md",
+   "evidence": "Maximum timeout of 120 seconds per continuation"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/development/apex-continuations.md",
+   "id": "kt:apex-continuations",
+   "title": "Apex Continuations",
+   "domain": "development",
+   "release": "Winter '27",
+   "blob": "0327e159ebc3f937d4986ac56df820334a31c7a7"
+  }
+ ],
+ "source_commit": "bd93276dae33764cd7a749280630e0960e16dea1",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

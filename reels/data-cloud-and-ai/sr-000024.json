@@ -1,0 +1,163 @@
+{
+ "id": "sr-000024",
+ "title": "Bolt closes every case in production",
+ "style": "story",
+ "topics": [
+  "data-cloud-and-ai"
+ ],
+ "backdrop": "office",
+ "cast": [
+  "dex",
+  "bolt",
+  "penny",
+  "archie"
+ ],
+ "beats": [
+  {
+   "say": "Dex is in a hurry. He tests Bolt right in production.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 28,
+     "anim": "run"
+    },
+    {
+     "id": "bolt",
+     "x": 70,
+     "flip": true
+    }
+   ],
+   "props": [
+    {
+     "id": "server",
+     "x": 50,
+     "scale": 3
+    }
+   ],
+   "sign": "PROD",
+   "sfx": "whoosh"
+  },
+  {
+   "say": "Bolt announces test one: close all open cases. Done.",
+   "speaker": "bolt",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 60,
+     "anim": "talk",
+     "emote": "idea"
+    },
+    {
+     "id": "dex",
+     "x": 25,
+     "emote": "!"
+    }
+   ],
+   "props": [
+    {
+     "id": "box",
+     "x": 85,
+     "anim": "drop"
+    }
+   ],
+   "fx": "flash",
+   "sfx": "zap"
+  },
+  {
+   "say": "Agent tests can change CRM records. Real ones.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 70,
+     "flip": true,
+     "anim": "enter-right",
+     "emote": "anger"
+    },
+    {
+     "id": "dex",
+     "x": 25,
+     "anim": "faint"
+    }
+   ],
+   "props": [
+    {
+     "id": "database",
+     "x": 48,
+     "anim": "shake"
+    }
+   ],
+   "fx": "alarm",
+   "sfx": "error"
+  },
+  {
+   "say": "So build in scratch orgs, and test in sandboxes with realistic data.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 50,
+     "anim": "talk"
+    }
+   ],
+   "props": [
+    {
+     "id": "whiteboard",
+     "x": 50,
+     "scale": 4,
+     "anim": "drop"
+    }
+   ],
+   "sign": "SANDBOX",
+   "sfx": "powerup"
+  },
+  {
+   "say": "Never in production. Penny would like her cases back.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 70,
+     "flip": true,
+     "emote": "anger"
+    },
+    {
+     "id": "bolt",
+     "x": 30,
+     "anim": "nod",
+     "emote": "sweat"
+    }
+   ],
+   "props": [
+    {
+     "id": "box",
+     "x": 50
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Agent tests should never run in production, because tests can modify CRM records.",
+   "source": "articles/data-cloud-and-ai/agent-development-lifecycle.md",
+   "evidence": "never run agent tests in production, because tests can modify CRM records"
+  },
+  {
+   "claim": "Developers iterate in scratch orgs and test in sandboxes loaded with realistic data.",
+   "source": "articles/data-cloud-and-ai/agent-development-lifecycle.md",
+   "evidence": "Developers iterate in scratch orgs, test in sandboxes loaded with realistic data"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/data-cloud-and-ai/agent-development-lifecycle.md",
+   "id": "kt:agent-development-lifecycle",
+   "title": "Agent Development Lifecycle",
+   "domain": "data-cloud-and-ai",
+   "release": "Winter '27",
+   "blob": "8958a9628b7291db48db5c3761b1d9222cc10983"
+  }
+ ],
+ "source_commit": "bd93276dae33764cd7a749280630e0960e16dea1",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

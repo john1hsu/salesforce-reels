@@ -1,0 +1,164 @@
+{
+ "id": "sr-000029",
+ "title": "System mode by default, says Dex",
+ "style": "myth",
+ "topics": [
+  "security-and-sharing"
+ ],
+ "backdrop": "wild-west",
+ "cast": [
+  "dex",
+  "archie",
+  "ada"
+ ],
+ "myth": "Apex database operations always run in system mode by default.",
+ "beats": [
+  {
+   "say": "Dex swears Apex runs in system mode by default.",
+   "speaker": "dex",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "talk",
+     "emote": "star"
+    }
+   ],
+   "props": [
+    {
+     "id": "cactus",
+     "x": 80
+    }
+   ],
+   "sign": "MYTH",
+   "sfx": "blip"
+  },
+  {
+   "say": "Archie draws one word: depends. On the API version.",
+   "speaker": "archie",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 72,
+     "flip": true,
+     "anim": "talk"
+    },
+    {
+     "id": "dex",
+     "x": 25,
+     "emote": "?"
+    }
+   ],
+   "props": [
+    {
+     "id": "whiteboard",
+     "x": 48,
+     "scale": 4,
+     "anim": "drop"
+    }
+   ],
+   "sfx": "boing"
+  },
+  {
+   "say": "From version sixty-seven, database operations run in user mode by default.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 72,
+     "flip": true,
+     "anim": "nod"
+    },
+    {
+     "id": "dex",
+     "x": 25,
+     "anim": "shake",
+     "emote": "!"
+    }
+   ],
+   "props": [
+    {
+     "id": "shield",
+     "x": 48,
+     "y": 45,
+     "anim": "grow"
+    }
+   ],
+   "sign": "BUSTED: API 67",
+   "fx": "flash",
+   "sfx": "zap"
+  },
+  {
+   "say": "So the user's permissions, field security and sharing apply.",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 50,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "lock",
+     "x": 75,
+     "anim": "pulse"
+    },
+    {
+     "id": "key",
+     "x": 25,
+     "y": 50
+    }
+   ],
+   "sfx": "powerup"
+  },
+  {
+   "say": "Older code keeps system mode. Dex checks his version numbers.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 35,
+     "anim": "sulk",
+     "emote": "sweat"
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 70,
+     "anim": "bob"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "From Apex API version 67.0, Apex database operations run in user mode by default.",
+   "source": "articles/security-and-sharing/apex-user-mode.md",
+   "evidence": "From version 67.0, Apex database operations run in user mode by default"
+  },
+  {
+   "claim": "Code saved at API version 66.0 or earlier keeps system mode as the default.",
+   "source": "articles/security-and-sharing/apex-user-mode.md",
+   "evidence": "Code saved at 66.0 or earlier keeps system mode as the default"
+  },
+  {
+   "claim": "User mode applies the running user's object permissions, field-level security and record sharing.",
+   "source": "articles/security-and-sharing/apex-user-mode.md",
+   "evidence": "applies the running user's object permissions, field-level security"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/security-and-sharing/apex-user-mode.md",
+   "id": "kt:apex-user-mode",
+   "title": "Apex User Mode",
+   "domain": "security-and-sharing",
+   "release": "Winter '27",
+   "blob": "2d6fd196a094f883cdd1138ca11d28e52a1a6057"
+  }
+ ],
+ "source_commit": "bd93276dae33764cd7a749280630e0960e16dea1",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

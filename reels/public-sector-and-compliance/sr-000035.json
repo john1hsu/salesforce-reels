@@ -1,0 +1,170 @@
+{
+ "id": "sr-000035",
+ "title": "Whose CMMC level is it anyway",
+ "style": "myth",
+ "topics": [
+  "public-sector-and-compliance"
+ ],
+ "backdrop": "stage",
+ "cast": [
+  "penny",
+  "archie"
+ ],
+ "myth": "Hosting on Salesforce Government Cloud means your CMMC level is the vendor's job.",
+ "beats": [
+  {
+   "say": "Penny announces: we're on Government Cloud, so our CMMC level is handled.",
+   "speaker": "penny",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 50,
+     "anim": "talk",
+     "emote": "star"
+    }
+   ],
+   "props": [
+    {
+     "id": "cloud",
+     "x": 80,
+     "y": 30,
+     "anim": "bob"
+    }
+   ],
+   "sign": "MYTH",
+   "sfx": "fanfare"
+  },
+  {
+   "say": "Archie: CMMC levels belong to the contractor, not its cloud vendor.",
+   "speaker": "archie",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 72,
+     "flip": true,
+     "anim": "enter-right"
+    },
+    {
+     "id": "penny",
+     "x": 28,
+     "emote": "!"
+    }
+   ],
+   "props": [
+    {
+     "id": "shield",
+     "x": 50,
+     "y": 45,
+     "anim": "drop"
+    }
+   ],
+   "sign": "BUSTED",
+   "fx": "flash",
+   "sfx": "zap"
+  },
+  {
+   "say": "Government Cloud can help meet Levels two and three.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 72,
+     "flip": true,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "cloud",
+     "x": 35,
+     "y": 35
+    },
+    {
+     "id": "trophy",
+     "x": 35,
+     "y": 60,
+     "scale": 2
+    }
+   ],
+   "sign": "HELPS L2 + L3",
+   "sfx": "coin"
+  },
+  {
+   "say": "But Penny's company still gets assessed itself.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 30,
+     "anim": "sulk",
+     "emote": "sweat"
+    }
+   ],
+   "props": [
+    {
+     "id": "magnifier",
+     "x": 65,
+     "y": 45,
+     "anim": "bob"
+    }
+   ],
+   "sfx": "boing"
+  },
+  {
+   "say": "Penny asks if that can be done by Friday.",
+   "speaker": "penny",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 30,
+     "anim": "talk",
+     "emote": "idea"
+    },
+    {
+     "id": "archie",
+     "x": 72,
+     "flip": true,
+     "emote": "..."
+    }
+   ],
+   "props": [
+    {
+     "id": "calendar",
+     "x": 52,
+     "y": 40,
+     "anim": "pulse"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "CMMC levels are assigned to the contractor, the organization seeking assessment, not to its cloud vendor.",
+   "source": "articles/public-sector-and-compliance/cmmc.md",
+   "evidence": "CMMC levels are assigned to the contractor"
+  },
+  {
+   "claim": "Salesforce says Government Cloud can help customers meet CMMC requirements, specifically Levels 2 and 3.",
+   "source": "articles/public-sector-and-compliance/cmmc.md",
+   "evidence": "Government Cloud can help customers meet CMMC requirements, specifically Levels 2 and 3"
+  },
+  {
+   "claim": "FedRAMP authorizes the cloud provider, while CMMC assesses the contractor.",
+   "source": "articles/public-sector-and-compliance/cmmc.md",
+   "evidence": "while CMMC assesses the contractor"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/public-sector-and-compliance/cmmc.md",
+   "id": "kt:cmmc",
+   "title": "Cybersecurity Maturity Model Certification (CMMC)",
+   "domain": "public-sector-and-compliance",
+   "release": "Winter '27",
+   "blob": "955cf9acbc01e2c387da78dcda3b25304ffbed15"
+  }
+ ],
+ "source_commit": "bd93276dae33764cd7a749280630e0960e16dea1",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

@@ -1,0 +1,167 @@
+{
+ "id": "sr-000033",
+ "title": "It depends, now with numbers",
+ "style": "fact",
+ "topics": [
+  "architecture-practice"
+ ],
+ "backdrop": "classroom",
+ "cast": [
+  "archie",
+  "penny"
+ ],
+ "beats": [
+  {
+   "say": "Flow or Apex? Archie's famous answer: it depends.",
+   "speaker": "archie",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 65,
+     "flip": true,
+     "anim": "talk"
+    },
+    {
+     "id": "penny",
+     "x": 25,
+     "emote": "anger"
+    }
+   ],
+   "props": [
+    {
+     "id": "whiteboard",
+     "x": 45,
+     "scale": 4
+    }
+   ],
+   "sfx": "boing"
+  },
+  {
+   "say": "The record-triggered automation guide says it depends on density.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 65,
+     "flip": true,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 35,
+     "anim": "drop"
+    }
+   ],
+   "sign": "DENSITY",
+   "sfx": "blip"
+  },
+  {
+   "say": "Fewer than fifteen automations on an object? Record-triggered Flow.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 70,
+     "flip": true
+    }
+   ],
+   "props": [
+    {
+     "id": "chart",
+     "x": 40,
+     "anim": "grow"
+    }
+   ],
+   "sign": "UNDER 15: FLOW",
+   "sfx": "coin"
+  },
+  {
+   "say": "Fifteen to thirty? Flow orchestrating invocable Apex.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 70,
+     "flip": true
+    }
+   ],
+   "props": [
+    {
+     "id": "chart",
+     "x": 40
+    },
+    {
+     "id": "gear",
+     "x": 22,
+     "y": 45,
+     "anim": "spin"
+    }
+   ],
+   "sign": "15-30: HYBRID",
+   "sfx": "coin"
+  },
+  {
+   "say": "Above thirty? Apex triggers. For once, it depends came with numbers.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 25,
+     "anim": "cheer",
+     "emote": "star"
+    },
+    {
+     "id": "archie",
+     "x": 70,
+     "flip": true,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "trophy",
+     "x": 48,
+     "y": 45,
+     "anim": "bob"
+    }
+   ],
+   "sign": "30+: APEX",
+   "fx": "confetti",
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "The record-triggered automation guide's principles include matching the tool to automation density.",
+   "source": "articles/architecture-practice/architect-decision-guides.md",
+   "evidence": "match the tool to automation density"
+  },
+  {
+   "claim": "It recommends record-triggered Flow for low density, fewer than 15 automations on an object.",
+   "source": "articles/architecture-practice/architect-decision-guides.md",
+   "evidence": "fewer than 15 automations on an object"
+  },
+  {
+   "claim": "For medium density, 15 to 30, it recommends Flow orchestrating invocable Apex.",
+   "source": "articles/architecture-practice/architect-decision-guides.md",
+   "evidence": "Flow orchestrating invocable Apex for medium density"
+  },
+  {
+   "claim": "Above 30 automations it recommends Apex triggers, ideally on a metadata-driven framework.",
+   "source": "articles/architecture-practice/architect-decision-guides.md",
+   "evidence": "Apex triggers, ideally on a metadata-driven framework, above 30"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/architecture-practice/architect-decision-guides.md",
+   "id": "kt:architect-decision-guides",
+   "title": "Architect Decision Guides",
+   "domain": "architecture-practice",
+   "release": "Winter '27",
+   "blob": "05e94a794ba6fb36fc1d65e71311bb3f1153ab1d"
+  }
+ ],
+ "source_commit": "bd93276dae33764cd7a749280630e0960e16dea1",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

@@ -1,0 +1,160 @@
+{
+ "id": "sr-000031",
+ "title": "Launch order: Penny's way",
+ "style": "story",
+ "topics": [
+  "identity"
+ ],
+ "backdrop": "space",
+ "cast": [
+  "ada",
+  "penny"
+ ],
+ "beats": [
+  {
+   "say": "Ada lines up the org's apps in the App Launcher. Perfect default order.",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 30,
+     "anim": "nod",
+     "emote": "star"
+    }
+   ],
+   "props": [
+    {
+     "id": "rocket",
+     "x": 60,
+     "anim": "rise"
+    },
+    {
+     "id": "rocket",
+     "x": 75
+    },
+    {
+     "id": "rocket",
+     "x": 90
+    }
+   ],
+   "sfx": "powerup"
+  },
+  {
+   "say": "But weeks ago, Penny dragged her own tiles around.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 65,
+     "flip": true,
+     "anim": "float",
+     "emote": "heart"
+    }
+   ],
+   "props": [
+    {
+     "id": "rocket",
+     "x": 30,
+     "anim": "spin"
+    }
+   ],
+   "sfx": "whoosh"
+  },
+  {
+   "say": "A user's personal order overrides the admin's default.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 65,
+     "flip": true,
+     "anim": "cheer"
+    },
+    {
+     "id": "ada",
+     "x": 25
+    }
+   ],
+   "props": [
+    {
+     "id": "trophy",
+     "x": 45,
+     "y": 40,
+     "anim": "bob"
+    }
+   ],
+   "sign": "HER ORDER WINS",
+   "sfx": "fanfare"
+  },
+  {
+   "say": "So Ada's tidy lineup never reaches Penny's screen.",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 30,
+     "emote": "..."
+    }
+   ],
+   "props": [
+    {
+     "id": "computer",
+     "x": 70
+    },
+    {
+     "id": "rocket",
+     "x": 50,
+     "y": 30,
+     "anim": "fly-right"
+    }
+   ],
+   "sfx": "boing"
+  },
+  {
+   "say": "Ada sips her coffee. Some orbits cannot be changed.",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 50,
+     "anim": "idle",
+     "emote": "zzz"
+    }
+   ],
+   "props": [
+    {
+     "id": "coffee",
+     "x": 66,
+     "y": 55
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Admins set a default App Launcher order by dragging apps under Setup App Menu.",
+   "source": "articles/identity/app-launcher.md",
+   "evidence": "Admins drag apps into the default order"
+  },
+  {
+   "claim": "Users can rearrange their own App Launcher, and their personal order overrides the admin's default.",
+   "source": "articles/identity/app-launcher.md",
+   "evidence": "their personal order overrides the admin's default"
+  },
+  {
+   "claim": "Later admin changes to the default order may not reach users who have customised theirs.",
+   "source": "articles/identity/app-launcher.md",
+   "evidence": "later admin changes to the default may not reach users who have customised theirs"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/identity/app-launcher.md",
+   "id": "kt:app-launcher",
+   "title": "App Launcher",
+   "domain": "identity",
+   "release": "Winter '27",
+   "blob": "9b26615193712ad5785fc8b58afc115d67e5c952"
+  }
+ ],
+ "source_commit": "bd93276dae33764cd7a749280630e0960e16dea1",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

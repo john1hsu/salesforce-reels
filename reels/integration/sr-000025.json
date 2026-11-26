@@ -1,0 +1,155 @@
+{
+ "id": "sr-000025",
+ "title": "Bolt at the agent mixer",
+ "style": "humor",
+ "topics": [
+  "integration"
+ ],
+ "backdrop": "ballroom",
+ "cast": [
+  "bolt"
+ ],
+ "beats": [
+  {
+   "say": "Bolt arrives at a fancy mixer for AI agents.",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 30,
+     "anim": "enter-left",
+     "emote": "heart"
+    }
+   ],
+   "props": [
+    {
+     "id": "trophy",
+     "x": 75,
+     "scale": 2
+    }
+   ],
+   "sfx": "fanfare"
+  },
+  {
+   "say": "Under A2A, every agent publishes an Agent Card listing its skills.",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 30,
+     "emote": "?"
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 62,
+     "y": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "envelope",
+     "x": 82,
+     "y": 50,
+     "anim": "bob"
+    }
+   ],
+   "sign": "AGENT CARD",
+   "sfx": "coin"
+  },
+  {
+   "say": "Bolt has none. Agentforce agents are not natively A2A compliant.",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 35,
+     "anim": "sulk",
+     "emote": "sweat"
+    }
+   ],
+   "props": [
+    {
+     "id": "stop",
+     "x": 70
+    }
+   ],
+   "sfx": "error"
+  },
+  {
+   "say": "MuleSoft Agent Fabric lends it a bridge: an A2A facade, no rewiring.",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 35,
+     "anim": "jump",
+     "emote": "star"
+    }
+   ],
+   "props": [
+    {
+     "id": "gear",
+     "x": 65,
+     "y": 45,
+     "anim": "spin"
+    },
+    {
+     "id": "scroll",
+     "x": 80,
+     "y": 35,
+     "anim": "drop"
+    }
+   ],
+   "fx": "sparkle",
+   "sfx": "powerup"
+  },
+  {
+   "say": "Bolt announces its skills. Alphabetically.",
+   "speaker": "bolt",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 50,
+     "anim": "talk",
+     "emote": "!"
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 75,
+     "y": 40
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "In A2A, an Agent Card is a JSON document published at a well-known URI that advertises the agent's skills.",
+   "source": "articles/integration/agent-to-agent-protocol.md",
+   "evidence": "published at a well-known URI, that advertises the agent's identity, endpoint, skills"
+  },
+  {
+   "claim": "Agentforce agents are not natively A2A-compliant.",
+   "source": "articles/integration/agent-to-agent-protocol.md",
+   "evidence": "Agentforce agents are not natively A2A-compliant"
+  },
+  {
+   "claim": "MuleSoft Agent Fabric's A2A bridge puts an A2A facade in front of a non-A2A agent with no change to the source agent.",
+   "source": "articles/integration/agent-to-agent-protocol.md",
+   "evidence": "puts an A2A facade in front of a non-A2A agent"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/integration/agent-to-agent-protocol.md",
+   "id": "kt:agent-to-agent-protocol",
+   "title": "Agent2Agent (A2A) Protocol",
+   "domain": "integration",
+   "release": "Winter '27",
+   "blob": "6499c72823e4aaf221cbbb913a649034bae6c95f"
+  }
+ ],
+ "source_commit": "bd93276dae33764cd7a749280630e0960e16dea1",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

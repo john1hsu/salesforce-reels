@@ -1,0 +1,169 @@
+{
+ "id": "sr-000038",
+ "title": "Bolt loads it all again",
+ "style": "humor",
+ "topics": [
+  "data-model"
+ ],
+ "backdrop": "space",
+ "cast": [
+  "bolt",
+  "archie"
+ ],
+ "beats": [
+  {
+   "say": "Bolt's big object load fails halfway.",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 30,
+     "anim": "shake",
+     "emote": "sweat"
+    }
+   ],
+   "props": [
+    {
+     "id": "database",
+     "x": 70,
+     "scale": 4,
+     "anim": "shake"
+    }
+   ],
+   "fx": "shake",
+   "sfx": "error"
+  },
+  {
+   "say": "Bolt announces it will load everything again. Every row.",
+   "speaker": "bolt",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 30,
+     "anim": "talk",
+     "emote": "!"
+    }
+   ],
+   "props": [
+    {
+     "id": "box",
+     "x": 60,
+     "anim": "drop"
+    },
+    {
+     "id": "box",
+     "x": 75,
+     "anim": "drop"
+    },
+    {
+     "id": "box",
+     "x": 90,
+     "anim": "drop"
+    }
+   ],
+   "sfx": "boing"
+  },
+  {
+   "say": "No duplicates. Writes are idempotent on the index.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 70,
+     "flip": true,
+     "anim": "float"
+    },
+    {
+     "id": "bolt",
+     "x": 28,
+     "emote": "?"
+    }
+   ],
+   "props": [
+    {
+     "id": "key",
+     "x": 50,
+     "y": 45,
+     "anim": "spin"
+    }
+   ],
+   "sign": "NO DUPES",
+   "fx": "sparkle",
+   "sfx": "powerup"
+  },
+  {
+   "say": "Same index values? The record is overwritten, not copied.",
+   "speaker": "archie",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 70,
+     "flip": true,
+     "anim": "talk"
+    }
+   ],
+   "props": [
+    {
+     "id": "database",
+     "x": 35,
+     "anim": "pulse"
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "So failed loads can simply be retried. Bolt retries eleven more times, for fun.",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 45,
+     "anim": "spin",
+     "emote": "heart"
+    },
+    {
+     "id": "archie",
+     "x": 80,
+     "flip": true,
+     "emote": "..."
+    }
+   ],
+   "props": [
+    {
+     "id": "rocket",
+     "x": 15,
+     "anim": "rise"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Big object writes are idempotent on the index.",
+   "source": "articles/data-model/big-objects.md",
+   "evidence": "Writes are idempotent on the index"
+  },
+  {
+   "claim": "Inserting a big object record whose index values already exist overwrites that record instead of creating a duplicate.",
+   "source": "articles/data-model/big-objects.md",
+   "evidence": "a record whose index values already exist overwrites that record instead of creating a duplicate"
+  },
+  {
+   "claim": "Because of this, a failed big object load can simply be retried.",
+   "source": "articles/data-model/big-objects.md",
+   "evidence": "so a failed load can simply be retried"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/data-model/big-objects.md",
+   "id": "kt:big-objects",
+   "title": "Big Objects",
+   "domain": "data-model",
+   "release": "Winter '27",
+   "blob": "8bd64e51083da6f076e6e92d77d83a1ede35e72b"
+  }
+ ],
+ "source_commit": "bd93276dae33764cd7a749280630e0960e16dea1",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}
