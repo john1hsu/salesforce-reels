@@ -1,0 +1,27 @@
+{
+ "reels_in_feed": 2,
+ "by_status": {
+  "active": 2
+ },
+ "articles_covered": 1,
+ "by_style": {
+  "humor": 1,
+  "myth": 1
+ },
+ "by_topic": {
+  "platform-architecture": 2
+ },
+ "by_cast": {
+  "ada": 1,
+  "dex": 1,
+  "gus": 1,
+  "penny": 1
+ },
+ "by_backdrop": {
+  "office": 1,
+  "server-room": 1
+ },
+ "by_article": {
+  "articles/platform-architecture/governor-limits.md": 2
+ }
+}

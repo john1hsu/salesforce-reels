@@ -1,0 +1,591 @@
+{
+ "backdrops": [
+  {
+   "id": "office",
+   "description": "Bright open-plan office",
+   "base": "#cfd8e6",
+   "ground": 232,
+   "layers": [
+    {
+     "op": "grad",
+     "y": 0,
+     "h": 200,
+     "from": "#dfe7f2",
+     "to": "#b9c6da",
+     "steps": 6
+    },
+    {
+     "op": "window",
+     "x": 18,
+     "y": 70,
+     "w": 54,
+     "h": 44
+    },
+    {
+     "op": "window",
+     "x": 108,
+     "y": 70,
+     "w": 54,
+     "h": 44
+    },
+    {
+     "op": "prop",
+     "id": "clock",
+     "x": 79,
+     "y": 28,
+     "s": 2
+    },
+    {
+     "op": "rect",
+     "y": 196,
+     "h": 5,
+     "c": "#7d889c"
+    },
+    {
+     "op": "checker",
+     "y": 201,
+     "h": 119,
+     "size": 20,
+     "c1": "#8b6b4a",
+     "c2": "#7d5f41"
+    }
+   ]
+  },
+  {
+   "id": "server-room",
+   "description": "Dim server room with blinking racks",
+   "base": "#141a2e",
+   "ground": 232,
+   "layers": [
+    {
+     "op": "grad",
+     "y": 0,
+     "h": 200,
+     "from": "#141a2e",
+     "to": "#263154",
+     "steps": 6
+    },
+    {
+     "op": "prop",
+     "id": "server",
+     "x": 8,
+     "y": 120,
+     "s": 5
+    },
+    {
+     "op": "prop",
+     "id": "server",
+     "x": 64,
+     "y": 134,
+     "s": 4
+    },
+    {
+     "op": "prop",
+     "id": "server",
+     "x": 116,
+     "y": 120,
+     "s": 5
+    },
+    {
+     "op": "rect",
+     "y": 196,
+     "h": 4,
+     "c": "#5ef0ff"
+    },
+    {
+     "op": "checker",
+     "y": 200,
+     "h": 120,
+     "size": 18,
+     "c1": "#1f2740",
+     "c2": "#2a3454"
+    }
+   ]
+  },
+  {
+   "id": "space",
+   "description": "Outer space above a small moon",
+   "base": "#0b0d1f",
+   "ground": 232,
+   "layers": [
+    {
+     "op": "grad",
+     "y": 0,
+     "h": 232,
+     "from": "#0b0d1f",
+     "to": "#241a45",
+     "steps": 7
+    },
+    {
+     "op": "stars",
+     "n": 70,
+     "yMax": 225
+    },
+    {
+     "op": "sun",
+     "x": 140,
+     "y": 62,
+     "r": 18,
+     "c": "#b47cf0"
+    },
+    {
+     "op": "hills",
+     "y": 228,
+     "amp": 7,
+     "c": "#5a6080",
+     "freq": 0.09,
+     "seed": 2,
+     "h": 100
+    },
+    {
+     "op": "rect",
+     "y": 236,
+     "h": 84,
+     "c": "#4a5070"
+    }
+   ]
+  },
+  {
+   "id": "wild-west",
+   "description": "Dusty frontier town at sunset",
+   "base": "#f4845f",
+   "ground": 232,
+   "layers": [
+    {
+     "op": "grad",
+     "y": 0,
+     "h": 205,
+     "from": "#f9c784",
+     "to": "#f4845f",
+     "steps": 7
+    },
+    {
+     "op": "sun",
+     "x": 44,
+     "y": 92,
+     "r": 18,
+     "c": "#fff0a8"
+    },
+    {
+     "op": "hills",
+     "y": 200,
+     "amp": 22,
+     "c": "#b5651d",
+     "freq": 0.03,
+     "seed": 1,
+     "h": 30
+    },
+    {
+     "op": "rect",
+     "y": 206,
+     "h": 114,
+     "c": "#d9a066"
+    },
+    {
+     "op": "rect",
+     "y": 206,
+     "h": 3,
+     "c": "#b88248"
+    },
+    {
+     "op": "prop",
+     "id": "cactus",
+     "x": 142,
+     "y": 164,
+     "s": 4
+    },
+    {
+     "op": "prop",
+     "id": "cactus",
+     "x": 12,
+     "y": 182,
+     "s": 2
+    }
+   ]
+  },
+  {
+   "id": "kitchen",
+   "description": "Cozy kitchen",
+   "base": "#f6e7c8",
+   "ground": 232,
+   "layers": [
+    {
+     "op": "stripes",
+     "y": 0,
+     "h": 200,
+     "size": 12,
+     "c1": "#f6e7c8",
+     "c2": "#f1dcb2"
+    },
+    {
+     "op": "window",
+     "x": 62,
+     "y": 56,
+     "w": 56,
+     "h": 46,
+     "c": "#9fdcf7"
+    },
+    {
+     "op": "rect",
+     "y": 150,
+     "h": 50,
+     "c": "#c98d5a"
+    },
+    {
+     "op": "rect",
+     "y": 150,
+     "h": 4,
+     "c": "#e8e0d0"
+    },
+    {
+     "op": "checker",
+     "y": 200,
+     "h": 120,
+     "size": 16,
+     "c1": "#e8e8e8",
+     "c2": "#c9534f"
+    }
+   ]
+  },
+  {
+   "id": "dungeon",
+   "description": "Torch-lit stone dungeon",
+   "base": "#2f2b3a",
+   "ground": 232,
+   "layers": [
+    {
+     "op": "bricks",
+     "y": 0,
+     "h": 205,
+     "c1": "#4a4458",
+     "c2": "#2f2b3a"
+    },
+    {
+     "op": "prop",
+     "id": "door",
+     "x": 70,
+     "y": 109,
+     "s": 4,
+     "flip": false
+    },
+    {
+     "op": "prop",
+     "id": "flame",
+     "x": 22,
+     "y": 96,
+     "s": 2
+    },
+    {
+     "op": "prop",
+     "id": "flame",
+     "x": 140,
+     "y": 96,
+     "s": 2
+    },
+    {
+     "op": "rect",
+     "y": 205,
+     "h": 115,
+     "c": "#2a2634"
+    },
+    {
+     "op": "rect",
+     "y": 205,
+     "h": 3,
+     "c": "#1d1a26"
+    }
+   ]
+  },
+  {
+   "id": "beach",
+   "description": "Sunny beach",
+   "base": "#7ed0f5",
+   "ground": 232,
+   "layers": [
+    {
+     "op": "grad",
+     "y": 0,
+     "h": 170,
+     "from": "#5fbcf0",
+     "to": "#d6f1ff",
+     "steps": 7
+    },
+    {
+     "op": "sun",
+     "x": 142,
+     "y": 50,
+     "r": 16
+    },
+    {
+     "op": "prop",
+     "id": "cloud",
+     "x": 16,
+     "y": 44,
+     "s": 3
+    },
+    {
+     "op": "rect",
+     "y": 170,
+     "h": 42,
+     "c": "#2f8fd0"
+    },
+    {
+     "op": "rect",
+     "y": 176,
+     "h": 2,
+     "c": "#8fd0f5"
+    },
+    {
+     "op": "rect",
+     "y": 190,
+     "h": 2,
+     "c": "#8fd0f5"
+    },
+    {
+     "op": "rect",
+     "y": 210,
+     "h": 110,
+     "c": "#f2d99b"
+    },
+    {
+     "op": "rect",
+     "y": 210,
+     "h": 3,
+     "c": "#fff3cf"
+    }
+   ]
+  },
+  {
+   "id": "city-night",
+   "description": "City rooftops at night",
+   "base": "#151a3a",
+   "ground": 232,
+   "layers": [
+    {
+     "op": "grad",
+     "y": 0,
+     "h": 215,
+     "from": "#151a3a",
+     "to": "#4a3570",
+     "steps": 7
+    },
+    {
+     "op": "stars",
+     "n": 40,
+     "yMax": 120
+    },
+    {
+     "op": "skyline",
+     "y": 214,
+     "c": "#0f1226",
+     "seed": 3,
+     "amp": 70
+    },
+    {
+     "op": "rect",
+     "y": 214,
+     "h": 106,
+     "c": "#23263a"
+    },
+    {
+     "op": "rect",
+     "y": 214,
+     "h": 3,
+     "c": "#3a3f5a"
+    }
+   ]
+  },
+  {
+   "id": "forest",
+   "description": "Sunlit forest clearing",
+   "base": "#a8e0c0",
+   "ground": 232,
+   "layers": [
+    {
+     "op": "grad",
+     "y": 0,
+     "h": 200,
+     "from": "#8fd6e8",
+     "to": "#dff5e6",
+     "steps": 6
+    },
+    {
+     "op": "hills",
+     "y": 198,
+     "amp": 18,
+     "c": "#3e8e5a",
+     "freq": 0.05,
+     "seed": 4,
+     "h": 30
+    },
+    {
+     "op": "prop",
+     "id": "tree",
+     "x": 4,
+     "y": 128,
+     "s": 6
+    },
+    {
+     "op": "prop",
+     "id": "tree",
+     "x": 120,
+     "y": 140,
+     "s": 5
+    },
+    {
+     "op": "rect",
+     "y": 208,
+     "h": 112,
+     "c": "#5fa869"
+    },
+    {
+     "op": "rect",
+     "y": 208,
+     "h": 3,
+     "c": "#7cc486"
+    }
+   ]
+  },
+  {
+   "id": "stage",
+   "description": "Theatre stage with red curtains",
+   "base": "#8c1c2c",
+   "ground": 232,
+   "layers": [
+    {
+     "op": "stripes",
+     "y": 0,
+     "h": 200,
+     "size": 15,
+     "c1": "#8c1c2c",
+     "c2": "#a32638"
+    },
+    {
+     "op": "rect",
+     "x": 40,
+     "y": 0,
+     "w": 100,
+     "h": 200,
+     "c": "#2a1a2e"
+    },
+    {
+     "op": "sun",
+     "x": 90,
+     "y": 150,
+     "r": 46,
+     "c": "#4a3550"
+    },
+    {
+     "op": "rect",
+     "y": 200,
+     "h": 120,
+     "c": "#6b4a2f"
+    },
+    {
+     "op": "rect",
+     "y": 200,
+     "h": 4,
+     "c": "#8a6540"
+    },
+    {
+     "op": "stripes",
+     "y": 230,
+     "h": 2,
+     "size": 30,
+     "c1": "#5a3d26",
+     "c2": "#6b4a2f"
+    }
+   ]
+  },
+  {
+   "id": "classroom",
+   "description": "Classroom with a whiteboard",
+   "base": "#dfe8d8",
+   "ground": 232,
+   "layers": [
+    {
+     "op": "grad",
+     "y": 0,
+     "h": 200,
+     "from": "#e8efe0",
+     "to": "#cfdcc6",
+     "steps": 5
+    },
+    {
+     "op": "prop",
+     "id": "whiteboard",
+     "x": 42,
+     "y": 64,
+     "s": 6
+    },
+    {
+     "op": "rect",
+     "y": 196,
+     "h": 5,
+     "c": "#8a9a80"
+    },
+    {
+     "op": "checker",
+     "y": 201,
+     "h": 119,
+     "size": 22,
+     "c1": "#b9a27a",
+     "c2": "#ad966e"
+    }
+   ]
+  },
+  {
+   "id": "mountain",
+   "description": "Snowy mountain pass",
+   "base": "#bcd6f2",
+   "ground": 232,
+   "layers": [
+    {
+     "op": "grad",
+     "y": 0,
+     "h": 210,
+     "from": "#7fb2e8",
+     "to": "#e3f0fb",
+     "steps": 7
+    },
+    {
+     "op": "prop",
+     "id": "cloud",
+     "x": 104,
+     "y": 36,
+     "s": 3
+    },
+    {
+     "op": "hills",
+     "y": 190,
+     "amp": 64,
+     "c": "#6c7a96",
+     "freq": 0.035,
+     "seed": 5,
+     "h": 40
+    },
+    {
+     "op": "hills",
+     "y": 204,
+     "amp": 30,
+     "c": "#8fa0bd",
+     "freq": 0.06,
+     "seed": 8,
+     "h": 30
+    },
+    {
+     "op": "rect",
+     "y": 212,
+     "h": 108,
+     "c": "#eef3fa"
+    },
+    {
+     "op": "rect",
+     "y": 212,
+     "h": 3,
+     "c": "#ffffff"
+    }
+   ]
+  }
+ ]
+}

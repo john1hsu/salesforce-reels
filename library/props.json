@@ -1,0 +1,691 @@
+{
+ "props": [
+  {
+   "id": "server",
+   "description": "Rack server with status lights",
+   "palette": {
+    "d": "#3a4256",
+    "g": "#5fd38a",
+    "k": "#1a1c2c",
+    "l": "#8fb8e8",
+    "r": "#e23b3b"
+   },
+   "rows": [
+    "kkkkkkkkkkkk",
+    "kddddddddddk",
+    "kdgdlllllldk",
+    "kddddddddddk",
+    "kkkkkkkkkkkk",
+    "kddddddddddk",
+    "kdgdllllllrk",
+    "kddddddddddk",
+    "kkkkkkkkkkkk",
+    "kddddddddddk",
+    "kdgdlllllldk",
+    "kddddddddddk",
+    "kkkkkkkkkkkk",
+    ".kk......kk."
+   ]
+  },
+  {
+   "id": "cloud",
+   "description": "Fluffy cloud",
+   "palette": {
+    "s": "#c9d3e3",
+    "w": "#f4f4f4"
+   },
+   "rows": [
+    "....wwww......",
+    "..wwwwwwww....",
+    ".wwwwwwwwwww..",
+    "wwwwwwwwwwwww.",
+    "wwwwwwwwwwwwww",
+    "wwwwwwwwwwwwww",
+    ".ssssssssssss.",
+    "..ssssssssss.."
+   ]
+  },
+  {
+   "id": "bolt",
+   "description": "Lightning bolt",
+   "palette": {
+    "y": "#f6c945"
+   },
+   "rows": [
+    "....yyy.",
+    "...yyy..",
+    "..yyy...",
+    ".yyyyyy.",
+    "...yyy..",
+    "..yyy...",
+    ".yyy....",
+    ".yy.....",
+    "yy......",
+    "y......."
+   ]
+  },
+  {
+   "id": "database",
+   "description": "Database cylinder",
+   "palette": {
+    "b": "#3b6fd6",
+    "d": "#3a4256",
+    "l": "#8fb8e8"
+   },
+   "rows": [
+    "..bbbbbb..",
+    ".bllllllb.",
+    "bllllllllb",
+    "bbllllllbb",
+    "bdbbbbbbdb",
+    "bddddddddb",
+    "bbddddddbb",
+    "bdbbbbbbdb",
+    "bddddddddb",
+    "bbddddddbb",
+    ".bbbbbbbb."
+   ]
+  },
+  {
+   "id": "gear",
+   "description": "Gear / settings cog",
+   "palette": {
+    "a": "#8a8f9e",
+    "d": "#3a4256"
+   },
+   "rows": [
+    "....aaa....",
+    ".aa.aaa.aa.",
+    ".aaaaaaaaa.",
+    "..aadddaa..",
+    "aaaad.daaaa",
+    "aaad...daaa",
+    "aaaad.daaaa",
+    "..aadddaa..",
+    ".aaaaaaaaa.",
+    ".aa.aaa.aa.",
+    "....aaa...."
+   ]
+  },
+  {
+   "id": "key",
+   "description": "Golden key",
+   "palette": {
+    "y": "#f6c945"
+   },
+   "rows": [
+    ".yyy........",
+    "y...yyyyyyyy",
+    "y...y....y.y",
+    "y...y....y.y",
+    ".yyy........"
+   ]
+  },
+  {
+   "id": "lock",
+   "description": "Padlock",
+   "palette": {
+    "k": "#1a1c2c",
+    "o": "#e08a2c",
+    "y": "#f6c945"
+   },
+   "rows": [
+    "...kkkk...",
+    "..k....k..",
+    "..k....k..",
+    "..k....k..",
+    "yyyyyyyyyy",
+    "yyyyyyyyyy",
+    "yyyykkyyyy",
+    "yyyykkyyyy",
+    "yyyyyyyyyy",
+    "oooooooooo"
+   ]
+  },
+  {
+   "id": "bug",
+   "description": "Software bug",
+   "palette": {
+    "k": "#1a1c2c",
+    "r": "#e23b3b"
+   },
+   "rows": [
+    ".k.......k.",
+    "..k.rrr.k..",
+    "..rrrrrrr..",
+    "kkrkrrrkrkk",
+    "..rrrrrrr..",
+    "kkrrkrkrrkk",
+    "..rrrrrrr..",
+    ".k.rrrrr.k.",
+    "k.........k"
+   ]
+  },
+  {
+   "id": "coffee",
+   "description": "Steaming coffee mug",
+   "palette": {
+    "s": "#c9d3e3",
+    "t": "#a8763e",
+    "w": "#f4f4f4"
+   },
+   "rows": [
+    "..s..s...",
+    "...s..s..",
+    ".........",
+    "wwwwwww..",
+    "wtttttwww",
+    "wwwwwww.w",
+    "wwwwwwwww",
+    ".wwwww...",
+    "..www...."
+   ]
+  },
+  {
+   "id": "desk",
+   "description": "Office desk",
+   "palette": {
+    "d": "#3a4256",
+    "t": "#a8763e"
+   },
+   "rows": [
+    "tttttttttttttttt",
+    "tttttttttttttttt",
+    "dddddddddddddddd",
+    ".d............d.",
+    ".d............d.",
+    ".d............d.",
+    ".d............d.",
+    ".d............d.",
+    ".d............d."
+   ]
+  },
+  {
+   "id": "computer",
+   "description": "Desktop computer",
+   "palette": {
+    "a": "#8a8f9e",
+    "b": "#3b6fd6",
+    "g": "#5fd38a",
+    "k": "#1a1c2c"
+   },
+   "rows": [
+    "kkkkkkkkkkkk",
+    "kbbbbbbbbbbk",
+    "kbgggbbbbbbk",
+    "kbbbbbbbbbbk",
+    "kbggggggbbbk",
+    "kbbbbbbbbbbk",
+    "kbggggbbbbbk",
+    "kkkkkkkkkkkk",
+    "....kkkk....",
+    "...kkkkkk...",
+    "..aaaaaaaa.."
+   ]
+  },
+  {
+   "id": "trophy",
+   "description": "Trophy cup",
+   "palette": {
+    "o": "#e08a2c",
+    "y": "#f6c945"
+   },
+   "rows": [
+    "yyyyyyyyyyy",
+    "y.yyyyyyy.y",
+    "y.yyyyyyy.y",
+    ".yyyyyyyyy.",
+    "..yyyyyyy..",
+    "...yyyyy...",
+    "....yyy....",
+    "....yyy....",
+    "...yyyyy...",
+    "..ooooooo..",
+    "..ooooooo.."
+   ]
+  },
+  {
+   "id": "flame",
+   "description": "Fire",
+   "palette": {
+    "o": "#e08a2c",
+    "r": "#e23b3b",
+    "y": "#f6c945"
+   },
+   "rows": [
+    "....r....",
+    "...rr....",
+    "...rrr...",
+    "..rrrr.r.",
+    ".rrorrrr.",
+    ".rroorrr.",
+    "rrooyorrr",
+    "rroyyyorr",
+    "rroyyyorr",
+    ".rooyoor.",
+    "..rrrrr.."
+   ]
+  },
+  {
+   "id": "box",
+   "description": "Cardboard package",
+   "palette": {
+    "d": "#3a4256",
+    "t": "#a8763e",
+    "y": "#f6c945"
+   },
+   "rows": [
+    ".dddddddddd.",
+    "dttttyyttttd",
+    "dttttyyttttd",
+    "dddddddddddd",
+    "dttttyyttttd",
+    "dttttyyttttd",
+    "dttttttttttd",
+    "dttttttttttd",
+    "dttttttttttd",
+    "dddddddddddd"
+   ]
+  },
+  {
+   "id": "clock",
+   "description": "Wall clock",
+   "palette": {
+    "k": "#1a1c2c",
+    "w": "#f4f4f4"
+   },
+   "rows": [
+    "...kkkkk...",
+    ".kkwwwwwkk.",
+    ".kwwwkwwwk.",
+    "kwwwwkwwwwk",
+    "kwwwwkwwwwk",
+    "kwwwwkkkwwk",
+    "kwwwwwwwwwk",
+    "kwwwwwwwwwk",
+    ".kwwwwwwwk.",
+    ".kkwwwwwkk.",
+    "...kkkkk..."
+   ]
+  },
+  {
+   "id": "envelope",
+   "description": "Email envelope",
+   "palette": {
+    "k": "#1a1c2c",
+    "w": "#f4f4f4"
+   },
+   "rows": [
+    "kkkkkkkkkkkk",
+    "kkwwwwwwwwkk",
+    "kwkwwwwwwkwk",
+    "kwwkwwwwkwwk",
+    "kwwwkkkkwwwk",
+    "kwwwwwwwwwwk",
+    "kwwwwwwwwwwk",
+    "kkkkkkkkkkkk"
+   ]
+  },
+  {
+   "id": "shield",
+   "description": "Security shield",
+   "palette": {
+    "b": "#3b6fd6",
+    "l": "#8fb8e8",
+    "w": "#f4f4f4"
+   },
+   "rows": [
+    "bbbbbbbbbb",
+    "bllllllllb",
+    "bllllwlllb",
+    "blllwwwllb",
+    "bllwwwwwlb",
+    "blllwwwllb",
+    "bllllwlllb",
+    ".bllllllb.",
+    ".bllllllb.",
+    "..bllllb..",
+    "...bllb...",
+    "....bb...."
+   ]
+  },
+  {
+   "id": "tree",
+   "description": "Leafy tree",
+   "palette": {
+    "g": "#3e9e5f",
+    "t": "#a8763e",
+    "w": "#7fd69a"
+   },
+   "rows": [
+    "....gggg....",
+    "..gggggggg..",
+    ".gggggggggg.",
+    "ggggwggggggg",
+    "ggggggggwggg",
+    "gggggggggggg",
+    ".gggggggggg.",
+    "..gggggggg..",
+    ".....tt.....",
+    ".....tt.....",
+    ".....tt.....",
+    ".....tt.....",
+    "....tttt...."
+   ]
+  },
+  {
+   "id": "cactus",
+   "description": "Desert cactus",
+   "palette": {
+    "g": "#3e9e5f"
+   },
+   "rows": [
+    "....gg....",
+    "....gg....",
+    "....gg..g.",
+    ".g..gg..g.",
+    ".g..gg..g.",
+    ".g..ggggg.",
+    ".ggggg....",
+    "....gg....",
+    "....gg....",
+    "....gg....",
+    "....gg...."
+   ]
+  },
+  {
+   "id": "rocket",
+   "description": "Rocket ship",
+   "palette": {
+    "b": "#3b6fd6",
+    "o": "#e08a2c",
+    "r": "#e23b3b",
+    "w": "#f4f4f4",
+    "y": "#f6c945"
+   },
+   "rows": [
+    "....w....",
+    "...www...",
+    "...www...",
+    "..wwwww..",
+    "..wbbbw..",
+    "..wbbbw..",
+    "..wwwww..",
+    "..wwwww..",
+    ".rwwwwwr.",
+    "rrwwwwwrr",
+    "rr.www.rr",
+    "...yoy...",
+    "...yoy...",
+    "....y...."
+   ]
+  },
+  {
+   "id": "coin",
+   "description": "Gold coin",
+   "palette": {
+    "o": "#e08a2c",
+    "y": "#f6c945"
+   },
+   "rows": [
+    "..yyyy..",
+    ".yooooy.",
+    "yoyyyyoy",
+    "yoyooyoy",
+    "yoyooyoy",
+    "yoyyyyoy",
+    ".yooooy.",
+    "..yyyy.."
+   ]
+  },
+  {
+   "id": "stop",
+   "description": "Stop sign",
+   "palette": {
+    "a": "#8a8f9e",
+    "r": "#e23b3b",
+    "w": "#f4f4f4"
+   },
+   "rows": [
+    "...rrrrr...",
+    "..rrrrrrr..",
+    ".rrrrrrrrr.",
+    "rrrrrrrrrrr",
+    "rwwwwwwwwwr",
+    "rwwwwwwwwwr",
+    "rrrrrrrrrrr",
+    ".rrrrrrrrr.",
+    "..rrrrrrr..",
+    "...rrrrr...",
+    ".....a.....",
+    ".....a.....",
+    ".....a....."
+   ]
+  },
+  {
+   "id": "door",
+   "description": "Wooden door",
+   "palette": {
+    "d": "#7d5529",
+    "k": "#1a1c2c",
+    "t": "#a8763e",
+    "y": "#f6c945"
+   },
+   "rows": [
+    "kkkkkkkkkk",
+    "kttttttttk",
+    "kttttttttk",
+    "kttddddttk",
+    "kttddddttk",
+    "kttddddttk",
+    "kttttttttk",
+    "kttttttttk",
+    "ktttttyytk",
+    "ktttttyytk",
+    "kttttttttk",
+    "kttddddttk",
+    "kttddddttk",
+    "kttddddttk",
+    "kttttttttk",
+    "kkkkkkkkkk"
+   ]
+  },
+  {
+   "id": "scroll",
+   "description": "Parchment scroll / document",
+   "palette": {
+    "k": "#6b5a3a",
+    "t": "#a8763e",
+    "w": "#fff4d6"
+   },
+   "rows": [
+    "tttttttttt",
+    "twwwwwwwwt",
+    ".wkkkkkkw.",
+    ".wwwwwwww.",
+    ".wkkkkkww.",
+    ".wwwwwwww.",
+    ".wkkkkkkw.",
+    ".wwwwwwww.",
+    ".wkkkkwww.",
+    ".wwwwwwww.",
+    "twwwwwwwwt",
+    "tttttttttt"
+   ]
+  },
+  {
+   "id": "magnifier",
+   "description": "Magnifying glass",
+   "palette": {
+    "k": "#1a1c2c",
+    "l": "#8fb8e8",
+    "w": "#f4f4f4"
+   },
+   "rows": [
+    "..kkkk....",
+    ".kllllk...",
+    "kllwlllk..",
+    "klwllllk..",
+    "kllllllk..",
+    "kllllllk..",
+    ".kllllk...",
+    "..kkkkkk..",
+    "......kkk.",
+    ".......kkk"
+   ]
+  },
+  {
+   "id": "chest",
+   "description": "Treasure chest",
+   "palette": {
+    "k": "#1a1c2c",
+    "t": "#a8763e",
+    "y": "#f6c945"
+   },
+   "rows": [
+    ".tttttttttt.",
+    "tyyttttttyyt",
+    "tttttttttttt",
+    "kkkkkyykkkkk",
+    "tttttyyttttt",
+    "tyyttttttyyt",
+    "tyyttttttyyt",
+    "tttttttttttt",
+    "tttttttttttt",
+    "kkkkkkkkkkkk"
+   ]
+  },
+  {
+   "id": "bucket",
+   "description": "Bucket",
+   "palette": {
+    "b": "#3b6fd6",
+    "k": "#1a1c2c"
+   },
+   "rows": [
+    "k........k",
+    ".k......k.",
+    "kkkkkkkkkk",
+    "kbbbbbbbbk",
+    "kbbbbbbbbk",
+    ".kbbbbbbk.",
+    ".kbbbbbbk.",
+    ".kbbbbbbk.",
+    "..kkkkkk.."
+   ]
+  },
+  {
+   "id": "chart",
+   "description": "Bar chart",
+   "palette": {
+    "b": "#3b6fd6",
+    "g": "#5fd38a",
+    "k": "#1a1c2c",
+    "r": "#e23b3b"
+   },
+   "rows": [
+    "k...........",
+    "k........gg.",
+    "k........gg.",
+    "k.....bb.gg.",
+    "k.....bb.gg.",
+    "k..rr.bb.gg.",
+    "k..rr.bb.gg.",
+    "k..rr.bb.gg.",
+    "kkkkkkkkkkkk"
+   ]
+  },
+  {
+   "id": "whiteboard",
+   "description": "Whiteboard with a diagram",
+   "palette": {
+    "b": "#3b6fd6",
+    "g": "#5fd38a",
+    "k": "#1a1c2c",
+    "r": "#e23b3b",
+    "w": "#f4f4f4"
+   },
+   "rows": [
+    "kkkkkkkkkkkkkkkk",
+    "kwwwwwwwwwwwwwwk",
+    "kwbbbwwwwwrrwwwk",
+    "kwbwbwwkkwrrwwwk",
+    "kwbbbkkwwwwwwwwk",
+    "kwwwwwwwkkwggwwk",
+    "kwwwwwwwwwkggwwk",
+    "kwwwwwwwwwwwwwwk",
+    "kkkkkkkkkkkkkkkk",
+    "..k..........k..",
+    "..k..........k.."
+   ]
+  },
+  {
+   "id": "phone",
+   "description": "Smartphone",
+   "palette": {
+    "a": "#8a8f9e",
+    "b": "#3b6fd6",
+    "g": "#5fd38a",
+    "k": "#1a1c2c",
+    "l": "#8fb8e8",
+    "r": "#e23b3b"
+   },
+   "rows": [
+    "kkkkkkk",
+    "klllllk",
+    "klllllk",
+    "klgglrk",
+    "klllllk",
+    "klbbllk",
+    "klllllk",
+    "klllllk",
+    "kkkkkkk",
+    "kkkakkk",
+    "kkkkkkk"
+   ]
+  },
+  {
+   "id": "calendar",
+   "description": "Calendar page",
+   "palette": {
+    "k": "#1a1c2c",
+    "r": "#e23b3b",
+    "w": "#f4f4f4"
+   },
+   "rows": [
+    ".k......k...",
+    "rrrrrrrrrrrr",
+    "rrrrrrrrrrrr",
+    "wwwwwwwwwwww",
+    "wkwkwkwkwkww",
+    "wwwwwwwwwwww",
+    "wkwkwrwkwkww",
+    "wwwwwwwwwwww",
+    "wkwkwkwkwwww",
+    "wwwwwwwwwwww"
+   ]
+  },
+  {
+   "id": "campfire",
+   "description": "Campfire",
+   "palette": {
+    "o": "#e08a2c",
+    "r": "#e23b3b",
+    "t": "#a8763e",
+    "y": "#f6c945"
+   },
+   "rows": [
+    "....r....",
+    "...rrr...",
+    "..rryrr..",
+    "..ryyyr..",
+    ".rryyyrr.",
+    ".ryyoyyr.",
+    "..ryyyr..",
+    "t.tttt.tt",
+    ".ttttttt.",
+    "tt.ttt.tt"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#0b0d1f">
+<title>Salesforce Reels</title>
+<meta name="description" content="Bite-sized, 16-bit pixel-art reels that make Salesforce knowledge stick. Swipe up for the next one.">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main id="feed" aria-label="Salesforce reels">
+  <div id="stage">
+    <canvas id="screen" width="180" height="320" aria-hidden="true"></canvas>
+    <a id="source" target="_blank" rel="noopener" hidden></a>
+    <ul id="sources" hidden></ul>
+    <div id="muted" aria-hidden="true" hidden>
+      <svg viewBox="0 0 12 12" width="24" height="24" shape-rendering="crispEdges"><path fill="#fff" d="M1 4h2v4H1zM3 3h1v6H3zM4 2h1v8H4zM5 1h1v10H5z"/><path fill="#ff5d6c" d="M7 4h1v1H7zM8 5h1v1H8zM9 6h1v1H9zM10 7h1v1h-1zM10 4h1v1h-1zM9 5h1v1H9zM8 6h1v1H8zM7 7h1v1H7z"/></svg>
+    </div>
+    <p id="caption" aria-live="off"></p>
+  </div>
+  <p id="status" role="status"></p>
+</main>
+<script src="engine.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

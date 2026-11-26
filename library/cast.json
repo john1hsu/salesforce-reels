@@ -1,0 +1,119 @@
+{
+ "characters": [
+  {
+   "id": "ada",
+   "name": "Ada",
+   "role": "Salesforce admin",
+   "personality": "Unflappable, dry, solves it with clicks before anyone finishes panicking. Never seen without her mug.",
+   "gags": [
+    "Fixes things with clicks while others are still writing code",
+    "Sips coffee instead of reacting"
+   ],
+   "kind": "human",
+   "hair": "bun",
+   "hairColor": "#2b1d16",
+   "skin": "#c98d62",
+   "shirt": "#3b82c4",
+   "pants": "#2d3550",
+   "accessories": [
+    "mug"
+   ]
+  },
+  {
+   "id": "dex",
+   "name": "Dex",
+   "role": "Developer",
+   "personality": "Brilliant and over-eager. Would rather write 300 lines of Apex than tick a checkbox, and learns limits the hard way.",
+   "gags": [
+    "Reaches for code when a setting would do",
+    "Trips a limit and gets whistled at by Gus"
+   ],
+   "kind": "human",
+   "hair": "spiky",
+   "hairColor": "#d98a2b",
+   "skin": "#f1c59b",
+   "shirt": "#3e9e5f",
+   "pants": "#3a3f52",
+   "accessories": [
+    "headset"
+   ]
+  },
+  {
+   "id": "archie",
+   "name": "Archie",
+   "role": "Architect",
+   "personality": "Calm and professorial. Draws a diagram for everything and answers most questions with 'it depends'.",
+   "gags": [
+    "Answers 'it depends'",
+    "Produces a whiteboard out of nowhere"
+   ],
+   "kind": "human",
+   "hair": "short",
+   "hairColor": "#9aa0ad",
+   "skin": "#8d5a3b",
+   "shirt": "#6b4fa3",
+   "pants": "#2a2c3a",
+   "accessories": [
+    "glasses",
+    "tie"
+   ],
+   "tie": "#f6c945"
+  },
+  {
+   "id": "penny",
+   "name": "Penny",
+   "role": "Business stakeholder",
+   "personality": "Cheerful, impatient, full of ideas. Wants everything by Friday and calls every request 'a quick one'.",
+   "gags": [
+    "Needs it by Friday",
+    "Calls a huge request 'just a quick one'"
+   ],
+   "kind": "human",
+   "hair": "long",
+   "hairColor": "#5a2d1a",
+   "skin": "#e8b48a",
+   "shirt": "#d6457a",
+   "pants": "#3b2f4a",
+   "accessories": [
+    "scarf"
+   ],
+   "scarf": "#f6c945"
+  },
+  {
+   "id": "bolt",
+   "name": "Bolt",
+   "role": "AI agent",
+   "personality": "A small helpful robot who takes every instruction completely literally and is proud of it.",
+   "gags": [
+    "Takes instructions literally",
+    "Announces what it is about to do before doing it"
+   ],
+   "kind": "robot",
+   "body": "#9aa7b8",
+   "eye": "#5ef0ff",
+   "trim": "#ffb000",
+   "accessories": []
+  },
+  {
+   "id": "gus",
+   "name": "Gus",
+   "role": "The Governor (limits referee)",
+   "personality": "A fair but relentless referee who appears the instant anyone crosses a platform limit. Blows the whistle, never explains twice.",
+   "gags": [
+    "Blows the whistle the moment a limit is hit",
+    "Appears from nowhere"
+   ],
+   "kind": "human",
+   "hair": "short",
+   "hairColor": "#1d1d28",
+   "skin": "#b97a52",
+   "shirt": "#f4f4f4",
+   "pants": "#1d1d28",
+   "accessories": [
+    "cap",
+    "whistle"
+   ],
+   "hat": "#1d1d28"
+  }
+ ]
+}

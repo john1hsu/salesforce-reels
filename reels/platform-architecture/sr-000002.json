@@ -1,0 +1,140 @@
+{
+ "id": "sr-000002",
+ "title": "Batch Apex does not share one set of limits",
+ "style": "myth",
+ "topics": [
+  "platform-architecture"
+ ],
+ "backdrop": "server-room",
+ "cast": [
+  "penny",
+  "ada"
+ ],
+ "myth": "A Batch Apex job gets a single set of governor limits for the whole run.",
+ "beats": [
+  {
+   "say": "Myth: a batch job gets one set of limits for the whole run.",
+   "sign": "MYTH",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 50,
+     "emote": "?"
+    }
+   ],
+   "props": [
+    {
+     "id": "box",
+     "x": 20,
+     "scale": 3
+    },
+    {
+     "id": "box",
+     "x": 80,
+     "scale": 3
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "Penny pictures fifty thousand records sharing a hundred queries. Panic.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 50,
+     "anim": "run",
+     "emote": "sweat"
+    }
+   ],
+   "props": [
+    {
+     "id": "box",
+     "x": 20,
+     "scale": 3,
+     "anim": "shake"
+    },
+    {
+     "id": "box",
+     "x": 80,
+     "scale": 3,
+     "anim": "shake"
+    },
+    {
+     "id": "box",
+     "x": 50,
+     "y": 25,
+     "scale": 3,
+     "anim": "drop"
+    }
+   ],
+   "fx": "shake",
+   "sfx": "error"
+  },
+  {
+   "say": "Fact: in Batch Apex, the limits reset for every execute batch.",
+   "sign": "FACT",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 30,
+     "emote": "!"
+    },
+    {
+     "id": "ada",
+     "x": 72,
+     "anim": "enter-right"
+    }
+   ],
+   "fx": "flash",
+   "sfx": "powerup"
+  },
+  {
+   "say": "Each chunk gets a fresh allowance. Ada already knew. Ada always knows.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 30,
+     "anim": "cheer"
+    },
+    {
+     "id": "ada",
+     "x": 72,
+     "flip": true,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "coin",
+     "x": 50,
+     "y": 35,
+     "scale": 4,
+     "anim": "spin"
+    }
+   ],
+   "fx": "sparkle",
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "In Batch Apex, governor limits reset for each execute batch.",
+   "source": "articles/platform-architecture/governor-limits.md",
+   "evidence": "the limits reset for each execute batch"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/platform-architecture/governor-limits.md",
+   "id": "kt:governor-limits",
+   "title": "Governor Limits",
+   "domain": "platform-architecture",
+   "release": "Winter '27",
+   "blob": "e782f2c498b1136ea90f5baed2344672e4e57cea"
+  }
+ ],
+ "source_commit": "3ea374f6fafb0d8f6a4bcd0233dfc6c97a73c70c",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}

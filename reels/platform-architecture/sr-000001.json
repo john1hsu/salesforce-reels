@@ -1,0 +1,152 @@
+{
+ "id": "sr-000001",
+ "title": "Query one hundred and one",
+ "style": "humor",
+ "topics": [
+  "platform-architecture"
+ ],
+ "backdrop": "office",
+ "cast": [
+  "dex",
+  "gus"
+ ],
+ "beats": [
+  {
+   "say": "Dex writes a query inside a loop. Bold move.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 35,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "desk",
+     "x": 68,
+     "scale": 4
+    },
+    {
+     "id": "computer",
+     "x": 68,
+     "y": 54,
+     "scale": 3
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "Query ninety-nine. Query one hundred.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 35,
+     "anim": "cheer"
+    }
+   ],
+   "props": [
+    {
+     "id": "desk",
+     "x": 68,
+     "scale": 4
+    },
+    {
+     "id": "computer",
+     "x": 68,
+     "y": 54,
+     "scale": 3
+    }
+   ],
+   "sign": "SOQL: 100",
+   "sfx": "coin"
+  },
+  {
+   "say": "Query one hundred and one.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 35,
+     "anim": "shake",
+     "emote": "sweat"
+    },
+    {
+     "id": "gus",
+     "x": 78,
+     "anim": "enter-right",
+     "emote": "!"
+    }
+   ],
+   "sign": "SOQL: 101",
+   "fx": "alarm",
+   "sfx": "error"
+  },
+  {
+   "say": "Synchronous Apex gets one hundred SOQL queries per transaction. Not one more.",
+   "speaker": "gus",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "sulk"
+    },
+    {
+     "id": "gus",
+     "x": 70,
+     "flip": true
+    }
+   ],
+   "props": [
+    {
+     "id": "stop",
+     "x": 50,
+     "y": 30,
+     "scale": 4,
+     "anim": "drop"
+    }
+   ]
+  },
+  {
+   "say": "And you can't catch that exception. Gus doesn't do appeals.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "faint"
+    },
+    {
+     "id": "gus",
+     "x": 70,
+     "flip": true,
+     "anim": "nod"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Synchronous Apex is limited to 100 SOQL queries per transaction.",
+   "source": "articles/platform-architecture/governor-limits.md",
+   "evidence": "SOQL queries: 100 / 200"
+  },
+  {
+   "claim": "Exceeding a governor limit throws an exception that code cannot catch.",
+   "source": "articles/platform-architecture/governor-limits.md",
+   "evidence": "throws a runtime exception that code cannot handle"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/platform-architecture/governor-limits.md",
+   "id": "kt:governor-limits",
+   "title": "Governor Limits",
+   "domain": "platform-architecture",
+   "release": "Winter '27",
+   "blob": "e782f2c498b1136ea90f5baed2344672e4e57cea"
+  }
+ ],
+ "source_commit": "3ea374f6fafb0d8f6a4bcd0233dfc6c97a73c70c",
+ "verified_release": "Winter '27",
+ "created": "2026-11-26",
+ "status": "active"
+}
