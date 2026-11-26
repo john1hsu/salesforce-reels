@@ -45,7 +45,7 @@
   var trail = [], hpos = -1;         // reels shown this session, for swiping back
   var cur = null;                    // {meta, reel, tl, beat, beatStart, start, watched, tapped, wordIdx}
   var sound = false;                 // always starts muted: browsers need a tap before speech
-  var raf = 0, lastTick = 0, speakToken = 0, sawBoundary = false;
+  var raf = 0, lastTick = 0, speakToken = 0, sawBoundary = false, keepAlive = null;
 
   /* ---------- scoring ---------- */
   function score(kind, key) { var s = state.scores[kind][key]; return s ? s.s : NEUTRAL; }
@@ -139,8 +139,13 @@
     var my = ++speakToken, c = cur, i = c.beat, text = c.reel.beats[i].say;
     sawBoundary = false;
     try {
-      synth.cancel();
+      // Safari drops an utterance queued straight after cancel(), so only cancel when something
+      // is actually playing, and then give it a moment before speaking.
+      var busy = synth.speaking || synth.pending;
+      if (busy) synth.cancel();
+      if (!voice) chooseVoice();                       // phones load their voices late
       var u = new SpeechSynthesisUtterance(text);
+      keepAlive = u;                                   // an unreferenced utterance can lose its end event
       if (voice) u.voice = voice;
       u.lang = (voice && voice.lang) || "en-US"; u.rate = 1.05; u.pitch = 1.0;
       u.onboundary = function (ev) {
@@ -151,11 +156,21 @@
       u.onend = function () { if (my === speakToken && cur === c && c.beat === i) c.spokenDone = performance.now(); };
       u.onerror = u.onend;
       c.spokenDone = 0; c.speaking = true;
-      synth.speak(u);
+      if (busy) setTimeout(function () { if (my === speakToken) synth.speak(u); }, 80);
+      else synth.speak(u);                             // first tap: must run inside the gesture
     } catch (e) { c.speaking = false; }
+  }
+  function unlockAudio() {                               // must run inside a tap
+    try { if (navigator.audioSession) navigator.audioSession.type = "playback"; } catch (e) { /* older browsers */ }
+    try {
+      if (!actx) { var AC = window.AudioContext || window.webkitAudioContext; if (AC) actx = new AC(); }
+      if (actx && actx.state !== "running") actx.resume();
+    } catch (e) { /* effects are optional */ }
+    try { if (synth && synth.paused) synth.resume(); } catch (e) { /* ignore */ }
   }
   function setSound(on) {
     sound = on; mutedEl.hidden = on;
+    if (on) unlockAudio();
     if (on) { if (cur) { startBeat(cur.beat, true); } }
     else { stopSpeech(); if (cur) cur.speaking = false; }
   }
