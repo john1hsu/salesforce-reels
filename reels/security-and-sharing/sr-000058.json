@@ -1,0 +1,146 @@
+{
+ "id": "sr-000058",
+ "title": "Keep the frame shut, invite one guest",
+ "style": "story",
+ "topics": [
+  "security-and-sharing"
+ ],
+ "backdrop": "city-night",
+ "cast": [
+  "dex",
+  "penny",
+  "archie"
+ ],
+ "beats": [
+  {
+   "say": "Dex's fix for Penny's embedded partner page: switch clickjack protection off.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "talk",
+     "emote": "idea"
+    },
+    {
+     "id": "penny",
+     "x": 70,
+     "flip": true
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "Archie winces. That opens a clickjacking path.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 60,
+     "anim": "shake",
+     "emote": "!"
+    }
+   ],
+   "props": [
+    {
+     "id": "door",
+     "x": 28,
+     "anim": "shake"
+    }
+   ],
+   "fx": "alarm",
+   "sfx": "error"
+  },
+  {
+   "say": "A hidden frame tricks you into clicks you never meant.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 40,
+     "emote": "sweat"
+    }
+   ],
+   "props": [
+    {
+     "id": "bug",
+     "x": 72,
+     "y": 50,
+     "anim": "bob"
+    }
+   ],
+   "fx": "dark",
+   "sfx": "whoosh"
+  },
+  {
+   "say": "Keep it on, and list the partner under Trusted Domains for Inline Frames.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 60,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "shield",
+     "x": 28,
+     "y": 45,
+     "anim": "grow"
+    }
+   ],
+   "sfx": "powerup"
+  },
+  {
+   "say": "One guest listed. Everyone else waits outside.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 30,
+     "anim": "cheer"
+    },
+    {
+     "id": "archie",
+     "x": 70,
+     "flip": true
+    }
+   ],
+   "props": [
+    {
+     "id": "door",
+     "x": 50
+    }
+   ],
+   "fx": "sparkle",
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Turning clickjack protection off to fix embedding opens a clickjacking path.",
+   "source": "articles/security-and-sharing/clickjack-protection.md",
+   "evidence": "trades a configuration fix for an open clickjacking path"
+  },
+  {
+   "claim": "Clickjacking makes the victim click something they never meant to click.",
+   "source": "articles/security-and-sharing/clickjack-protection.md",
+   "evidence": "so that the victim clicks something they never meant to click"
+  },
+  {
+   "claim": "Keep protection on and list framing domains under Trusted Domains for Inline Frames.",
+   "source": "articles/security-and-sharing/clickjack-protection.md",
+   "evidence": "keep protection on and list the framing domains under Trusted Domains for Inline Frames"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/security-and-sharing/clickjack-protection.md",
+   "id": "kt:clickjack-protection",
+   "title": "Clickjack Protection",
+   "domain": "security-and-sharing",
+   "release": "Winter '27",
+   "blob": "1984020251ce1968e15f2b572ebe6a6eaedbfbad"
+  }
+ ],
+ "source_commit": "ffd9e446d37ea9d4c35224a06aafd30f1f18c73b",
+ "verified_release": "Winter '27",
+ "created": "2026-11-27",
+ "status": "active"
+}

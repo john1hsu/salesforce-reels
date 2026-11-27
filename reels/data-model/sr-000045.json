@@ -1,0 +1,157 @@
+{
+ "id": "sr-000045",
+ "title": "Penny wanted a chef and got a menu",
+ "style": "humor",
+ "topics": [
+  "data-model"
+ ],
+ "backdrop": "kitchen",
+ "cast": [
+  "penny",
+  "bolt"
+ ],
+ "beats": [
+  {
+   "say": "Penny asks Bolt for a business process. A quick one to do her work.",
+   "speaker": "penny",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 30,
+     "anim": "talk",
+     "emote": "heart"
+    },
+    {
+     "id": "bolt",
+     "x": 72,
+     "flip": true
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "Bolt announces: building business process. It hands her a shorter menu.",
+   "speaker": "bolt",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 60,
+     "anim": "talk"
+    },
+    {
+     "id": "penny",
+     "x": 25,
+     "emote": "?"
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 42,
+     "y": 55,
+     "anim": "drop"
+    }
+   ],
+   "sfx": "boing"
+  },
+  {
+   "say": "Just the Stage values her team sees.",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 65,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 35,
+     "y": 50,
+     "scale": 5,
+     "anim": "pulse"
+    }
+   ],
+   "sign": "STAGE MENU"
+  },
+  {
+   "say": "It automates nothing, and arrives through a record type.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 40,
+     "anim": "sulk",
+     "emote": "..."
+    }
+   ],
+   "props": [
+    {
+     "id": "gear",
+     "x": 72,
+     "y": 45,
+     "anim": "spin"
+    },
+    {
+     "id": "stop",
+     "x": 72
+    }
+   ],
+   "sfx": "error"
+  },
+  {
+   "say": "Penny wanted a chef. She got a menu.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 30,
+     "anim": "shake"
+    },
+    {
+     "id": "bolt",
+     "x": 70,
+     "flip": true,
+     "anim": "cheer"
+    }
+   ],
+   "props": [
+    {
+     "id": "coffee",
+     "x": 50,
+     "y": 60
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "A business process automates nothing; it only constrains which lifecycle picklist values are offered.",
+   "source": "articles/data-model/business-processes.md",
+   "evidence": "a business process automates nothing, it only constrains which lifecycle values are offered"
+  },
+  {
+   "claim": "Sales processes filter the opportunity Stage picklist.",
+   "source": "articles/data-model/business-processes.md",
+   "evidence": "sales processes filter the opportunity Stage picklist"
+  },
+  {
+   "claim": "Each business process is assigned to a record type, which is how users get it.",
+   "source": "articles/data-model/business-processes.md",
+   "evidence": "each one is assigned to a record type"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/data-model/business-processes.md",
+   "id": "kt:business-processes",
+   "title": "Business Processes",
+   "domain": "data-model",
+   "release": "Winter '27",
+   "blob": "e5fec6fd9ed26e469672aaae3c9dabf619dbffac"
+  }
+ ],
+ "source_commit": "ffd9e446d37ea9d4c35224a06aafd30f1f18c73b",
+ "verified_release": "Winter '27",
+ "created": "2026-11-27",
+ "status": "active"
+}

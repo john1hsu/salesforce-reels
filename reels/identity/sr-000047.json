@@ -1,0 +1,150 @@
+{
+ "id": "sr-000047",
+ "title": "Data Not Available, said the keystore",
+ "style": "story",
+ "topics": [
+  "identity"
+ ],
+ "backdrop": "server-room",
+ "cast": [
+  "dex",
+  "ada"
+ ],
+ "beats": [
+  {
+   "say": "Dex imports a keystore of certificates. Salesforce answers: Data Not Available.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 35,
+     "anim": "shake",
+     "emote": "?"
+    }
+   ],
+   "props": [
+    {
+     "id": "key",
+     "x": 72,
+     "y": 50,
+     "anim": "bob"
+    }
+   ],
+   "sign": "DATA NOT AVAILABLE",
+   "fx": "flash",
+   "sfx": "error"
+  },
+  {
+   "say": "He rebuilds the file. Renames everything. Same vague error.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 40,
+     "anim": "sulk",
+     "emote": "anger"
+    }
+   ],
+   "props": [
+    {
+     "id": "computer",
+     "x": 72,
+     "anim": "shake"
+    }
+   ],
+   "fx": "shake",
+   "sfx": "error"
+  },
+  {
+   "say": "Ada wanders in, sips, and enables Identity Provider.",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 60,
+     "anim": "enter-right"
+    },
+    {
+     "id": "dex",
+     "x": 25,
+     "emote": "..."
+    }
+   ],
+   "props": [
+    {
+     "id": "coffee",
+     "x": 80,
+     "y": 55
+    }
+   ],
+   "sfx": "powerup"
+  },
+  {
+   "say": "Keystore import needs Identity Provider switched on first. Now it sails through.",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 60,
+     "anim": "nod"
+    },
+    {
+     "id": "dex",
+     "x": 25,
+     "anim": "cheer"
+    }
+   ],
+   "props": [
+    {
+     "id": "lock",
+     "x": 45,
+     "y": 40,
+     "anim": "spin"
+    }
+   ],
+   "fx": "sparkle",
+   "sfx": "coin"
+  },
+  {
+   "say": "The error was vague. The fix was one setting.",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 50,
+     "anim": "idle"
+    }
+   ],
+   "props": [
+    {
+     "id": "coffee",
+     "x": 70,
+     "y": 55,
+     "anim": "bob"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Import from Keystore fails with a vague Data Not Available error when Identity Provider is not enabled.",
+   "source": "articles/identity/certificate-and-key-management.md",
+   "evidence": "fails with a vague \"Data Not Available\" error when Identity Provider is not enabled"
+  },
+  {
+   "claim": "Enabling Identity Provider first resolves the keystore import error.",
+   "source": "articles/identity/certificate-and-key-management.md",
+   "evidence": "enabling it first resolves the error"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/identity/certificate-and-key-management.md",
+   "id": "kt:certificate-and-key-management",
+   "title": "Certificate and Key Management",
+   "domain": "identity",
+   "release": "Winter '27",
+   "blob": "e2d40d4ad729ada32560f84edad7d6452210e4bf"
+  }
+ ],
+ "source_commit": "ffd9e446d37ea9d4c35224a06aafd30f1f18c73b",
+ "verified_release": "Winter '27",
+ "created": "2026-11-27",
+ "status": "active"
+}

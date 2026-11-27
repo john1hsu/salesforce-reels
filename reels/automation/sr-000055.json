@@ -1,0 +1,136 @@
+{
+ "id": "sr-000055",
+ "title": "Happy holidays to every outage",
+ "style": "fact",
+ "topics": [
+  "automation"
+ ],
+ "backdrop": "mountain",
+ "cast": [
+  "penny",
+  "dex",
+  "ada"
+ ],
+ "beats": [
+  {
+   "say": "Penny wants a cheerful holiday auto-reply. Dex builds a whole second case auto-response rule.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 25,
+     "anim": "cheer",
+     "emote": "heart"
+    },
+    {
+     "id": "dex",
+     "x": 70,
+     "flip": true,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "envelope",
+     "x": 48,
+     "y": 40,
+     "anim": "bob"
+    }
+   ],
+   "fx": "snow",
+   "sfx": "blip"
+  },
+  {
+   "say": "He activates it. The original rule quietly switches off.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 40,
+     "anim": "shake",
+     "emote": "!"
+    }
+   ],
+   "props": [
+    {
+     "id": "gear",
+     "x": 72,
+     "y": 45,
+     "anim": "spin"
+    }
+   ],
+   "sign": "1 ACTIVE RULE",
+   "fx": "flash",
+   "sfx": "error"
+  },
+  {
+   "say": "Only one auto-response rule per object can be active. Variations go in entries of that one rule.",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 60,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 28,
+     "y": 45,
+     "anim": "pulse"
+    }
+   ],
+   "sfx": "powerup"
+  },
+  {
+   "say": "Meanwhile every outage report gets: happy holidays!",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 35,
+     "anim": "faint",
+     "emote": "sweat"
+    }
+   ],
+   "props": [
+    {
+     "id": "envelope",
+     "x": 70,
+     "y": 40,
+     "anim": "fly-left"
+    }
+   ],
+   "fx": "snow",
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Only one auto-response rule can be active per object at a time.",
+   "source": "articles/automation/auto-response-rules.md",
+   "evidence": "Only one auto-response rule can be active per object at a time"
+  },
+  {
+   "claim": "Activating an auto-response rule deactivates the one that was active before.",
+   "source": "articles/automation/auto-response-rules.md",
+   "evidence": "activating a rule deactivates the one that was active before"
+  },
+  {
+   "claim": "Variations belong in entries of a single rule, not in separate rules.",
+   "source": "articles/automation/auto-response-rules.md",
+   "evidence": "Variations therefore belong in entries of a single rule, not in separate rules"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/automation/auto-response-rules.md",
+   "id": "kt:auto-response-rules",
+   "title": "Auto-Response Rules",
+   "domain": "automation",
+   "release": "Winter '27",
+   "blob": "0a16165610f5ffede5c7ecdfd4f08c2fc1de27cf"
+  }
+ ],
+ "source_commit": "ffd9e446d37ea9d4c35224a06aafd30f1f18c73b",
+ "verified_release": "Winter '27",
+ "created": "2026-11-27",
+ "status": "active"
+}

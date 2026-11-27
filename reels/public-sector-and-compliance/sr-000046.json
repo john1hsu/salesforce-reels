@@ -1,0 +1,117 @@
+{
+ "id": "sr-000046",
+ "title": "B2B contacts count under California privacy",
+ "style": "fact",
+ "topics": [
+  "public-sector-and-compliance"
+ ],
+ "backdrop": "beach",
+ "cast": [
+  "penny",
+  "archie"
+ ],
+ "beats": [
+  {
+   "say": "Penny asks: do business contacts count under California's privacy law? Archie starts: it depends...",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 28,
+     "anim": "talk"
+    },
+    {
+     "id": "archie",
+     "x": 72,
+     "flip": true,
+     "emote": "idea"
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "Not today. The employee and B2B exemptions expired at the end of 2022.",
+   "speaker": "archie",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 65,
+     "flip": true,
+     "anim": "talk"
+    }
+   ],
+   "props": [
+    {
+     "id": "calendar",
+     "x": 30,
+     "y": 50,
+     "anim": "drop"
+    }
+   ],
+   "sign": "EXEMPT? NOPE",
+   "fx": "flash",
+   "sfx": "zap"
+  },
+  {
+   "say": "So classic CRM data, employees and business contacts, is in scope.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 65,
+     "flip": true,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "database",
+     "x": 30,
+     "anim": "pulse"
+    }
+   ],
+   "sfx": "powerup"
+  },
+  {
+   "say": "Archie looks almost sad. No 'it depends' today.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 50,
+     "anim": "sulk",
+     "emote": "..."
+    },
+    {
+     "id": "penny",
+     "x": 20,
+     "anim": "cheer"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "The temporary CCPA exemptions for employee and business-to-business data expired on December 31, 2022.",
+   "source": "articles/public-sector-and-compliance/ccpa-and-cpra.md",
+   "evidence": "The temporary exemptions for employee and business-to-business data expired on December 31, 2022"
+  },
+  {
+   "claim": "Personal information about employees and B2B contacts, typical CRM data, is now in scope.",
+   "source": "articles/public-sector-and-compliance/ccpa-and-cpra.md",
+   "evidence": "personal information about employees and B2B contacts, typical CRM data, is now in scope"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/public-sector-and-compliance/ccpa-and-cpra.md",
+   "id": "kt:ccpa-and-cpra",
+   "title": "CCPA and CPRA",
+   "domain": "public-sector-and-compliance",
+   "release": "Winter '27",
+   "blob": "31739c09096f02ceb5f19a17f2e72accf23ffa6e"
+  }
+ ],
+ "source_commit": "ffd9e446d37ea9d4c35224a06aafd30f1f18c73b",
+ "verified_release": "Winter '27",
+ "created": "2026-11-27",
+ "status": "active"
+}

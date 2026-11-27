@@ -1,0 +1,130 @@
+{
+ "id": "sr-000050",
+ "title": "The disappearing fields act",
+ "style": "humor",
+ "topics": [
+  "development"
+ ],
+ "backdrop": "stage",
+ "cast": [
+  "dex",
+  "ada"
+ ],
+ "beats": [
+  {
+   "say": "Dex presents an Apex class that lets a flow carry a whole API payload. No records needed!",
+   "speaker": "dex",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 40,
+     "anim": "cheer",
+     "emote": "star"
+    }
+   ],
+   "props": [
+    {
+     "id": "box",
+     "x": 72,
+     "anim": "drop"
+    }
+   ],
+   "fx": "sparkle",
+   "sfx": "fanfare"
+  },
+  {
+   "say": "Ada opens the flow. Half the fields have vanished.",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 60,
+     "emote": "..."
+    },
+    {
+     "id": "dex",
+     "x": 25
+    }
+   ],
+   "props": [
+    {
+     "id": "box",
+     "x": 80,
+     "anim": "shake"
+    }
+   ],
+   "fx": "dark",
+   "sfx": "whoosh"
+  },
+  {
+   "say": "The secret: a property without Aura Enabled is invisible to Flow.",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 60,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "magnifier",
+     "x": 30,
+     "y": 45,
+     "anim": "bob"
+    }
+   ],
+   "sign": "@AuraEnabled",
+   "sfx": "zap"
+  },
+  {
+   "say": "Dex calls it a disappearing act. Ada calls it a missing annotation.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "sulk",
+     "emote": "sweat"
+    },
+    {
+     "id": "ada",
+     "x": 70,
+     "flip": true,
+     "anim": "idle"
+    }
+   ],
+   "props": [
+    {
+     "id": "coffee",
+     "x": 85,
+     "y": 55
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "An Apex-defined type lets declarative automation work with data that has no record behind it.",
+   "source": "articles/development/apex-defined-types.md",
+   "evidence": "lets declarative automation work with data that has no record behind it"
+  },
+  {
+   "claim": "A property without @AuraEnabled is invisible to Flow and to screen components.",
+   "source": "articles/development/apex-defined-types.md",
+   "evidence": "A property without @AuraEnabled is invisible to Flow"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/development/apex-defined-types.md",
+   "id": "kt:apex-defined-types",
+   "title": "Apex-Defined Types",
+   "domain": "development",
+   "release": "Winter '27",
+   "blob": "d6a3b20704ba0391c39437c034e1ca805296b80e"
+  }
+ ],
+ "source_commit": "ffd9e446d37ea9d4c35224a06aafd30f1f18c73b",
+ "verified_release": "Winter '27",
+ "created": "2026-11-27",
+ "status": "active"
+}

@@ -1,0 +1,144 @@
+{
+ "id": "sr-000059",
+ "title": "COBIT is not just the IT department's homework",
+ "style": "myth",
+ "topics": [
+  "public-sector-and-compliance"
+ ],
+ "backdrop": "stadium",
+ "cast": [
+  "penny",
+  "archie"
+ ],
+ "myth": "COBIT only covers the IT department.",
+ "beats": [
+  {
+   "say": "Penny hears COBIT and tosses it to the IT department. Their homework, right?",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 30,
+     "anim": "talk"
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 72,
+     "y": 45,
+     "anim": "fly-right"
+    }
+   ],
+   "sign": "MYTH",
+   "sfx": "whoosh"
+  },
+  {
+   "say": "Archie catches it. COBIT covers all of the enterprise's technology, not just IT.",
+   "speaker": "archie",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 68,
+     "flip": true,
+     "anim": "jump"
+    },
+    {
+     "id": "penny",
+     "x": 25,
+     "emote": "!"
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 50,
+     "y": 40
+    }
+   ],
+   "sign": "BUSTED",
+   "fx": "flash",
+   "sfx": "zap"
+  },
+  {
+   "say": "It splits governance from management, with forty objectives across five domains.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 62,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "whiteboard",
+     "x": 30,
+     "scale": 4,
+     "anim": "drop"
+    }
+   ],
+   "sign": "40 OBJECTIVES",
+   "sfx": "powerup"
+  },
+  {
+   "say": "And a Salesforce org is technology too. Penny's on the team now.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 35,
+     "anim": "cheer",
+     "emote": "sweat"
+    },
+    {
+     "id": "archie",
+     "x": 70,
+     "flip": true
+    }
+   ],
+   "props": [
+    {
+     "id": "trophy",
+     "x": 52,
+     "y": 50
+    }
+   ],
+   "fx": "confetti",
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "COBIT covers all of the enterprise's technology, not just the IT department.",
+   "source": "articles/public-sector-and-compliance/cobit.md",
+   "evidence": "covers all of the enterprise's technology, not just the IT department"
+  },
+  {
+   "claim": "COBIT's core model splits governance from management.",
+   "source": "articles/public-sector-and-compliance/cobit.md",
+   "evidence": "The core model splits governance from management"
+  },
+  {
+   "claim": "COBIT organizes the work into 40 governance and management objectives across five domains.",
+   "source": "articles/public-sector-and-compliance/cobit.md",
+   "evidence": "40 governance and management objectives across five domains"
+  },
+  {
+   "claim": "A Salesforce org falls under the same enterprise I&T governance that COBIT describes.",
+   "source": "articles/public-sector-and-compliance/cobit.md",
+   "evidence": "A Salesforce org falls under the same enterprise I&T governance that COBIT describes"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/public-sector-and-compliance/cobit.md",
+   "id": "kt:cobit",
+   "title": "COBIT",
+   "domain": "public-sector-and-compliance",
+   "release": "Winter '27",
+   "blob": "8d1572c7b07ee2376416e5de800dd045d539e8bc"
+  }
+ ],
+ "source_commit": "ffd9e446d37ea9d4c35224a06aafd30f1f18c73b",
+ "verified_release": "Winter '27",
+ "created": "2026-11-27",
+ "status": "active"
+}

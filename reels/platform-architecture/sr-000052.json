@@ -1,0 +1,153 @@
+{
+ "id": "sr-000052",
+ "title": "Version twenty-five rides into a ghost town",
+ "style": "humor",
+ "topics": [
+  "platform-architecture"
+ ],
+ "backdrop": "wild-west",
+ "cast": [
+  "dex",
+  "ada"
+ ],
+ "beats": [
+  {
+   "say": "Dex's old integration rides into town, still calling API version twenty-five.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 25,
+     "anim": "enter-left",
+     "emote": "star"
+    }
+   ],
+   "props": [
+    {
+     "id": "cactus",
+     "x": 80
+    }
+   ],
+   "sign": "API v25",
+   "sfx": "whoosh"
+  },
+  {
+   "say": "Ghost town. Versions twenty-one through thirty retired in Summer twenty-five.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 35,
+     "emote": "?"
+    }
+   ],
+   "props": [
+    {
+     "id": "door",
+     "x": 72,
+     "anim": "shake"
+    }
+   ],
+   "sign": "RETIRED",
+   "fx": "dark",
+   "sfx": "boing"
+  },
+  {
+   "say": "No quiet fallback. REST answers four-ten. Gone.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 35,
+     "anim": "faint"
+    }
+   ],
+   "props": [
+    {
+     "id": "stop",
+     "x": 70,
+     "anim": "drop"
+    }
+   ],
+   "sign": "410 GONE",
+   "fx": "shake",
+   "sfx": "error"
+  },
+  {
+   "say": "Every API version gets at least three years of support.",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 60,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "calendar",
+     "x": 30,
+     "y": 45,
+     "anim": "pulse"
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "Dex had three years. He spent them writing Apex.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "sulk",
+     "emote": "sweat"
+    },
+    {
+     "id": "ada",
+     "x": 70,
+     "flip": true
+    }
+   ],
+   "props": [
+    {
+     "id": "coffee",
+     "x": 85,
+     "y": 55
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "API versions 21.0 through 30.0 have been retired since Summer '25.",
+   "source": "articles/platform-architecture/api-version-lifecycle.md",
+   "evidence": "21.0 through 30.0 as retired since Summer '25"
+  },
+  {
+   "claim": "Calls to a retired version fail with errors rather than silently falling back.",
+   "source": "articles/platform-architecture/api-version-lifecycle.md",
+   "evidence": "fail with version-specific errors rather than silently falling back"
+  },
+  {
+   "claim": "REST returns HTTP 410 GONE for a retired API version.",
+   "source": "articles/platform-architecture/api-version-lifecycle.md",
+   "evidence": "REST returns HTTP 410 GONE"
+  },
+  {
+   "claim": "Salesforce supports every API version for at least three years after it first ships.",
+   "source": "articles/platform-architecture/api-version-lifecycle.md",
+   "evidence": "support every API version for at least three years after it first ships"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/platform-architecture/api-version-lifecycle.md",
+   "id": "kt:api-version-lifecycle",
+   "title": "API Version Lifecycle",
+   "domain": "platform-architecture",
+   "release": "Winter '27",
+   "blob": "30868fd9b6624095b79d7a557f495eb99057f004"
+  }
+ ],
+ "source_commit": "ffd9e446d37ea9d4c35224a06aafd30f1f18c73b",
+ "verified_release": "Winter '27",
+ "created": "2026-11-27",
+ "status": "active"
+}

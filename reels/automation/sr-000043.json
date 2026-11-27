@@ -1,0 +1,160 @@
+{
+ "id": "sr-000043",
+ "title": "The mailroom where order is the logic",
+ "style": "story",
+ "topics": [
+  "automation"
+ ],
+ "backdrop": "mailroom",
+ "cast": [
+  "ada",
+  "dex"
+ ],
+ "beats": [
+  {
+   "say": "Ada sorts new leads like mail: each drops into the first matching slot.",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 30,
+     "anim": "idle"
+    }
+   ],
+   "props": [
+    {
+     "id": "envelope",
+     "x": 70,
+     "y": 55,
+     "anim": "fly-left"
+    }
+   ],
+   "sign": "1ST MATCH WINS",
+   "sfx": "blip"
+  },
+  {
+   "say": "Dex adds a top entry: any lead at all.",
+   "speaker": "dex",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 65,
+     "anim": "enter-right",
+     "emote": "idea"
+    },
+    {
+     "id": "ada",
+     "x": 25
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 45,
+     "y": 50,
+     "anim": "drop"
+    }
+   ],
+   "sfx": "boing"
+  },
+  {
+   "say": "Every lead lands in his slot. Evaluation stops at the first match.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 60,
+     "anim": "faint",
+     "emote": "sweat"
+    }
+   ],
+   "props": [
+    {
+     "id": "envelope",
+     "x": 30,
+     "y": 40,
+     "anim": "fly-right"
+    },
+    {
+     "id": "envelope",
+     "x": 50,
+     "y": 30,
+     "anim": "fly-right"
+    },
+    {
+     "id": "box",
+     "x": 80
+    }
+   ],
+   "fx": "shake",
+   "sfx": "error"
+  },
+  {
+   "say": "Ada sips, then reorders: specific first, catch-all last.",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 40,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "coffee",
+     "x": 65,
+     "y": 60,
+     "anim": "bob"
+    }
+   ],
+   "sfx": "powerup"
+  },
+  {
+   "say": "In assignment rules, order is the logic.",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 35,
+     "anim": "cheer"
+    },
+    {
+     "id": "dex",
+     "x": 70,
+     "flip": true,
+     "anim": "nod"
+    }
+   ],
+   "sign": "ORDER = LOGIC",
+   "fx": "sparkle",
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Assignment rule entries are evaluated in sort order, and evaluation stops at the first match.",
+   "source": "articles/automation/assignment-rules.md",
+   "evidence": "Evaluation stops at the first match, so the order is the logic"
+  },
+  {
+   "claim": "Best practice is to put specific entries first and finish with a catch-all entry with no criteria.",
+   "source": "articles/automation/assignment-rules.md",
+   "evidence": "Put specific entries first and finish with a catch-all entry"
+  },
+  {
+   "claim": "Assignment rules set the owner of new or updated leads and cases.",
+   "source": "articles/automation/assignment-rules.md",
+   "evidence": "Declarative rules that set the owner of new or updated leads and cases"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/automation/assignment-rules.md",
+   "id": "kt:assignment-rules",
+   "title": "Assignment Rules",
+   "domain": "automation",
+   "release": "Winter '27",
+   "blob": "d5ec5dbb14dec7a218b9588f0af47bdd52ab5fd7"
+  }
+ ],
+ "source_commit": "ffd9e446d37ea9d4c35224a06aafd30f1f18c73b",
+ "verified_release": "Winter '27",
+ "created": "2026-11-27",
+ "status": "active"
+}

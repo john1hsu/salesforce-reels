@@ -1,0 +1,159 @@
+{
+ "id": "sr-000048",
+ "title": "Classic Encryption cannot retrofit a field",
+ "style": "myth",
+ "topics": [
+  "security-and-sharing"
+ ],
+ "backdrop": "classroom",
+ "cast": [
+  "dex",
+  "archie",
+  "gus"
+ ],
+ "myth": "Classic Encryption can be switched on for an existing field.",
+ "beats": [
+  {
+   "say": "Dex plans to encrypt the existing Notes field with Classic Encryption.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "talk",
+     "emote": "star"
+    }
+   ],
+   "props": [
+    {
+     "id": "lock",
+     "x": 72,
+     "y": 50,
+     "anim": "bob"
+    }
+   ],
+   "sign": "MYTH",
+   "sfx": "blip"
+  },
+  {
+   "say": "Archie's diagram says no: existing fields can't be encrypted.",
+   "speaker": "archie",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 70,
+     "flip": true,
+     "anim": "talk"
+    },
+    {
+     "id": "dex",
+     "x": 22,
+     "emote": "!"
+    }
+   ],
+   "props": [
+    {
+     "id": "whiteboard",
+     "x": 45,
+     "scale": 4,
+     "anim": "drop"
+    }
+   ],
+   "sign": "BUSTED",
+   "fx": "flash",
+   "sfx": "zap"
+  },
+  {
+   "say": "Make a new Text Encrypted field and migrate the data.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 65,
+     "flip": true,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "box",
+     "x": 25,
+     "anim": "fly-right"
+    },
+    {
+     "id": "lock",
+     "x": 45,
+     "y": 50
+    }
+   ],
+   "sfx": "whoosh"
+  },
+  {
+   "say": "And it holds at most one hundred seventy-five characters.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 65,
+     "flip": true
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 30,
+     "y": 50,
+     "anim": "pulse"
+    }
+   ],
+   "sign": "MAX 175 CHARS"
+  },
+  {
+   "say": "Dex pastes in a novel. Gus blows the whistle.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 25,
+     "anim": "faint",
+     "emote": "sweat"
+    },
+    {
+     "id": "gus",
+     "x": 70,
+     "flip": true,
+     "anim": "enter-right"
+    }
+   ],
+   "fx": "alarm",
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "You cannot switch on Classic Encryption for an existing field.",
+   "source": "articles/security-and-sharing/classic-encryption.md",
+   "evidence": "You cannot switch on encryption for an existing field"
+  },
+  {
+   "claim": "Instead you create a new Text (Encrypted) field and migrate the data.",
+   "source": "articles/security-and-sharing/classic-encryption.md",
+   "evidence": "create a new Text (Encrypted) field and migrate the data"
+  },
+  {
+   "claim": "A Text (Encrypted) field has a maximum length of 175 characters.",
+   "source": "articles/security-and-sharing/classic-encryption.md",
+   "evidence": "with a maximum length of 175 characters"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/security-and-sharing/classic-encryption.md",
+   "id": "kt:classic-encryption",
+   "title": "Classic Encryption",
+   "domain": "security-and-sharing",
+   "release": "Winter '27",
+   "blob": "a4202a6d7d410332586aba6d5b61414d8bd353f6"
+  }
+ ],
+ "source_commit": "ffd9e446d37ea9d4c35224a06aafd30f1f18c73b",
+ "verified_release": "Winter '27",
+ "created": "2026-11-27",
+ "status": "active"
+}

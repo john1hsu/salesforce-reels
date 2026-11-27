@@ -1,0 +1,145 @@
+{
+ "id": "sr-000057",
+ "title": "A checkbox default is not a seatbelt",
+ "style": "myth",
+ "topics": [
+  "data-model"
+ ],
+ "backdrop": "office",
+ "cast": [
+  "dex",
+  "ada",
+  "penny"
+ ],
+ "myth": "Setting a checkbox default to Checked keeps it checked.",
+ "beats": [
+  {
+   "say": "Dex sets the Agreed checkbox default to Checked. Now it's always checked!",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "cheer",
+     "emote": "star"
+    }
+   ],
+   "props": [
+    {
+     "id": "computer",
+     "x": 72
+    }
+   ],
+   "sign": "MYTH",
+   "sfx": "blip"
+  },
+  {
+   "say": "Ada sips. A default is applied once, when the record is created.",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 65,
+     "flip": true,
+     "anim": "nod"
+    },
+    {
+     "id": "dex",
+     "x": 25,
+     "emote": "?"
+    }
+   ],
+   "props": [
+    {
+     "id": "coffee",
+     "x": 82,
+     "y": 55
+    }
+   ],
+   "sign": "BUSTED",
+   "fx": "flash",
+   "sfx": "zap"
+  },
+  {
+   "say": "After that, Penny unticks it in one click.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 50,
+     "anim": "jump"
+    }
+   ],
+   "props": [
+    {
+     "id": "computer",
+     "x": 78
+    }
+   ],
+   "sfx": "boing"
+  },
+  {
+   "say": "A must-be-checked rule belongs in a validation rule.",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 55,
+     "anim": "talk"
+    }
+   ],
+   "props": [
+    {
+     "id": "stop",
+     "x": 25,
+     "anim": "drop"
+    }
+   ],
+   "sfx": "powerup"
+  },
+  {
+   "say": "A default is a starting state, not a seatbelt.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "sulk",
+     "emote": "sweat"
+    },
+    {
+     "id": "ada",
+     "x": 70,
+     "flip": true
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "A checkbox default value is applied once, when the record is created.",
+   "source": "articles/data-model/checkbox-fields.md",
+   "evidence": "that choice is applied once, when the record is created"
+  },
+  {
+   "claim": "A default is a starting state and not a constraint.",
+   "source": "articles/data-model/checkbox-fields.md",
+   "evidence": "a default is a starting state and not a constraint"
+  },
+  {
+   "claim": "A must-be-checked rule belongs in a validation rule, not in the default value.",
+   "source": "articles/data-model/checkbox-fields.md",
+   "evidence": "belongs in a validation rule, not in the default value"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/data-model/checkbox-fields.md",
+   "id": "kt:checkbox-fields",
+   "title": "Checkbox Fields",
+   "domain": "data-model",
+   "release": "Winter '27",
+   "blob": "d387082ae082ae392b9aeba227e71eda254f4ef7"
+  }
+ ],
+ "source_commit": "ffd9e446d37ea9d4c35224a06aafd30f1f18c73b",
+ "verified_release": "Winter '27",
+ "created": "2026-11-27",
+ "status": "active"
+}

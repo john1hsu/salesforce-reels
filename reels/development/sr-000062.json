@@ -1,0 +1,133 @@
+{
+ "id": "sr-000062",
+ "title": "Unit of Work ships the mail once",
+ "style": "fact",
+ "topics": [
+  "development"
+ ],
+ "backdrop": "mailroom",
+ "cast": [
+  "dex",
+  "ada"
+ ],
+ "beats": [
+  {
+   "say": "Dex mails every record the moment it's ready. One trip per letter.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 50,
+     "anim": "run",
+     "emote": "sweat"
+    }
+   ],
+   "props": [
+    {
+     "id": "envelope",
+     "x": 20,
+     "y": 45,
+     "anim": "fly-right"
+    }
+   ],
+   "sfx": "whoosh"
+  },
+  {
+   "say": "Unit of Work collects instead: register new and changed records as you go.",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 30,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "box",
+     "x": 68,
+     "anim": "drop"
+    },
+    {
+     "id": "envelope",
+     "x": 68,
+     "y": 45,
+     "anim": "drop"
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "Then one commit work call writes it all in bulk, inside a savepoint.",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 30,
+     "anim": "cheer"
+    }
+   ],
+   "props": [
+    {
+     "id": "box",
+     "x": 68,
+     "anim": "fly-right"
+    }
+   ],
+   "sign": "commitWork x1",
+   "fx": "sparkle",
+   "sfx": "powerup"
+  },
+  {
+   "say": "Call it once per service method. Dex retires his running shoes.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 40,
+     "anim": "sulk"
+    },
+    {
+     "id": "ada",
+     "x": 72,
+     "flip": true
+    }
+   ],
+   "props": [
+    {
+     "id": "coffee",
+     "x": 85,
+     "y": 55
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "With Unit of Work, code registers new and changed records during processing.",
+   "source": "articles/development/apex-enterprise-patterns.md",
+   "evidence": "Code registers new and changed records during processing"
+  },
+  {
+   "claim": "A single commitWork call performs the DML in bulk inside a savepoint.",
+   "source": "articles/development/apex-enterprise-patterns.md",
+   "evidence": "a single commitWork call performs the DML in bulk inside a savepoint"
+  },
+  {
+   "claim": "commitWork should be called only once in a service method.",
+   "source": "articles/development/apex-enterprise-patterns.md",
+   "evidence": "Call commitWork only once in a service method"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/development/apex-enterprise-patterns.md",
+   "id": "kt:apex-enterprise-patterns",
+   "title": "Apex Enterprise Patterns",
+   "domain": "development",
+   "release": "Winter '27",
+   "blob": "fc054e1ea2c1d487bd0892974bf0d5a413eacf51"
+  }
+ ],
+ "source_commit": "ffd9e446d37ea9d4c35224a06aafd30f1f18c73b",
+ "verified_release": "Winter '27",
+ "created": "2026-11-27",
+ "status": "active"
+}

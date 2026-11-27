@@ -1,0 +1,132 @@
+{
+ "id": "sr-000056",
+ "title": "Nothing to phish on a smart card",
+ "style": "fact",
+ "topics": [
+  "identity"
+ ],
+ "backdrop": "city-night",
+ "cast": [
+  "penny",
+  "archie",
+  "bolt"
+ ],
+ "beats": [
+  {
+   "say": "Penny taps her smart card and she's logged in. Nothing typed.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 35,
+     "anim": "cheer"
+    }
+   ],
+   "props": [
+    {
+     "id": "key",
+     "x": 70,
+     "y": 45,
+     "anim": "pulse"
+    }
+   ],
+   "sfx": "coin"
+  },
+  {
+   "say": "Certificate-based authentication: you prove who you are with a certificate.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 65,
+     "flip": true,
+     "anim": "talk"
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 30,
+     "y": 45,
+     "anim": "bob"
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "The private key stays in hardware, and there's no typed secret to steal.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 65,
+     "flip": true,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "lock",
+     "x": 30,
+     "y": 45,
+     "anim": "grow"
+    }
+   ],
+   "sign": "NO SECRET",
+   "sfx": "powerup"
+  },
+  {
+   "say": "So it counts as phishing-resistant MFA. Bolt asks for her password. Nothing to give.",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 70,
+     "flip": true,
+     "emote": "?"
+    },
+    {
+     "id": "penny",
+     "x": 30,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "shield",
+     "x": 50,
+     "y": 40,
+     "anim": "bob"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Certificate-based authentication lets an org authenticate individual users with digital certificates.",
+   "source": "articles/identity/certificate-based-authentication.md",
+   "evidence": "authenticate individual users with digital certificates"
+  },
+  {
+   "claim": "With certificate-based authentication there is no typed secret and the key stays in hardware.",
+   "source": "articles/identity/certificate-based-authentication.md",
+   "evidence": "Because there is no typed secret and the key stays in hardware"
+  },
+  {
+   "claim": "Salesforce counts certificate-based authentication among the phishing-resistant forms of MFA.",
+   "source": "articles/identity/certificate-based-authentication.md",
+   "evidence": "Salesforce counts this among the phishing-resistant forms of MFA"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/identity/certificate-based-authentication.md",
+   "id": "kt:certificate-based-authentication",
+   "title": "Certificate-Based Authentication",
+   "domain": "identity",
+   "release": "Winter '27",
+   "blob": "97fc0c5141164e5a70f255ef27b5a352ff945ae3"
+  }
+ ],
+ "source_commit": "ffd9e446d37ea9d4c35224a06aafd30f1f18c73b",
+ "verified_release": "Winter '27",
+ "created": "2026-11-27",
+ "status": "active"
+}

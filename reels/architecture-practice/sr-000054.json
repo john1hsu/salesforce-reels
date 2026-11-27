@@ -1,0 +1,150 @@
+{
+ "id": "sr-000054",
+ "title": "Which roadmap? It depends on the reader",
+ "style": "humor",
+ "topics": [
+  "architecture-practice"
+ ],
+ "backdrop": "mountain",
+ "cast": [
+  "archie",
+  "penny"
+ ],
+ "beats": [
+  {
+   "say": "Archie unveils his roadmap to Penny. Every component. Tiny print.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 65,
+     "flip": true,
+     "anim": "cheer"
+    },
+    {
+     "id": "penny",
+     "x": 25
+    }
+   ],
+   "props": [
+    {
+     "id": "whiteboard",
+     "x": 45,
+     "scale": 4,
+     "anim": "drop"
+    }
+   ],
+   "sfx": "fanfare"
+  },
+  {
+   "say": "Penny's eyes glaze over. What does the business get?",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 30,
+     "anim": "sulk",
+     "emote": "zzz"
+    }
+   ],
+   "props": [
+    {
+     "id": "whiteboard",
+     "x": 65,
+     "scale": 4
+    }
+   ],
+   "sfx": "boing"
+  },
+  {
+   "say": "Executives get a capability roadmap. Component roadmaps are for engineers.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 60,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "chart",
+     "x": 28,
+     "y": 45,
+     "anim": "grow"
+    }
+   ],
+   "sign": "MATCH AUDIENCE",
+   "sfx": "powerup"
+  },
+  {
+   "say": "Roughly twelve to twenty-four months. Not a five-year plan.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 60
+    }
+   ],
+   "props": [
+    {
+     "id": "calendar",
+     "x": 28,
+     "y": 45,
+     "anim": "pulse"
+    }
+   ],
+   "sign": "12-24 MONTHS"
+  },
+  {
+   "say": "Which roadmap? For once, it depends is exactly right.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 60,
+     "anim": "talk",
+     "emote": "star"
+    },
+    {
+     "id": "penny",
+     "x": 25,
+     "anim": "cheer"
+    }
+   ],
+   "fx": "confetti",
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Don't give executives a component roadmap or engineers a capability roadmap.",
+   "source": "articles/architecture-practice/architecture-roadmaps.md",
+   "evidence": "Don't give executives a component roadmap or engineers a capability roadmap"
+  },
+  {
+   "claim": "A capability roadmap tells executives which capabilities will be enabled in a timeframe.",
+   "source": "articles/architecture-practice/architecture-roadmaps.md",
+   "evidence": "A capability roadmap tells executives which capabilities will be enabled in a timeframe"
+  },
+  {
+   "claim": "A roadmap is a phased plan for roughly the next 12 to 24 months.",
+   "source": "articles/architecture-practice/architecture-roadmaps.md",
+   "evidence": "a phased plan for roughly the next 12 to 24 months"
+  },
+  {
+   "claim": "A roadmap is not a five-year long-range plan.",
+   "source": "articles/architecture-practice/architecture-roadmaps.md",
+   "evidence": "it is not a statement of work, a requirements document, a five-year long-range plan"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/architecture-practice/architecture-roadmaps.md",
+   "id": "kt:architecture-roadmaps",
+   "title": "Architecture Roadmaps",
+   "domain": "architecture-practice",
+   "release": "Winter '27",
+   "blob": "1210dfd0450dc1605546e313199bfbde60872a6e"
+  }
+ ],
+ "source_commit": "ffd9e446d37ea9d4c35224a06aafd30f1f18c73b",
+ "verified_release": "Winter '27",
+ "created": "2026-11-27",
+ "status": "active"
+}

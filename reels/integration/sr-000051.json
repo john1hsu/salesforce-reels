@@ -1,0 +1,131 @@
+{
+ "id": "sr-000051",
+ "title": "Count the licenses before the portal",
+ "style": "fact",
+ "topics": [
+  "integration"
+ ],
+ "backdrop": "stadium",
+ "cast": [
+  "penny",
+  "archie"
+ ],
+ "beats": [
+  {
+   "say": "Penny wants a portal where partners find her APIs. By Friday, naturally.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 30,
+     "anim": "talk",
+     "emote": "heart"
+    }
+   ],
+   "props": [
+    {
+     "id": "calendar",
+     "x": 72,
+     "y": 45,
+     "anim": "drop"
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "Archie suggests API Experience Hub. MuleSoft runs it, but every portal lives on Experience Cloud.",
+   "speaker": "archie",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 68,
+     "flip": true,
+     "anim": "talk"
+    },
+    {
+     "id": "penny",
+     "x": 25
+    }
+   ],
+   "props": [
+    {
+     "id": "cloud",
+     "x": 45,
+     "y": 25,
+     "anim": "bob"
+    }
+   ],
+   "sfx": "whoosh"
+  },
+  {
+   "say": "So count seats first: at least two thousand External Identity licenses.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 65,
+     "flip": true,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "key",
+     "x": 30,
+     "y": 45,
+     "anim": "pulse"
+    }
+   ],
+   "sign": "2,000 EXT ID",
+   "fx": "flash",
+   "sfx": "zap"
+  },
+  {
+   "say": "Missing prerequisites love to fail mid-linking. Penny's Friday depends on it.",
+   "actors": [
+    {
+     "id": "penny",
+     "x": 40,
+     "anim": "shake",
+     "emote": "sweat"
+    },
+    {
+     "id": "archie",
+     "x": 72,
+     "flip": true,
+     "emote": "idea"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Every API Experience Hub portal runs on Salesforce Experience Cloud.",
+   "source": "articles/integration/api-experience-hub.md",
+   "evidence": "every portal it creates runs on Salesforce Experience Cloud"
+  },
+  {
+   "claim": "API Experience Hub requires at least 2,000 External Identity licenses.",
+   "source": "articles/integration/api-experience-hub.md",
+   "evidence": "at least 2,000 External Identity licenses"
+  },
+  {
+   "claim": "Missing prerequisites tend to surface as failures during Salesforce linking.",
+   "source": "articles/integration/api-experience-hub.md",
+   "evidence": "Missing prerequisites tend to surface as failures during Salesforce linking"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/integration/api-experience-hub.md",
+   "id": "kt:api-experience-hub",
+   "title": "API Experience Hub",
+   "domain": "integration",
+   "release": "Winter '27",
+   "blob": "28748e11ed3aefa0e961d3f1375b45559da7f778"
+  }
+ ],
+ "source_commit": "ffd9e446d37ea9d4c35224a06aafd30f1f18c73b",
+ "verified_release": "Winter '27",
+ "created": "2026-11-27",
+ "status": "active"
+}

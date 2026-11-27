@@ -1,0 +1,135 @@
+{
+ "id": "sr-000061",
+ "title": "Routing to Stuff or More Stuff",
+ "style": "humor",
+ "topics": [
+  "data-cloud-and-ai"
+ ],
+ "backdrop": "space",
+ "cast": [
+  "dex",
+  "bolt",
+  "ada"
+ ],
+ "beats": [
+  {
+   "say": "Dex gives Bolt three subagents: Stuff, More Stuff, and Misc.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 28,
+     "anim": "cheer",
+     "emote": "star"
+    },
+    {
+     "id": "bolt",
+     "x": 70,
+     "flip": true
+    }
+   ],
+   "props": [
+    {
+     "id": "box",
+     "x": 50
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "The router picks a subagent from names and descriptions alone.",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 60,
+     "anim": "float"
+    }
+   ],
+   "props": [
+    {
+     "id": "magnifier",
+     "x": 28,
+     "y": 45,
+     "anim": "bob"
+    }
+   ],
+   "sign": "NAMES ONLY",
+   "sfx": "whoosh"
+  },
+  {
+   "say": "Bolt announces: routing your refund to... Stuff? More Stuff?",
+   "speaker": "bolt",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 55,
+     "anim": "spin",
+     "emote": "?"
+    }
+   ],
+   "fx": "shake",
+   "sfx": "error"
+  },
+  {
+   "say": "Make names short, verb-led and distinct, like Track Order.",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 55,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 25,
+     "y": 45,
+     "anim": "pulse"
+    }
+   ],
+   "sfx": "powerup"
+  },
+  {
+   "say": "Bolt takes labels literally. So label like you mean it.",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 65,
+     "flip": true,
+     "anim": "nod"
+    },
+    {
+     "id": "dex",
+     "x": 28,
+     "anim": "sulk"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "The reasoning engine classifies a request into a subagent using only names and classification descriptions.",
+   "source": "articles/data-cloud-and-ai/agentforce.md",
+   "evidence": "classifies a request into a subagent using only names and classification descriptions"
+  },
+  {
+   "claim": "Subagent names should be short, verb-led and non-overlapping.",
+   "source": "articles/data-cloud-and-ai/agentforce.md",
+   "evidence": "Make subagent names short, verb-led and non-overlapping"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/data-cloud-and-ai/agentforce.md",
+   "id": "kt:agentforce",
+   "title": "Agentforce",
+   "domain": "data-cloud-and-ai",
+   "release": "Winter '27",
+   "blob": "45909db7b667b734454b8d8cda9395b67959d9e8"
+  }
+ ],
+ "source_commit": "ffd9e446d37ea9d4c35224a06aafd30f1f18c73b",
+ "verified_release": "Winter '27",
+ "created": "2026-11-27",
+ "status": "active"
+}

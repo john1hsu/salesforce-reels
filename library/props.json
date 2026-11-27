@@ -686,6 +686,29 @@
     ".ttttttt.",
     "tt.ttt.tt"
    ]
+  },
+  {
+   "id": "recycle-bin",
+   "description": "Wastebasket recycle bin with an arrow",
+   "palette": {
+    "k": "#1a1c2c",
+    "g": "#3e9e5f",
+    "l": "#7fd39a",
+    "w": "#f4f4f4"
+   },
+   "rows": [
+    "..kkkkkkkk..",
+    ".kllllllllk.",
+    "kkkkkkkkkkkk",
+    ".kggggggggk.",
+    ".kgggwwgggk.",
+    ".kggwggwggk.",
+    ".kgggggwggk.",
+    ".kggwgwwggk.",
+    ".kgggwgwggk.",
+    "..kggggggk..",
+    "..kkkkkkkk.."
+   ]
   }
  ]
 }

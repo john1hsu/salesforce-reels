@@ -1,0 +1,161 @@
+{
+ "id": "sr-000053",
+ "title": "The security report shows examples, not every bug",
+ "style": "myth",
+ "topics": [
+  "devops-and-alm"
+ ],
+ "backdrop": "forest",
+ "cast": [
+  "dex",
+  "archie"
+ ],
+ "myth": "A failed security review lists every bug, so fixing those exact lines is enough.",
+ "beats": [
+  {
+   "say": "Dex's failed security review lists three bugs. He'll fix exactly those lines.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "nod",
+     "emote": "idea"
+    }
+   ],
+   "props": [
+    {
+     "id": "scroll",
+     "x": 70,
+     "y": 50,
+     "anim": "drop"
+    }
+   ],
+   "sign": "MYTH",
+   "sfx": "blip"
+  },
+  {
+   "say": "Archie: the report shows examples of each issue class, not every instance.",
+   "speaker": "archie",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 68,
+     "flip": true,
+     "anim": "talk"
+    },
+    {
+     "id": "dex",
+     "x": 25,
+     "emote": "!"
+    }
+   ],
+   "sign": "BUSTED",
+   "fx": "flash",
+   "sfx": "zap"
+  },
+  {
+   "say": "So find that pattern everywhere, and fix it all.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 50,
+     "anim": "run"
+    }
+   ],
+   "props": [
+    {
+     "id": "bug",
+     "x": 20,
+     "anim": "shake"
+    },
+    {
+     "id": "bug",
+     "x": 80,
+     "y": 60,
+     "anim": "bob"
+    },
+    {
+     "id": "magnifier",
+     "x": 50,
+     "y": 45
+    }
+   ],
+   "sfx": "whoosh"
+  },
+  {
+   "say": "Every paid resubmission costs nine hundred ninety-nine dollars again.",
+   "actors": [
+    {
+     "id": "archie",
+     "x": 60,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "coin",
+     "x": 30,
+     "y": 45,
+     "anim": "spin"
+    }
+   ],
+   "sign": "$999",
+   "sfx": "coin"
+  },
+  {
+   "say": "Dex goes bug hunting. The whole forest.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 40,
+     "anim": "sulk",
+     "emote": "sweat"
+    }
+   ],
+   "props": [
+    {
+     "id": "bug",
+     "x": 75,
+     "anim": "bob"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "The security review report gives examples of each issue class rather than every instance.",
+   "source": "articles/devops-and-alm/appexchange-security-review.md",
+   "evidence": "the report gives examples of each issue class rather than every instance"
+  },
+  {
+   "claim": "A failed report means finding and fixing the pattern everywhere.",
+   "source": "articles/devops-and-alm/appexchange-security-review.md",
+   "evidence": "find and fix this pattern everywhere"
+  },
+  {
+   "claim": "The fee is $999 per paid solution.",
+   "source": "articles/devops-and-alm/appexchange-security-review.md",
+   "evidence": "a fee of $999 per paid solution"
+  },
+  {
+   "claim": "The fee is charged again on every resubmission after a failed attempt.",
+   "source": "articles/devops-and-alm/appexchange-security-review.md",
+   "evidence": "again on every resubmission after a failed attempt"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/devops-and-alm/appexchange-security-review.md",
+   "id": "kt:appexchange-security-review",
+   "title": "AgentExchange Security Review",
+   "domain": "devops-and-alm",
+   "release": "Winter '27",
+   "blob": "5b74c5a5a77eb68ee8b488bdf1382deebe45c5db"
+  }
+ ],
+ "source_commit": "ffd9e446d37ea9d4c35224a06aafd30f1f18c73b",
+ "verified_release": "Winter '27",
+ "created": "2026-11-27",
+ "status": "active"
+}

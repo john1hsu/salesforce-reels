@@ -1,0 +1,134 @@
+{
+ "id": "sr-000044",
+ "title": "The Recycle Bin is not a backup",
+ "style": "myth",
+ "topics": [
+  "clouds-and-products"
+ ],
+ "backdrop": "dungeon",
+ "cast": [
+  "dex",
+  "ada"
+ ],
+ "myth": "The Recycle Bin is a backup that can undo any data mistake.",
+ "beats": [
+  {
+   "say": "Dex overwrote every phone number in the org. Relax, the Recycle Bin has my back!",
+   "speaker": "dex",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "talk",
+     "emote": "star"
+    }
+   ],
+   "props": [
+    {
+     "id": "recycle-bin",
+     "x": 72,
+     "scale": 4
+    }
+   ],
+   "sign": "MYTH",
+   "sfx": "blip"
+  },
+  {
+   "say": "Ada peeks in. The bin holds deleted records, and only briefly.",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 45,
+     "anim": "idle",
+     "emote": "..."
+    }
+   ],
+   "props": [
+    {
+     "id": "recycle-bin",
+     "x": 72,
+     "scale": 4,
+     "anim": "shake"
+    }
+   ],
+   "sfx": "whoosh"
+  },
+  {
+   "say": "A bad update deletes nothing. Nothing to get back.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "faint",
+     "emote": "sweat"
+    }
+   ],
+   "props": [
+    {
+     "id": "recycle-bin",
+     "x": 72,
+     "scale": 4
+    }
+   ],
+   "sign": "BUSTED",
+   "fx": "flash",
+   "sfx": "error"
+  },
+  {
+   "say": "Your records are your job. A real backup restores what was lost.",
+   "actors": [
+    {
+     "id": "ada",
+     "x": 35,
+     "anim": "nod"
+    }
+   ],
+   "props": [
+    {
+     "id": "chest",
+     "x": 72,
+     "anim": "pulse"
+    },
+    {
+     "id": "shield",
+     "x": 72,
+     "y": 45,
+     "anim": "bob"
+    }
+   ],
+   "fx": "sparkle",
+   "sfx": "powerup"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "The Recycle Bin holds deleted records only briefly and does nothing about bad updates.",
+   "source": "articles/clouds-and-products/backup-and-recover.md",
+   "evidence": "the Recycle Bin holds deleted records only briefly and does nothing about bad updates"
+  },
+  {
+   "claim": "Under shared responsibility, the customer is responsible for its own records, files, metadata and customizations.",
+   "source": "articles/clouds-and-products/backup-and-recover.md",
+   "evidence": "the customer is responsible for its own records, files, metadata and customizations"
+  },
+  {
+   "claim": "Backup & Recover restores data that was lost or corrupted.",
+   "source": "articles/clouds-and-products/backup-and-recover.md",
+   "evidence": "and restores what was lost or corrupted"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/clouds-and-products/backup-and-recover.md",
+   "id": "kt:backup-and-recover",
+   "title": "Salesforce Backup & Recover",
+   "domain": "clouds-and-products",
+   "release": "Winter '27",
+   "blob": "a6cba55a989c02d2260155c474e7181d81a85f7c"
+  }
+ ],
+ "source_commit": "ffd9e446d37ea9d4c35224a06aafd30f1f18c73b",
+ "verified_release": "Winter '27",
+ "created": "2026-11-27",
+ "status": "active"
+}

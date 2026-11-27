@@ -1,0 +1,142 @@
+{
+ "id": "sr-000049",
+ "title": "Bolt cannot see the credit button",
+ "style": "story",
+ "topics": [
+  "data-cloud-and-ai"
+ ],
+ "backdrop": "ballroom",
+ "cast": [
+  "bolt",
+  "dex"
+ ],
+ "beats": [
+  {
+   "say": "Bolt runs a resort desk. It gives Dex a credit; a variable flips to true.",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 65,
+     "flip": true,
+     "anim": "nod"
+    },
+    {
+     "id": "dex",
+     "x": 25,
+     "anim": "cheer"
+    }
+   ],
+   "props": [
+    {
+     "id": "coin",
+     "x": 45,
+     "y": 45,
+     "anim": "spin"
+    }
+   ],
+   "sign": "CREDIT = TRUE",
+   "sfx": "coin"
+  },
+  {
+   "say": "Dex asks again, with clever wording.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "talk",
+     "emote": "idea"
+    },
+    {
+     "id": "bolt",
+     "x": 68,
+     "flip": true
+    }
+   ],
+   "sfx": "blip"
+  },
+  {
+   "say": "That variable filters the credit action out of the model's view.",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 60,
+     "anim": "idle",
+     "emote": "?"
+    }
+   ],
+   "props": [
+    {
+     "id": "magnifier",
+     "x": 30,
+     "y": 45,
+     "anim": "bob"
+    }
+   ],
+   "fx": "dark",
+   "sfx": "whoosh"
+  },
+  {
+   "say": "Instructions can be talked around. Hidden actions can't.",
+   "actors": [
+    {
+     "id": "dex",
+     "x": 30,
+     "anim": "sulk",
+     "emote": "sweat"
+    }
+   ],
+   "props": [
+    {
+     "id": "lock",
+     "x": 70,
+     "y": 50,
+     "anim": "pulse"
+    }
+   ],
+   "sfx": "error"
+  },
+  {
+   "say": "Bolt announces: I cannot see the button.",
+   "speaker": "bolt",
+   "actors": [
+    {
+     "id": "bolt",
+     "x": 55,
+     "anim": "talk"
+    }
+   ],
+   "sfx": "rimshot"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "A variable-based filter removes an action from the LLM's view entirely.",
+   "source": "articles/data-cloud-and-ai/agent-variables.md",
+   "evidence": "A filtered action is removed from the LLM's view entirely"
+  },
+  {
+   "claim": "Instruction text alone cannot guarantee that an action stays unused.",
+   "source": "articles/data-cloud-and-ai/agent-variables.md",
+   "evidence": "Instruction text alone cannot guarantee that"
+  },
+  {
+   "claim": "A user cannot talk the model into calling an action it cannot see.",
+   "source": "articles/data-cloud-and-ai/agent-variables.md",
+   "evidence": "a user cannot talk the model into calling an action it cannot see"
+  }
+ ],
+ "sources": [
+  {
+   "path": "articles/data-cloud-and-ai/agent-variables.md",
+   "id": "kt:agent-variables",
+   "title": "Agent Variables",
+   "domain": "data-cloud-and-ai",
+   "release": "Winter '27",
+   "blob": "525b49d936ef381f142af1b50925991076bf2e59"
+  }
+ ],
+ "source_commit": "ffd9e446d37ea9d4c35224a06aafd30f1f18c73b",
+ "verified_release": "Winter '27",
+ "created": "2026-11-27",
+ "status": "active"
+}
